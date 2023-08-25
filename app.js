@@ -11,6 +11,7 @@ const btn = document.createElement('button');
 // creating a div in html
 const output = document.createElement('div');
 btn.textContent = "START GAME";
+
 // textContent - could also do innerHtml
 output.textContent = "Click that button";
 
@@ -30,16 +31,18 @@ const myWords = ["bird", "dog", "cat", "cow"];
 // next want to randomise the array
 // see https://www.w3schools.com/js/js_array_sort.asp
 // will then move on to randomising letters
-btn.addEventListener('click',(e)=>{
+btn.addEventListener('click', (e) => {
 
-// scramble the array
-// add random zero or a 1 randomise even more
-    myWords.sort(()=>{return 0.5 - Math.random()});
+    // scramble the array
+    // add random zero or a 1 randomise even more
+    myWords.sort(() => {
+        return 0.5 - Math.random()
+    });
 
-//selected word to be scrambled - whichever is first is random list
+    //selected word to be scrambled - whichever is first is random list
     let selWord = myWords[0];
     output.textContent = `${selWord} is our word`;
     console.log(myWords);
 })
 
-/// Learning: random sort, template literals. 
+/// Learning to do: random sort, template literals. 
