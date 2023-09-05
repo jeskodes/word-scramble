@@ -45,4 +45,7 @@ btn.addEventListener('click', (e) => {
     console.log(myWords);
 })
 
-/// Learning to do: random sort, template literals. 
+// Learning to do: random sort, template literals. 
+
+// First randomise the word using Math.randon() then make the word
+// into an array and use split()method and randomise the new array. 
