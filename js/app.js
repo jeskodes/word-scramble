@@ -22,8 +22,19 @@ gameArea.append(output);
 
 console.log(btn);
 
+//Will have words stored in separate file and use the following code
+//Will poss randomise words using
+/**
+ * let myWords = Math.floor(Math.random() * words.length; )
+ */
+
+
 // creating array of words to scramble
 const myWords = ["bird", "dog", "cat", "cow"];
+const game = {
+    sel: "",
+    scramble: "",
+}
 
 // Add in event listener - listening for presses on the btn.
 // the button is a useable object. 
@@ -35,13 +46,27 @@ btn.addEventListener('click', (e) => {
 
     // scramble the array
     // add random zero or a 1 randomise even more
+    //will use Math.floor(Math.random)
     myWords.sort(() => {
         return 0.5 - Math.random()
     });
 
     //selected word to be scrambled - whichever is first is random list
-    let selWord = myWords[0];
-    output.textContent = `${selWord} is our word`;
+    //scramble word letters using .split and turning into an array
+    //to put word (temp) back into a string use temp.join()method
+    game.sel = myWords[0];
+    let temp = game.sel.split('');
+    temp.sort(() => {
+        return 0.5 - Math.random()
+    });
+    temp.join('');
+    console.log(temp); 
+
+    //create a function that continues to run until the word is scrambled
+    //make sure the word is scrambled 
+
+
+    output.textContent = `${game.sel} is our word`;
     console.log(myWords);
 })
 
