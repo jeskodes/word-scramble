@@ -12,6 +12,7 @@ const btn = document.createElement('button');
 const output = document.createElement('div');
 const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
+inWord.classList.add('myInput'); 
 output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
 
