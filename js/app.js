@@ -43,7 +43,7 @@ const game = {
 // see https://www.w3schools.com/js/js_array_sort.asp
 // will then move on to randomising letters
 btn.addEventListener('click', (e) => {
-
+    btn.style.display = "none"; //button disappears when click start
     // scramble the array
     // add random zero or a 1 randomise even more
     //will use Math.floor(Math.random)
