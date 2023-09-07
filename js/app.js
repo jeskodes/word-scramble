@@ -10,7 +10,8 @@ const btn = document.createElement('button');
 // output some content - eventually scrambled word
 // creating a div in html
 const output = document.createElement('div');
-const inword = document.createElement ('input');
+const inWord = document.createElement('input');
+inWord.setAttribute('type', 'text');
 output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
 
@@ -21,6 +22,7 @@ output.textContent = "Click that button";
 // can also prepend and will appear on page first
 gameArea.append(btn);
 gameArea.append(output);
+gameArea.append(inWord);
 
 console.log(btn);
 
@@ -96,7 +98,7 @@ btn.addEventListener('click', (e) => {
 
 
     output.textContent = `${game.scramble}`;
-    output.style.fontSize = "4rem"; 
+    output.style.fontSize = "4rem";
     console.log(game.sel, game.scramble);
     //console.log(myWords);
 })
