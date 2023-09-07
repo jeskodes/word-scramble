@@ -95,6 +95,7 @@ btn.addEventListener('click', (e) => {
 
 
     output.textContent = `${game.sel}`;
+    output.style.fontSize = "4rem"; 
     console.log(game.sel, game.scramble);
     //console.log(myWords);
 })
