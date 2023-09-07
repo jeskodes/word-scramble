@@ -10,6 +10,7 @@ const btn = document.createElement('button');
 // output some content - eventually scrambled word
 // creating a div in html
 const output = document.createElement('div');
+const inword = document.createElement ('input');
 output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
 
