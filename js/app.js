@@ -11,7 +11,7 @@ const btn = document.createElement('button');
 // creating a div in html
 const output = document.createElement('div');
 const inWord = document.createElement('input');
-inWord.setAttribute('type', 'text');
+inWord.setAttribute('type','text');
 inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
@@ -37,8 +37,8 @@ console.log(btn);
 // creating array of words to scramble
 const myWords = ["bird", "dog", "cat", "cow"];
 const game = {
-    sel: "",
-    scramble: "",
+    sel: '',
+    scramble: '',
 }
 
 // Add in event listener - listening for presses on the btn.
@@ -61,12 +61,12 @@ btn.addEventListener('click', (e) => {
     //to put word (temp) back into a string use temp.join()method
     game.sel = myWords[0];
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
-    let temp = game.sel.split('');
-    temp.sort(() => {
-        return 0.5 - Math.random()
-    });
-    temp.join('');
-    console.log(temp);
+    output.style.fontSize = "4rem";
+    inWord.setAttribute('maxlength', game.sel.length);
+    output.textContent = `${game.scramble}`;
+    console.log(game.sel, game.scramble);
+    //console.log(myWords);
+})
 
     //create a function that continues to run until the word is scrambled
     //because word isn't always scrambling
@@ -75,11 +75,11 @@ btn.addEventListener('click', (e) => {
     //game.scramble = scrambled word
 
     function sorter(val) {
-        let temp = game.sel.split('');
+        let temp = val.split('');
         temp.sort(() => {
             return 0.5 - Math.random()
         });
-        temp.join('');
+        temp = temp.join('');
         console.log(temp);
         /**Check if new word same as previous word
         if it is then have a problem - testing as go
@@ -98,12 +98,7 @@ btn.addEventListener('click', (e) => {
     }
 
 
-    output.textContent = `${game.scramble}`;
-    output.style.fontSize = "4rem";
-    inWord.setAttribute('maxlength, game.sel.length');
-    console.log(game.sel, game.scramble);
-    //console.log(myWords);
-})
+
 
 // Learning to do: random sort, template literals. 
 
