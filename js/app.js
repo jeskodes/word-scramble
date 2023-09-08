@@ -63,6 +63,7 @@ btn.addEventListener('click', (e) => {
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
     output.style.fontSize = "4rem";
     inWord.setAttribute('maxlength', game.sel.length);
+    inWord.focus(); //adds focus to input field 
     output.textContent = `${game.scramble}`;
     console.log(game.sel, game.scramble);
     //console.log(myWords);
