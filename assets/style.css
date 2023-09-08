@@ -24,3 +24,9 @@ body {
     /*to stop the cards from changing size with different words*/
     min-height: "";
 }
+
+.myInput {
+    letter-spacing: 0.1rem; 
+    max-width: 4rem;
+    text-align: center; 
+}
