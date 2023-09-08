@@ -12,7 +12,7 @@ const btn = document.createElement('button');
 const output = document.createElement('div');
 const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
-inWord.classList.add('myInput'); 
+inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
 
@@ -100,6 +100,7 @@ btn.addEventListener('click', (e) => {
 
     output.textContent = `${game.scramble}`;
     output.style.fontSize = "4rem";
+    inWord.setAttribute('maxlength, game.sel.length');
     console.log(game.sel, game.scramble);
     //console.log(myWords);
 })

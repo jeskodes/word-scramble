@@ -1,25 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"";
+    font-family: "";
 }
 
 body {
-    display: flex;  
-    justify-content: center; 
-    align-items: center; 
-    background-color: #f5e5fc; 
-    min-height: 100vh; 
-    min-width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5e5fc;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .gameArea {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #48b8d0;
-    padding: 4rem; 
-    min-width: ""; /*to stop the cards from changing size with different words*/
-    min-height:"" ;
+    padding: 4rem;
+    min-width: "";
+    /*to stop the cards from changing size with different words*/
+    min-height: "";
 }
