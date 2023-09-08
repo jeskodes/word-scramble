@@ -66,8 +66,23 @@ btn.addEventListener('click', (e) => {
     inWord.focus(); //adds focus to input field 
     output.textContent = `${game.scramble}`;
     console.log(game.sel, game.scramble);
-    //console.log(myWords);
+    
 })
+
+//Add letter count using EventListener()
+//the function will check to see what the length of the inWord input is
+//everytime press in textbox get value 1 - length of word
+//keyup counts key presses 
+//counting because once reach same number of letters for word will do check 
+//to see if word matches the word. 
+//e.code means event.code - if press enter
+//so if reach same number of letters or if press enter will check if matches word. 
+    inWord.addEventListener('keyup', (e)=>{
+        console.log(e);
+        if(inWord.value.length == game.sel.length || e.code == "Enter"){
+            console.log("Checking"); 
+            }
+    })
 
     //create a function that continues to run until the word is scrambled
     //because word isn't always scrambling
