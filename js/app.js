@@ -79,14 +79,17 @@ btn.addEventListener('click', (e) => {
 //so if reach same number of letters or if press enter will check if matches word. 
 inWord.addEventListener('keyup', (e) => {
     console.log(e);
+    inWord.style.borderColor = "#000000"; //reset border color to default
+    inWord.style.borderWidth = "1px";
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
-        console.log("Checking");
+        winChecker(); //runt the winChecker function 
     }
 })
 
 //run check to see if words are matching
 function winChecker() {
-    if (inWord.value === game.sel) {
+    inWord.style.borderWidth = "5px";
+    if (inWord.value == game.sel) {
         console.log("Correct");
         inWord.style.borderColor = "green";
     } else {
