@@ -20,16 +20,17 @@ body {
     align-items: center;
     background-color: #48b8d0;
     padding: 4rem;
-    min-width: "";
+    max-width: 14rem;
     /*to stop the cards from changing size with different words*/
-    min-height: "";
+    max-height: 14rem;
 }
 
 /*Need to wrap contents of game area in div and space out*/
 
 .myInput {
-    letter-spacing: 0.1rem; 
-    max-width: 4.5rem;
-    font-size: 1.5rem; 
-    text-align: center; 
+    letter-spacing: 0.1rem;
+    max-width: 4.7rem;
+    max-height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
