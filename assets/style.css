@@ -20,9 +20,9 @@ body {
     align-items: center;
     background-color: #48b8d0;
     padding: 4rem;
-    max-width: 14rem;
+    max-width: 12rem;
     /*to stop the cards from changing size with different words*/
-    max-height: 14rem;
+    max-height: 12rem;
 }
 
 /*Need to wrap contents of game area in div and space out*/
