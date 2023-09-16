@@ -43,6 +43,7 @@ body {
     background-color: pink;
     margin: 5px 5px;
     width: 7rem;
+    border-radius: 5px; 
 
 }
 

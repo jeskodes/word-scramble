@@ -15,6 +15,10 @@ const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
 inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
+
+const scoreBoard = document.createElement('div'); 
+scoreBoard.textContent = "Score"; 
+
 btn.textContent = "START GAME";
 //Edit: add class to btn to style in css 
 btn.classList.add("btn_start");
@@ -64,6 +68,7 @@ btn.addEventListener('click', (e) => {
     //selected word to be scrambled - whichever is first is random list
     //scramble word letters using .split and turning into an array
     //to put word (temp) back into a string use temp.join()method
+    //Edit: changed and added output style - padding, fontSize, borderRadius
     game.sel = myWords[0];
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
     output.style.fontSize = "3rem";
