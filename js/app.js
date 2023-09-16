@@ -10,14 +10,19 @@ const btn = document.createElement('button');
 // output some content - eventually scrambled word
 // creating a div in html
 const output = document.createElement('div');
+
 const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
 inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 btn.textContent = "START GAME";
+//Edit: add class to btn to style in css 
+btn.classList.add("btn_start");
 
 // textContent - could also do innerHtml
 output.textContent = "Click that button";
+//Edit: add class to output so can style 
+output.classList.add("click_button"); 
 
 // Add to HTML page using append. Append to gameArea
 // can also prepend and will appear on page first
