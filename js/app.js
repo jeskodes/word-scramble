@@ -16,9 +16,9 @@ inWord.setAttribute('type', 'text');
 inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
-const scoreBoard = document.createElement('div'); 
-scoreBoard.textContent = "Score"; 
-scoreBoard.classList.add("div_scoreBoard"); 
+const scoreBoard = document.createElement('div');
+scoreBoard.textContent = "Score";
+scoreBoard.classList.add("div_scoreBoard");
 //Edit: added classname to scoreBoard so can style
 
 btn.textContent = "START GAME";
@@ -28,18 +28,18 @@ btn.classList.add("btn_start");
 // textContent - could also do innerHtml
 output.textContent = "Click that button";
 //Edit: add class to output so can style 
-output.classList.add("click_button"); 
+output.classList.add("click_button");
 
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
-gameArea.prepend(scoreBoard); 
+gameArea.prepend(scoreBoard);
 gameArea.append(btn);
 gameArea.append(output);
 gameArea.append(inWord);
 
 //hide scoreBoard and input at start of game
-scoreBoard.style.display = 'none'; 
-inWord.style.display = 'none'; 
+scoreBoard.style.display = 'none';
+inWord.style.display = 'none';
 
 console.log(btn);
 
@@ -56,7 +56,7 @@ const myWords = ["bird", "dog", "cat", "cow"];
 const game = {
     sel: '',
     scramble: '',
-    score: 0, 
+    score: 0,
     incorrect: 0
 };
 
@@ -71,10 +71,10 @@ btn.addEventListener('click', (e) => {
     // scramble the array
     // add random zero or a 1 randomise even more
     //will use Math.floor(Math.random)
-    
+
     //toggle values of scoreBoard and input when start game
-    scoreBoard.style.display = 'block'; 
-    inWord.style.display = 'block'; 
+    scoreBoard.style.display = 'block';
+    inWord.style.display = 'block';
     myWords.sort(() => {
         return 0.5 - Math.random()
     });
@@ -114,23 +114,39 @@ inWord.addEventListener('keyup', (e) => {
 })
 
 //create a function to output the score on the gameplay
+//Used template literal to assign value of the score
+//tempOutput is what will output to scoreboard. 
+//innerHTML more flexibility than textContent
 
-
+function addScore() {
+    let tempOutput = `Score: ${game.score} vs incorrect (${game.incorrect})`;
+    scoreBoard.innerHTML = tempOutput;
+}
 
 //run check to see if words are matching
 //changing border width when checking making word shift - keep border same width throughout
 //Edit: original used borderWidth to signify if correct - made word above move. Style background color instead. 
+//Update score whenever checking the winner. If get it correct then want to increase if statement if incorrect same with else
+//use game.score++ the addScore() to update score within same function as checking correct/incorrect. 
+//if correct btn will display again to click for next word. Would prefer press enter for next word. 
 function winChecker() {
     inWord.style.borderWidth = "2px";
     if (inWord.value == game.sel) {
         console.log("Correct");
         inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
+        game.score++;
+        inWord.disabled = true; //stop player entering correct score indefinitely. 
+        btn.style.display = "block"; 
+        btn.textContent = "Click for next word"; 
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        inWord.style.backgroundColor = "red";//Edit: will change but better than changing border width.
+        inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
+        game.incorrect++; 
     }
+
+    addScore();
 
 }
 

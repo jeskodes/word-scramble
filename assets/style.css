@@ -31,6 +31,8 @@ body {
 
 .div_scoreBoard {
     font-family: arial; /*TEST checking can style score*/
+    background-color: purple; 
+    color: white; 
 }
 
 .btn_start {
