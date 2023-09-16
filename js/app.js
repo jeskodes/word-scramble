@@ -69,6 +69,7 @@ btn.addEventListener('click', (e) => {
     output.style.fontSize = "4rem";
     inWord.setAttribute('maxlength', game.sel.length);
     inWord.focus(); //adds focus to input field 
+    inWord.style.borderColor = "black";
     output.textContent = `${game.scramble}`;
     console.log(game.sel, game.scramble);
 
@@ -85,23 +86,25 @@ btn.addEventListener('click', (e) => {
 inWord.addEventListener('keyup', (e) => {
     console.log(e);
     inWord.style.borderColor = "#000000"; //reset border color to default
-    inWord.style.borderWidth = "1px";
+    inWord.style.borderWidth = "2px"; //keep border width same throughout game play
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
 })
 
 //run check to see if words are matching
+//changing border width when checking making word shift - keep border same width throughout
+//Edit: original used borderWidth to signify if correct - made word above move. Style background color instead. 
 function winChecker() {
-    inWord.style.borderWidth = "5px";
+    inWord.style.borderWidth = "2px";
     if (inWord.value == game.sel) {
         console.log("Correct");
-        inWord.style.borderColor = "green";
+        inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        inWord.style.borderColor = "red";
+        inWord.style.backgroundColor = "red";//Edit: will change but better than changing border width.
     }
 
 }
