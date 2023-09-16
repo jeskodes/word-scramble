@@ -44,11 +44,14 @@ console.log(btn);
 
 
 // creating array of words to scramble
+// add score and incorrect to game so can track 
 const myWords = ["bird", "dog", "cat", "cow"];
 const game = {
     sel: '',
     scramble: '',
-}
+    score: 0, 
+    incorrect: 0
+};
 
 // Add in event listener - listening for presses on the btn.
 // the button is a useable object. 
