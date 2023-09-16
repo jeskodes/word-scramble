@@ -66,7 +66,8 @@ btn.addEventListener('click', (e) => {
     //to put word (temp) back into a string use temp.join()method
     game.sel = myWords[0];
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
-    output.style.fontSize = "4rem";
+    output.style.fontSize = "3rem";
+    output.style.padding = "5px 5px";
     inWord.setAttribute('maxlength', game.sel.length);
     inWord.focus(); //adds focus to input field 
     inWord.style.borderColor = "black";
