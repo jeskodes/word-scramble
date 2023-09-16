@@ -37,6 +37,10 @@ gameArea.append(btn);
 gameArea.append(output);
 gameArea.append(inWord);
 
+//hide scoreBoard and input at start of game
+scoreBoard.style.display = 'none'; 
+inWord.style.display = 'none'; 
+
 console.log(btn);
 
 //Will have words stored in separate file and use the following code
@@ -67,6 +71,10 @@ btn.addEventListener('click', (e) => {
     // scramble the array
     // add random zero or a 1 randomise even more
     //will use Math.floor(Math.random)
+    
+    //toggle values of scoreBoard and input when start game
+    scoreBoard.style.display = 'block'; 
+    inWord.style.display = 'block'; 
     myWords.sort(() => {
         return 0.5 - Math.random()
     });

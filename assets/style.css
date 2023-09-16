@@ -29,6 +29,10 @@ body {
 
 /*Need to wrap contents of game area in div and space out*/
 
+.div_scoreBoard {
+    font-family: arial; /*TEST checking can style score*/
+}
+
 .btn_start {
     border-radius: 4px;
     border: none;
