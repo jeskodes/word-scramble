@@ -18,6 +18,8 @@ inWord.classList.add('myInput');
 
 const scoreBoard = document.createElement('div'); 
 scoreBoard.textContent = "Score"; 
+scoreBoard.classList.add("div_scoreBoard"); 
+//Edit: added classname to scoreBoard so can style
 
 btn.textContent = "START GAME";
 //Edit: add class to btn to style in css 
@@ -29,7 +31,8 @@ output.textContent = "Click that button";
 output.classList.add("click_button"); 
 
 // Add to HTML page using append. Append to gameArea
-// can also prepend and will appear on page first
+// prepend scoreBoard at top
+gameArea.prepend(scoreBoard); 
 gameArea.append(btn);
 gameArea.append(output);
 gameArea.append(inWord);
@@ -101,6 +104,10 @@ inWord.addEventListener('keyup', (e) => {
         winChecker(); //runt the winChecker function 
     }
 })
+
+//create a function to output the score on the gameplay
+
+
 
 //run check to see if words are matching
 //changing border width when checking making word shift - keep border same width throughout
