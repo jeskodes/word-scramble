@@ -136,14 +136,14 @@ function winChecker() {
         inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
         inWord.disabled = true; //stop player entering correct score indefinitely. 
-        btn.style.display = "block"; 
-        btn.textContent = "Click for next word"; 
+        btn.style.display = "block";
+        btn.textContent = "Click for next word";
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
         inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
-        game.incorrect++; 
+        game.incorrect++;
     }
 
     addScore();
