@@ -68,6 +68,7 @@ btn.addEventListener('click', (e) => {
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
     output.style.fontSize = "3rem";
     output.style.padding = "5px 5px";
+    output.style.borderRadius = "5px";
     inWord.setAttribute('maxlength', game.sel.length);
     inWord.focus(); //adds focus to input field 
     inWord.style.borderColor = "black";
