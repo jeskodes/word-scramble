@@ -70,6 +70,7 @@ const game = {
 // will then move on to randomising letters
 btn.addEventListener('click', (e) => {
     inWord.disabled = false; //refresh word 
+    inWord.value = ""; //clear input box on click 
     btn.style.display = "none"; //button disappears when click start
     // scramble the array
     // add random zero or a 1 randomise even more
