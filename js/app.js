@@ -1,3 +1,5 @@
+//nice to have - click to skip to  next word 
+//nice to have - separate letters of words to guess into boxes - see conundra
 // debug by outputing object to console. 
 // select element on html page use querySelector
 // selects the "gameArea" class

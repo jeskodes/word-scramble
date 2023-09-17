@@ -24,6 +24,8 @@ body {
     min-width: 20rem;
     max-width: 20rem; 
     /*to stop the cards from changing size with different words*/
+    /* Setting min and max width works but not responsive */
+    /* All boxes are jumping around during gameplay - want all fixed. */
     max-height: 20rem;
     min-height: 20rem; 
     border-radius: 5px;
