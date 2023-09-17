@@ -1,3 +1,5 @@
+
+// debug by outputing object to console. 
 // select element on html page use querySelector
 // selects the "gameArea" class
 // gameArea "object"
@@ -67,6 +69,7 @@ const game = {
 // see https://www.w3schools.com/js/js_array_sort.asp
 // will then move on to randomising letters
 btn.addEventListener('click', (e) => {
+    inWord.disabled = false; //refresh word 
     btn.style.display = "none"; //button disappears when click start
     // scramble the array
     // add random zero or a 1 randomise even more
@@ -75,6 +78,7 @@ btn.addEventListener('click', (e) => {
     //toggle values of scoreBoard and input when start game
     scoreBoard.style.display = 'block';
     inWord.style.display = 'block';
+
     myWords.sort(() => {
         return 0.5 - Math.random()
     });
@@ -83,11 +87,13 @@ btn.addEventListener('click', (e) => {
     //scramble word letters using .split and turning into an array
     //to put word (temp) back into a string use temp.join()method
     //Edit: changed and added output style - padding, fontSize, borderRadius
-    game.sel = myWords[0];
+    //Need to remove word already guessed from array using .shift()method.
+    game.sel = myWords.shift();
+    //Edit: didn't add to game how many words left - too wordy. 
     game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
     output.style.fontSize = "3rem";
     output.style.padding = "5px 5px";
-    output.style.borderRadius = "5px";
+    output.style.borderRadius = "5px"; //Edit didn't change border
     inWord.setAttribute('maxlength', game.sel.length);
     inWord.focus(); //adds focus to input field 
     inWord.style.borderColor = "black";
@@ -118,6 +124,8 @@ inWord.addEventListener('keyup', (e) => {
 //tempOutput is what will output to scoreboard. 
 //innerHTML more flexibility than textContent
 
+
+//Edit: Did not add html how many words left
 function addScore() {
     let tempOutput = `Score: ${game.score} vs incorrect (${game.incorrect})`;
     scoreBoard.innerHTML = tempOutput;
@@ -129,6 +137,10 @@ function addScore() {
 //Update score whenever checking the winner. If get it correct then want to increase if statement if incorrect same with else
 //use game.score++ the addScore() to update score within same function as checking correct/incorrect. 
 //if correct btn will display again to click for next word. Would prefer press enter for next word. 
+//In winChecker function once played need to reenable new word to guess. 
+//reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
+
+
 function winChecker() {
     inWord.style.borderWidth = "2px";
     if (inWord.value == game.sel) {
