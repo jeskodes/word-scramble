@@ -62,6 +62,10 @@ const game = {
     incorrect: 0
 };
 
+
+//EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
+//the new word button needs tabbing to before click enter. 
+//start looking into with https://css-tricks.com/when-a-click-is-not-just-a-click/
 // Add in event listener - listening for presses on the btn.
 // the button is a useable object. 
 // The event object - can write out as function ?(e)=>{}
