@@ -1,4 +1,3 @@
-
 // debug by outputing object to console. 
 // select element on html page use querySelector
 // selects the "gameArea" class
@@ -35,9 +34,9 @@ output.classList.add("click_button");
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
 gameArea.prepend(scoreBoard);
-gameArea.append(btn);
 gameArea.append(output);
 gameArea.append(inWord);
+gameArea.append(btn);
 
 //hide scoreBoard and input at start of game
 scoreBoard.style.display = 'none';
