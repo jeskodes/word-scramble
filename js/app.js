@@ -164,6 +164,7 @@ function winChecker() {
         inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
         inWord.disabled = true; //stop player entering correct score indefinitely. 
+        inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
     } else {
