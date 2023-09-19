@@ -60,7 +60,8 @@ const game = {
     sel: '',
     scramble: '',
     score: 0,
-    incorrect: 0
+    incorrect: 0,
+    played: myWords.length
 };
 
 
@@ -73,39 +74,48 @@ const game = {
 // next want to randomise the array
 // see https://www.w3schools.com/js/js_array_sort.asp
 // will then move on to randomising letters
+
+
 btn.addEventListener('click', (e) => {
-    inWord.disabled = false; //refresh word 
-    inWord.value = ""; //clear input box on click 
-    btn.style.display = "none"; //button disappears when click start
-    // scramble the array
-    // add random zero or a 1 randomise even more
-    //will use Math.floor(Math.random)
+    if (myWords.length <= 0) { //when all words played
+        console.log('game over');
+        gameArea.innerHTML = `<div>GAME OVER</div>`;
+        gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`
+    } else { //edit from tutorial - too wordy with correct and incorrect.
 
-    //toggle values of scoreBoard and input when start game
-    scoreBoard.style.display = 'block';
-    inWord.style.display = 'block';
+        inWord.disabled = false; //refresh word 
+        inWord.value = ""; //clear input box on click 
+        btn.style.display = "none"; //button disappears when click start
+        // scramble the array
+        // add random zero or a 1 randomise even more
+        //will use Math.floor(Math.random)
 
-    myWords.sort(() => {
-        return 0.5 - Math.random()
-    });
+        //toggle values of scoreBoard and input when start game
+        scoreBoard.style.display = 'block';
+        inWord.style.display = 'block';
 
-    //selected word to be scrambled - whichever is first is random list
-    //scramble word letters using .split and turning into an array
-    //to put word (temp) back into a string use temp.join()method
-    //Edit: changed and added output style - padding, fontSize, borderRadius
-    //Need to remove word already guessed from array using .shift()method.
-    game.sel = myWords.shift();
-    //Edit: didn't add to game how many words left - too wordy. 
-    game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
-    output.style.fontSize = "3rem";
-    output.style.padding = "5px 5px";
-    output.style.borderRadius = "5px"; //Edit didn't change border
-    inWord.setAttribute('maxlength', game.sel.length);
-    inWord.focus(); //adds focus to input field 
-    inWord.style.borderColor = "black";
-    output.textContent = `${game.scramble}`;
-    console.log(game.sel, game.scramble);
+        myWords.sort(() => {
+            return 0.5 - Math.random()
+        });
 
+        //selected word to be scrambled - whichever is first is random list
+        //scramble word letters using .split and turning into an array
+        //to put word (temp) back into a string use temp.join()method
+        //Edit: changed and added output style - padding, fontSize, borderRadius
+        //Need to remove word already guessed from array using .shift()method.
+        game.sel = myWords.shift();
+        //Edit: didn't add to game how many words left - too wordy. 
+        game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
+        game.wordsLeft = myWords.length; //how many words left
+        output.style.fontSize = "3rem";
+        output.style.padding = "5px 5px";
+        output.style.borderRadius = "5px"; //Edit didn't change border
+        inWord.setAttribute('maxlength', game.sel.length);
+        inWord.focus(); //adds focus to input field 
+        inWord.style.borderColor = "black";
+        output.textContent = `${game.scramble}`;
+        console.log(game.sel, game.scramble);
+    }
 })
 
 //Add letter count using EventListener()
