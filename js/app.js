@@ -80,7 +80,24 @@ btn.addEventListener('click', (e) => {
     if (myWords.length <= 0) { //when all words played
         console.log('game over');
         gameArea.innerHTML = `<div>GAME OVER</div>`;
-        gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`
+        gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
+        btn.style.display = "block";
+        btn.textContent = "Click for next word"; 
+
+
+        //Want to reset game
+        // btn.addEventListener('Click', (e) => {
+        // window.location.reload(); //Edit: Add refresh but need it to be on click    
+        // })
+        
+// function resetGame () {
+//     if (gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`) {
+//         btn.style.display = "block";
+//         btn.textContent = "Click for next word"
+//     }
+// }
+        
+        
     } else { //edit from tutorial - too wordy with correct and incorrect.
 
         inWord.disabled = false; //refresh word 
@@ -117,6 +134,7 @@ btn.addEventListener('click', (e) => {
         console.log(game.sel, game.scramble);
     }
 })
+
 
 //Add letter count using EventListener()
 //the function will check to see what the length of the inWord input is
