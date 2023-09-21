@@ -17,3 +17,5 @@
 [JavaScript Keyboard Events Tutorial: the keyup and keydown Event Listeners](https://www.youtube.com/watch?v=OiYmhhe6Inc)
 
 [Youtube Tutorial Event Handlers and Event Listeners](https://www.youtube.com/watch?v=xogpUfUL5kY)
+
+[Tutorial Listening to Multiple Events in Vanilla JS](https://gomakethings.com/listening-to-multiple-events-in-vanilla-js/)
