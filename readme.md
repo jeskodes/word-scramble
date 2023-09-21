@@ -9,3 +9,5 @@
 [3 Ways to code Rock Paper Scissor with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
 
 [Git Hub Repo - Learning how to add reset button and replay](https://github.com/mariaalouisaa/pokemon-top-trumps/blob/main/index.html)
+
+[Tic Tac Toe Tutorial - Research how to refresh game](https://www.youtube.com/watch?v=JsErMawwdOw)
