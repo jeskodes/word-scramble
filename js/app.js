@@ -81,8 +81,8 @@ btn.addEventListener('click', (e) => {
         console.log('game over');
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
-        btn.style.display = "block";
-        btn.textContent = "Click for next word"; 
+        // btn.style.display = "block";
+        // btn.textContent = "Click for next word"; 
 
 
         //Want to reset game
@@ -144,8 +144,9 @@ btn.addEventListener('click', (e) => {
 //to see if word matches the word. 
 //e.code means event.code - if press enter
 //so if reach same number of letters or if press enter will check if matches word. 
+
 inWord.addEventListener('keyup', (e) => {
-    console.log(e);
+    // console.log(e); removed - used for debugging
     inWord.style.borderColor = "#000000"; //reset border color to default
     inWord.style.borderWidth = "2px"; //keep border width same throughout game play
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
