@@ -15,3 +15,5 @@
 [W3 Explanation of keyboard and mouse events](https://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS-20071102/SCR20.html)
 
 [JavaScript Keyboard Events Tutorial: the keyup and keydown Event Listeners](https://www.youtube.com/watch?v=OiYmhhe6Inc)
+
+[Youtube Tutorial Event Handlers and Event Listeners](https://www.youtube.com/watch?v=xogpUfUL5kY)
