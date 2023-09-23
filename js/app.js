@@ -33,12 +33,22 @@ output.textContent = "Click that button";
 //Edit: add class to output so can style 
 output.classList.add("click_button");
 
+const restart = document.createElement('button');//EDIT Add refresh button
+restart.innerHTML = "Refresh"; 
+restart.id = "btn_refresh";
+document.body.appendChild(restart);
+console.log(restart); //test restart button 
+
+//create new button from 
+//https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button.
+
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
 gameArea.prepend(scoreBoard);
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
+gameArea.appendChild(restart);
 
 //hide scoreBoard and input at start of game
 scoreBoard.style.display = 'none';
@@ -51,6 +61,7 @@ console.log(btn);
 /**
  * let myWords = Math.floor(Math.random() * words.length; )
  */
+
 
 
 // creating array of words to scramble
@@ -81,6 +92,8 @@ btn.addEventListener('click', (e) => {
         console.log('game over');
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
+        // gameArea.innerHTML = `<button>Refresh</button>`;
+        // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
         // btn.textContent = "Click for next word"; 
 
