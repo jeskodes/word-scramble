@@ -87,6 +87,12 @@ const game = {
 // will then move on to randomising letters
 
 
+//create function to refresh 
+
+restart.addEventListener("click", (e) => {
+    console.log("You clicked");
+})
+
 btn.addEventListener('click', (e) => {
     if (myWords.length <= 0) { //when all words played
         console.log('game over');
