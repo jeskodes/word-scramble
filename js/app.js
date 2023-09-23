@@ -135,6 +135,8 @@ gameArea.addEventListener('click', (e) => {
             return 0.5 - Math.random()
         });
 
+
+        //https://www.kodeclik.com/how-to-scramble-a-word-in-javascript/ how to scramble a word in javascript
         //selected word to be scrambled - whichever is first is random list
         //scramble word letters using .split and turning into an array
         //to put word (temp) back into a string use temp.join()method
@@ -198,10 +200,10 @@ function addScore() {
 
 function winChecker() {
     inWord.style.borderWidth = "2px";
-    if (inWord.value == game.sel) {
-        console.log("Correct");
+    if (inWord.value == game.sel) {      
         inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
+        console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
         btn.style.display = "block";
