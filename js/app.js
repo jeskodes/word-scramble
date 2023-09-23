@@ -90,14 +90,15 @@ const game = {
 //create function to refresh 
 
 restart.addEventListener("click", (e) => {
-    console.log("You clicked");
+    window.location.reload();
 })
 
-btn.addEventListener('click', (e) => {
+gameArea.addEventListener('click', (e) => {
     if (myWords.length <= 0) { //when all words played
         console.log('game over');
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
+        gameArea.appendChild(restart); //EDIT add refresh button
         // gameArea.innerHTML = `<button>Refresh</button>`;
         // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
