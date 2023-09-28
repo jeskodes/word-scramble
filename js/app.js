@@ -87,6 +87,8 @@ const game = {
 // see https://www.w3schools.com/js/js_array_sort.asp
 // will then move on to randomising letters
 
+// const correctWord = myWords.game.sel; 
+// // console.log(correctWord);
 
 //create function to refresh 
 
@@ -209,6 +211,8 @@ function winChecker() {
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
+        output.textContent = `${game.sel}`; //EDIT: When guess right the ouput my word unscrambles. 
+
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
