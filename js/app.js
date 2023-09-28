@@ -20,7 +20,7 @@ inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
-scoreBoard.textContent = "Score";
+// scoreBoard.textContent = "Score";  EDIT: removed "Score in html"
 scoreBoard.classList.add("div_scoreBoard");
 //Edit: added classname to scoreBoard so can style
 
