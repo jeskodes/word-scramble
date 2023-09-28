@@ -44,11 +44,12 @@ console.log(restart); //test restart button
 
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
-gameArea.prepend(scoreBoard);
+
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
 gameArea.appendChild(restart);
+gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 
 //hide scoreBoard and input at start of game
 scoreBoard.style.display = 'none';
@@ -184,7 +185,7 @@ inWord.addEventListener('keyup', (e) => {
 
 //Edit: Did not add html how many words left
 function addScore() {
-    let tempOutput = `Score: ${game.score} vs incorrect (${game.incorrect})`;
+    let tempOutput = `Score: ${game.score} / ${game.incorrect}`;
     scoreBoard.innerHTML = tempOutput;
 }
 
@@ -201,7 +202,7 @@ function addScore() {
 function winChecker() {
     inWord.style.borderWidth = "2px";
     if (inWord.value == game.sel) {      
-        inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
+        // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
@@ -212,7 +213,7 @@ function winChecker() {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
+        // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         game.incorrect++;
     }
 
