@@ -49,8 +49,15 @@ body {
 }
 
 /* To add hover color change to button */
-.btn_start:hover {
-    background-color: ""; 
+.btn_start:hover, #btn_refresh:hover {
+    background-color: blue; 
+}
+
+/* Create and style refresh button */
+#btn_refresh {
+    border-radius: 4px; 
+    border: none; 
+    padding: 0.35rem;
 }
 
 /*Created class .click_button so can target text*/
