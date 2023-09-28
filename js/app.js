@@ -45,10 +45,10 @@ console.log(restart); //test restart button
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
 
+gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
-gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.appendChild(restart);
 
 
@@ -214,7 +214,7 @@ function winChecker() {
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
-        output.textContent = `${game.sel}`; //EDIT: When guess right the ouput my word unscrambles. 
+        output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
 
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
