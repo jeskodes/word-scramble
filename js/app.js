@@ -48,12 +48,14 @@ console.log(restart); //test restart button
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
-gameArea.appendChild(restart);
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
+gameArea.appendChild(restart);
 
-//hide scoreBoard and input at start of game
+
+//hide scoreBoard, input and refresh at start of game
 scoreBoard.style.display = 'none';
 inWord.style.display = 'none';
+restart.style.display = 'none';
 
 console.log(btn);
 
@@ -101,6 +103,7 @@ gameArea.addEventListener('click', (e) => {
         console.log('game over');
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
+        restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
         // gameArea.innerHTML = `<button>Refresh</button>`;
         // window.addEventListener('onClick',()=>{ location.reload()})
