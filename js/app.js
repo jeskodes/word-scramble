@@ -75,8 +75,11 @@ const game = {
     scramble: '',
     score: 0,
     incorrect: 0,
+    maxGuesses: 0, //Edit - add maxGuesses so game over after 8 guesses. 
     played: myWords.length
 };
+
+let maxGuesses = ''; //Edit counting number of guesses 
 
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
@@ -98,9 +101,13 @@ restart.addEventListener("click", (e) => {
     window.location.reload();
 })
 
+
+
 gameArea.addEventListener('click', (e) => {
-    if (myWords.length <= 0) { //when all words played
+    if (myWords.length <= 0 || (maxGuesses == 3)){ //when all words played //Edit add maxGuesses so can have infinite 
+        //number of words but only play 5 at a time. 
         console.log('game over');
+        console.log(maxGuesses);
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
         restart.style.display = 'block';
@@ -209,6 +216,8 @@ function winChecker() {
     if (inWord.value == game.sel) {      
         // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
+        maxGuesses++; //attempting to count number of guesses - currently not defined. 
+        console.log(maxGuesses);
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
@@ -221,6 +230,7 @@ function winChecker() {
         inWord.value = "";
         inWord.focus();
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
+        maxGuesses++; //attempting to count maxGuesses - currently not defined
         game.incorrect++;
     }
 
