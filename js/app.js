@@ -69,7 +69,7 @@ console.log(btn);
 
 // creating array of words to scramble
 // add score and incorrect to game so can track 
-const myWords = ["bird", "dog", "cat", "cow"];
+const myWords = ["bird", "dog", "cat", "cow", "horse", "sheep", "chicken", "capybara"];
 const game = {
     sel: '',
     scramble: '',
@@ -104,7 +104,7 @@ restart.addEventListener("click", (e) => {
 
 
 gameArea.addEventListener('click', (e) => {
-    if (myWords.length <= 0 || (maxGuesses == 3)){ //when all words played //Edit add maxGuesses so can have infinite 
+    if (myWords.length <= 0 || (maxGuesses == 5)){ //when all words played //Edit add maxGuesses so can have infinite 
         //number of words but only play 5 at a time. 
         console.log('game over');
         console.log(maxGuesses);
