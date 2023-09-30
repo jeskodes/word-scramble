@@ -163,6 +163,8 @@ gameArea.addEventListener('click', (e) => {
         myWords.sort(() => {
             return 0.5 - Math.random()
         });
+        
+
 
 
         //https://www.kodeclik.com/how-to-scramble-a-word-in-javascript/ how to scramble a word in javascript
