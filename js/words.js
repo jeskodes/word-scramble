@@ -38,7 +38,6 @@ const myWords = [
     "crow",
     "deer",
     "dog",
-    "dogfish",
     "dolphin",
     "dragonfly",
     "duck",
