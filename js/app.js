@@ -231,7 +231,7 @@ function addScore() {
 
 function winChecker() {
     inWord.style.borderWidth = "2px";
-    if (inWord.value == game.sel) {      
+    if (inWord.value.toLowerCase() == game.sel) {      
         // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
         maxGuesses++; //attempting to count number of guesses - currently not defined. 
