@@ -110,7 +110,7 @@ let maxGuesses = ''; //Edit counting number of guesses
 // const correctWord = myWords.game.sel; 
 // // console.log(correctWord);
 
-//create function to refresh 
+//EDIT: create function to refresh 
 
 restart.addEventListener("click", (e) => {
     window.location.reload();
@@ -156,6 +156,7 @@ gameArea.addEventListener('click', (e) => {
         //will use Math.floor(Math.random)
 
         //toggle values of scoreBoard and input when start game
+        output.style.display = 'block';//EDIT hide output variable before start game then make visible. 
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
 

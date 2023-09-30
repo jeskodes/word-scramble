@@ -63,14 +63,13 @@ body {
 }
 
 /*Created class .click_button so can target text*/
-.click_button {
+/* .click_button {
     text-align: center;
     background-color: pink;
     margin: 5px 5px;
     width: 7rem;
     border-radius: 5px; 
-
-}
+} */
 
 .myWords {
     background-color: paleturquoise;
@@ -79,6 +78,7 @@ body {
     text-align: center; 
     position: relative; 
     padding: 0.5rem;
+    margin: 5px 5px; 
     
 }
 .myInput {

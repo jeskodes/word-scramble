@@ -76,7 +76,6 @@ const myWords = [
     "jaguar",
     "jellyfish",
     "kangaroo",
-    "kingfisher",
     "koala",
     "lemur",
     "leopard",
