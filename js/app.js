@@ -69,7 +69,11 @@ console.log(btn);
 
 // creating array of words to scramble
 // add score and incorrect to game so can track 
-const myWords = ["bird", "dog", "cat", "cow", "horse", "sheep", "chicken", "capybara"];
+// const myWords = ["bird", "dog", "cat", "cow", "horse", "sheep", "chicken", "capybara"];
+// const myWords = [''];
+
+
+
 const game = {
     sel: '',
     scramble: '',
