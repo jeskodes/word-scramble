@@ -124,8 +124,6 @@ const myWords = [
     "squid",
     "squirrel",
     "stingray",
-    "stork",
-    "swallow",
     "swan",
     "tiger",
     "toad",
