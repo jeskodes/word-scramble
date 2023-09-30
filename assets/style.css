@@ -73,8 +73,10 @@ body {
 
 .myWords {
     background-color: paleturquoise;
-    width: 13rem;
-    letter-spacing: 0.5rem;
+    font-size: 2rem; 
+    border-radius: 5px; 
+    width: 14rem;
+    letter-spacing: 0.3rem;
     text-align: center; 
     position: relative; 
     padding: 0.5rem;
@@ -86,7 +88,7 @@ body {
     /* max-width: 4.7rem;
     max-height: 3rem; */
     /* Stopped all from jumping around by making input same size a button - padding, margin and width */
-    width: 7rem;    
+    width: 14rem;    
     font-size: 1.5rem;
     text-align: center; 
     border-radius: 5px;
