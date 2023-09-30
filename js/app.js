@@ -178,7 +178,7 @@ gameArea.addEventListener('click', (e) => {
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "paleblue"; 
+        output.style.backgroundColor = "#ADD8E6"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
