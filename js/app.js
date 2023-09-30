@@ -90,7 +90,7 @@ const game = {
     scramble: '',
     score: 0,
     incorrect: 0,
-    maxGuesses: 0, //Edit - add maxGuesses so game over after 8 guesses. 
+    maxGuesses: 0, //Edit - add maxGuesses so game over after 5 guesses. 
     played: myWords.length
 };
 
@@ -147,7 +147,6 @@ gameArea.addEventListener('click', (e) => {
         
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
-
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
         btn.style.display = "none"; //button disappears when click start
@@ -178,6 +177,7 @@ gameArea.addEventListener('click', (e) => {
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
+        output.style.backgroundColor = "paleblue"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
@@ -238,6 +238,7 @@ function winChecker() {
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
+        output.style.backgroundColor = "palegreen"; 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
@@ -246,6 +247,7 @@ function winChecker() {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
+        output.style.backgroundColor = "lightpink"; //EDIT changed background color of output not inWord
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
         console.log(maxGuesses);
