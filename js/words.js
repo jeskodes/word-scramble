@@ -67,7 +67,6 @@ const myWords = [
     "hedgehog",
     "hippopotamus",
     "horse",
-    "hummingbird",
     "hyena",
     "ibex",
     "jaguar",
