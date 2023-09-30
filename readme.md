@@ -19,3 +19,5 @@
 [Youtube Tutorial Event Handlers and Event Listeners](https://www.youtube.com/watch?v=xogpUfUL5kY)
 
 [Tutorial Listening to Multiple Events in Vanilla JS](https://gomakethings.com/listening-to-multiple-events-in-vanilla-js/)
+
+[Animals Array](https://gist.github.com/borlaym/585e2e09dd6abd9b0d0a)
