@@ -72,6 +72,15 @@ body {
 
 }
 
+.myWords {
+    background-color: paleturquoise;
+    width: 13rem;
+    letter-spacing: 0.5rem;
+    text-align: center; 
+    position: relative; 
+    padding: 0.5rem;
+    
+}
 .myInput {
     letter-spacing: 0.1rem;
     /* max-width: 4.7rem;

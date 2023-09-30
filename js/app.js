@@ -14,6 +14,16 @@ const btn = document.createElement('button');
 // creating a div in html
 const output = document.createElement('div');
 
+
+// const output = document.createElement("p");
+// const node = document.createTextNode("text node");
+// output.appendChild(node);
+
+// const element = document.getElementsByClassName("click_button");
+// element.appendChild(output);
+
+
+
 const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
 inWord.classList.add('myInput');
@@ -31,7 +41,7 @@ btn.classList.add("btn_start");
 // textContent - could also do innerHtml
 output.textContent = "Click that button";
 //Edit: add class to output so can style 
-output.classList.add("click_button");
+output.classList.add("click_button"); 
 
 const restart = document.createElement('button');//EDIT Add refresh button
 restart.innerHTML = "Refresh"; 
@@ -113,7 +123,7 @@ gameArea.addEventListener('click', (e) => {
         console.log('game over');
         console.log(maxGuesses);
         gameArea.innerHTML = `<div>GAME OVER</div>`;
-        gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`;
+        gameArea.innerHTML += `<div> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
         // gameArea.innerHTML = `<button>Refresh</button>`;
@@ -235,7 +245,12 @@ function winChecker() {
         inWord.focus();
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
+        console.log(maxGuesses);
         game.incorrect++;
+        inWord.style.display = "none"; //EDIT: copied from above so can't enter correct word
+        btn.style.display = "block"; //EDIT: copied from above 
+        btn.textContent = "Click for next word"; //EDIT: move onto next word
+        output.textContent = `${game.sel}`; //EDIT: If guesses incorrect then says what word was. 
     }
 
     addScore();
