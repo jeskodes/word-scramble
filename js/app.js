@@ -81,7 +81,7 @@ console.log(btn);
 // creating array of words to scramble
 // add score and incorrect to game so can track 
 // const myWords = ["bird", "dog", "cat", "cow", "horse", "sheep", "chicken", "capybara"];
-// const myWords = [''];
+//const myWords = [''];
 
 
 
@@ -215,7 +215,7 @@ inWord.addEventListener('keyup', (e) => {
 
 //Edit: Did not add html how many words left
 function addScore() {
-    let tempOutput = `Score: ${game.score} / ${game.incorrect}`;
+    let tempOutput = `${game.score} <i class="fa-solid fa-square-check"></i>  ${game.incorrect} <i class="fa-solid fa-square-xmark"></i>`;
     scoreBoard.innerHTML = tempOutput;
 }
 
