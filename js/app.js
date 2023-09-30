@@ -175,9 +175,9 @@ gameArea.addEventListener('click', (e) => {
         //Edit: didn't add to game how many words left - too wordy. 
         game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
         game.wordsLeft = myWords.length; //how many words left
-        output.style.fontSize = "3rem";
-        output.style.padding = "5px 5px";
-        output.style.borderRadius = "5px"; //Edit didn't change border
+        // output.style.fontSize = "3rem";
+        // output.style.padding = "5px 5px";
+        // output.style.borderRadius = "5px"; //Edit didn't change border
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
