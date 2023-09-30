@@ -65,7 +65,6 @@ const myWords = [
     "hare",
     "hawk",
     "hedgehog",
-    "hippopotamus",
     "horse",
     "hyena",
     "ibex",
@@ -139,7 +138,6 @@ const myWords = [
     "wolf",
     "wolverine",
     "wombat",
-    "woodpecker",
     "worm",
     "zebra"
 ]
