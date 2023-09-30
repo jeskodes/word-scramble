@@ -30,7 +30,7 @@ inWord.classList.add('myInput');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
-// scoreBoard.textContent = "Score";  EDIT: removed "Score in html"
+scoreBoard.textContent = "Score";  //EDIT: removed "Score in html"
 scoreBoard.classList.add("div_scoreBoard");
 //Edit: added classname to scoreBoard so can style
 
@@ -147,6 +147,7 @@ gameArea.addEventListener('click', (e) => {
         
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
+        scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
         btn.style.display = "none"; //button disappears when click start
