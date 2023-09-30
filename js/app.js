@@ -39,9 +39,9 @@ btn.textContent = "START GAME";
 btn.classList.add("btn_start");
 
 // textContent - could also do innerHtml
-output.textContent = "Click that button";
+// output.textContent = "Click that button";
 //Edit: add class to output so can style 
-output.classList.add("click_button"); 
+output.classList.add("myWords"); 
 
 const restart = document.createElement('button');//EDIT Add refresh button
 restart.innerHTML = "Refresh"; 
@@ -66,6 +66,7 @@ gameArea.appendChild(restart);
 scoreBoard.style.display = 'none';
 inWord.style.display = 'none';
 restart.style.display = 'none';
+output.style.display = 'none';
 
 console.log(btn);
 
@@ -201,6 +202,7 @@ inWord.addEventListener('keyup', (e) => {
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
+
 })
 
 //create a function to output the score on the gameplay
