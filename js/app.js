@@ -116,7 +116,14 @@ restart.addEventListener("click", (e) => {
     window.location.reload();
 })
 
-
+//Fisher-Yate shuffle algorithim
+// function shuffle(myWords) {
+//     for (let i = myWords.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
+//     }
+//     return myWords;
+//   }
 
 gameArea.addEventListener('click', (e) => {
     if (myWords.length <= 0 || (maxGuesses == 5)){ //when all words played //Edit add maxGuesses so can have infinite 
@@ -161,9 +168,8 @@ gameArea.addEventListener('click', (e) => {
         inWord.style.display = 'block';
 
         myWords.sort(() => {
-            return 0.5 - Math.random()
+            return 0.475 - Math.random()
         });
-        
 
 
 
