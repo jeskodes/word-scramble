@@ -125,7 +125,10 @@ restart.addEventListener("click", (e) => {
 //     return myWords;
 //   }
 
-gameArea.addEventListener('click', (e) => {
+btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener functiona and gameplay for more flexibility. 
+console.log(btn);
+
+function gamePlay(){
     if (myWords.length <= 0 || (maxGuesses == 5)){ //when all words played //Edit add maxGuesses so can have infinite 
         //number of words but only play 5 at a time. 
         console.log('game over');
@@ -193,7 +196,7 @@ gameArea.addEventListener('click', (e) => {
         output.textContent = `${game.scramble}`;
         console.log(game.sel, game.scramble);
     }
-})
+}
 
 
 //Add letter count using EventListener()
