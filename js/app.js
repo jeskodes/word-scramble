@@ -126,7 +126,19 @@ restart.addEventListener("click", (e) => {
 //   }
 
 btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener functiona and gameplay for more flexibility. 
-console.log(btn);
+
+// const inputElement = document.getElementsByTagName('button');
+// inputElement.addEventListener ("keydown", function(event) {
+//     // If the user presses the "Enter" key on the keyboard
+//     if (event.key === "Enter" || e.code === "Enter") {  
+//         console.log('enter was pressed');    // Trigger the button element with a click
+//         document.getElementsByTagName("button").click();
+//         gamePlay();
+//     }
+    
+//     });
+
+
 
 function gamePlay(){
     if (myWords.length <= 0 || (maxGuesses == 5)){ //when all words played //Edit add maxGuesses so can have infinite 
