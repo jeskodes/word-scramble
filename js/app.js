@@ -94,7 +94,7 @@ const game = {
     played: myWords.length
 };
 
-let maxGuesses = 0; //Edit counting number of guesses 
+let maxGuesses = ''; //Edit counting number of guesses 
 
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
@@ -181,6 +181,7 @@ function gamePlay(){
         output.style.display = 'block';//EDIT hide output variable before start game then make visible. 
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
+        
 
         myWords.sort(() => {
             return 0.475 - Math.random()
@@ -265,6 +266,7 @@ function winChecker() {
         output.style.backgroundColor = "palegreen"; 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
+        restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
 
     } else {
