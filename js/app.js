@@ -94,7 +94,7 @@ const game = {
     played: myWords.length
 };
 
-let maxGuesses = ''; //Edit counting number of guesses 
+let maxGuesses = 0; //Edit counting number of guesses 
 
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
@@ -141,7 +141,7 @@ gameArea.addEventListener('click', (gamePlay));  //EDIT - separated out EventLis
 
 
 function gamePlay(){
-    if (myWords.length <= 0 || (maxGuesses == 5)){ //when all words played //Edit add maxGuesses so can have infinite 
+    if (myWords.length <= 0 || (maxGuesses === 5)){ //when all words played //Edit add maxGuesses so can have infinite 
         //number of words but only play 5 at a time. 
         console.log('game over');
         console.log(maxGuesses);
