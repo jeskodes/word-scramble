@@ -130,7 +130,8 @@ restart.addEventListener("keypress", (e) => {
 //   }
 
 btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
-btn.addEventListener('keypress', (gamePlay));
+btn.addEventListener("keypress", (e) => {
+    gamePlay();
 
 // const inputElement = document.getElementsByTagName('button');
 // inputElement.addEventListener ("keydown", function(event) {
