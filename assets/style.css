@@ -33,7 +33,7 @@ body {
 
 /*Need to wrap contents of game area in div and space out*/
 
-.div-scoreBoard {
+.div-scoreboard {
     font-family: arial; /*TEST checking can style score*/
     background-color: purple; 
     color: white; 
