@@ -158,7 +158,7 @@ function gamePlay(){
         // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
         // btn.textContent = "Click for next word"; 
-
+        btn.style.display = "none"; 
 
         //Want to reset game
         // btn.addEventListener('Click', (e) => {
@@ -176,7 +176,7 @@ function gamePlay(){
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
-        inWord.value = ""; //clear input box on click 
+        inWord.value = "Click for next word"; //clear input box on click 
         btn.style.display = "none"; //button disappears when click start
         // scramble the array
         // add random zero or a 1 randomise even more
@@ -230,13 +230,13 @@ inWord.addEventListener('keyup', (e) => {
     // console.log(e); removed - used for debugging
     inWord.style.borderColor = "#000000"; //reset border color to default
     inWord.style.borderWidth = "2px"; //keep border width same throughout game play
-    if (inWord.value.length == game.sel.length) {
+    if (inWord.value.length == game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
 
 })
 
-// if (inWord.value.length == game.sel.length || e.code == "Enter") {
+
 
 //create a function to output the score on the gameplay
 //Used template literal to assign value of the score
