@@ -125,7 +125,7 @@ restart.addEventListener("click", (e) => {
 //     return myWords;
 //   }
 
-gameArea.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener functiona and gameplay for more flexibility. 
+btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener functiona and gameplay for more flexibility. 
 
 // const inputElement = document.getElementsByTagName('button');
 // inputElement.addEventListener ("keydown", function(event) {
