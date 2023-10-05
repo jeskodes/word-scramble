@@ -116,6 +116,10 @@ restart.addEventListener("click", (e) => {
     window.location.reload();
 })
 
+restart.addEventListener("keypress", (e) => {
+    window.location.reload();
+})
+
 //Fisher-Yate shuffle algorithim
 // function shuffle(myWords) {
 //     for (let i = myWords.length - 1; i > 0; i--) {
@@ -126,7 +130,7 @@ restart.addEventListener("click", (e) => {
 //   }
 
 btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
-btn.addEventListener('keyup', (gamePlay));
+btn.addEventListener('keypress', (gamePlay));
 
 // const inputElement = document.getElementsByTagName('button');
 // inputElement.addEventListener ("keydown", function(event) {
