@@ -130,8 +130,7 @@ restart.addEventListener("keypress", (e) => {
 //   }
 
 btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
-btn.addEventListener("keypress", (e) => {
-    gamePlay();
+
 
 // const inputElement = document.getElementsByTagName('button');
 // inputElement.addEventListener ("keydown", function(event) {
@@ -231,11 +230,13 @@ inWord.addEventListener('keyup', (e) => {
     // console.log(e); removed - used for debugging
     inWord.style.borderColor = "#000000"; //reset border color to default
     inWord.style.borderWidth = "2px"; //keep border width same throughout game play
-    if (inWord.value.length == game.sel.length || e.code == "Enter") {
+    if (inWord.value.length == game.sel.length) {
         winChecker(); //runt the winChecker function 
     }
 
 })
+
+// if (inWord.value.length == game.sel.length || e.code == "Enter") {
 
 //create a function to output the score on the gameplay
 //Used template literal to assign value of the score
