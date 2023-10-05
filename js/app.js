@@ -158,7 +158,7 @@ function gamePlay(){
         // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
         // btn.textContent = "Click for next word"; 
-        btn.style.display = "none"; 
+        
 
         //Want to reset game
         // btn.addEventListener('Click', (e) => {
@@ -176,7 +176,7 @@ function gamePlay(){
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
-        inWord.value = "Click for next word"; //clear input box on click 
+        inWord.value = ""; //clear input box on click 
         btn.style.display = "none"; //button disappears when click start
         // scramble the array
         // add random zero or a 1 randomise even more
