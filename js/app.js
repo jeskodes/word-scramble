@@ -275,7 +275,7 @@ function winChecker() {
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
-
+    
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
