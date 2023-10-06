@@ -4,7 +4,7 @@
 // select element on html page use querySelector
 // selects the "gameArea" class
 // gameArea "object"
-const gameArea = document.querySelector('.gameArea');
+const gameArea = document.getElementById('game-area');
 
 // create a button to start - can also create btn in hmtl
 // document.createElement() is a method. 
