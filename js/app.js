@@ -4,7 +4,7 @@
 // select element on html page use querySelector
 // selects the "gameArea" class
 // gameArea "object"
-const gameArea = document.getElementById('game-area');
+const gameArea = document.querySelector('.gameArea');
 
 // create a button to start - can also create btn in hmtl
 // document.createElement() is a method. 
@@ -26,26 +26,26 @@ const output = document.createElement('div');
 
 const inWord = document.createElement('input');
 inWord.setAttribute('type', 'text');
-inWord.classList.add('myInput');
+inWord.classList.add('input-text');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
 scoreBoard.textContent = "Score";  //EDIT: removed "Score in html"
-scoreBoard.classList.add("div_scoreBoard");
+scoreBoard.classList.add("div-scoreboard");
 //Edit: added classname to scoreBoard so can style
 
 btn.textContent = "START GAME";
 //Edit: add class to btn to style in css 
-btn.classList.add("btn_start");
+btn.classList.add("btn-start");
 
 // textContent - could also do innerHtml
 // output.textContent = "Click that button";
 //Edit: add class to output so can style 
-output.classList.add("myWords"); 
+output.classList.add("div-played-words"); 
 
 const restart = document.createElement('button');//EDIT Add refresh button
 restart.innerHTML = "Refresh"; 
-restart.id = "btn_refresh";
+restart.id = "btn-refresh";
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
@@ -116,6 +116,10 @@ restart.addEventListener("click", (e) => {
     window.location.reload();
 })
 
+restart.addEventListener("keypress", (e) => {
+    window.location.reload();
+})
+
 //Fisher-Yate shuffle algorithim
 // function shuffle(myWords) {
 //     for (let i = myWords.length - 1; i > 0; i--) {
@@ -125,7 +129,8 @@ restart.addEventListener("click", (e) => {
 //     return myWords;
 //   }
 
-gameArea.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener functiona and gameplay for more flexibility. 
+btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
+
 
 // const inputElement = document.getElementsByTagName('button');
 // inputElement.addEventListener ("keydown", function(event) {
@@ -153,7 +158,7 @@ function gamePlay(){
         // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
         // btn.textContent = "Click for next word"; 
-
+        
 
         //Want to reset game
         // btn.addEventListener('Click', (e) => {
@@ -230,6 +235,8 @@ inWord.addEventListener('keyup', (e) => {
     }
 
 })
+
+
 
 //create a function to output the score on the gameplay
 //Used template literal to assign value of the score
