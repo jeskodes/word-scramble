@@ -137,13 +137,14 @@ btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener
 // console.log('button was pressed')
 
 
-btn.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementsByClassName('btn-start').click();
-    }
-    console.log("button clicked")
-});
+// btn.addEventListener("keypress", (e) => {
+//     if (e.key === "Enter") {
+//     btn.click();
+//     console.log("button clicked");
+//     }
+//     })
+
+    
 // btn.addEventListener('keyup', (e) => {
 //     console.log(e); //removed - used for debugging
 //     if (e.keyCode === 13) {
@@ -264,7 +265,7 @@ function gamePlay(){
 //e.code means event.code - if press enter
 //so if reach same number of letters or if press enter will check if matches word. 
 
-inWord.addEventListener('keyup', (e) => {
+inWord.addEventListener('click', (e) => {  //make more accessible if change from 'keypup' to 'click'
     // console.log(e); removed - used for debugging
     inWord.style.borderColor = "#000000"; //reset border color to default
     inWord.style.borderWidth = "2px"; //keep border width same throughout game play
