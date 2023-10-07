@@ -130,20 +130,58 @@ restart.addEventListener("keypress", (e) => {
 //   }
 
 btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
+// bth.addEventListener('keyup'(winChecker)); {
+//     if ()
+// }
+// btn.addEventListener('keyup', (gamePlay));
+// console.log('button was pressed')
 
 
-// const inputElement = document.getElementsByTagName('button');
-// inputElement.addEventListener ("keydown", function(event) {
+btn.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementsByClassName('btn-start').click();
+    }
+    console.log("button clicked")
+});
+// btn.addEventListener('keyup', (e) => {
+//     console.log(e); //removed - used for debugging
+//     if (e.keyCode === 13) {
+//         e.preventDefault();
+//         document.getElementById("myBtn").click();
+//     }
+//     {
+//     gamePlay()
+//     }
+// });
+
+
+// var input = document.getElementById("myInput");
+// input.addEventListener("keyup", function(event) {
+//     if (event.keyCode === 13) {
+//         event.preventDefault();
+//         document.getElementById("myBtn").click();
+//     }
+// });
+
+
+// btn.addEventListener ("keydown", function(event) {
 //     // If the user presses the "Enter" key on the keyboard
 //     if (event.key === "Enter" || e.code === "Enter") {  
 //         console.log('enter was pressed');    // Trigger the button element with a click
-//         document.getElementsByTagName("button").click();
-//         gamePlay();
 //     }
     
 //     });
 
 
+
+// document.getElementById("id_of_textbox")
+//     .addEventListener("keyup", function(event) {
+//     event.preventDefault();
+//     if (event.keyCode === 13) {
+//         document.getElementById("id_of_button").click();
+//     }
+// });
 
 function gamePlay(){
     if (myWords.length <= 0 || (maxGuesses === 5)){ //when all words played //Edit add maxGuesses so can have infinite 
@@ -235,6 +273,14 @@ inWord.addEventListener('keyup', (e) => {
     }
 
 })
+
+// btn.addEventListener ('keyup', (e) => {
+//     if (e.key === "Enter" || e.code === "Enter")
+//         document.getElementsByTagName('btn-start').click(); { 
+//         winChecker(); 
+//         console.log('enter was pressed'); 
+//     }
+// })
 
 
 
