@@ -24,7 +24,7 @@ const output = document.createElement('div');
 
 
 
-const inWord = document.createElement('input');
+const inWord = document.getElementById('input-word');
 inWord.setAttribute('type', 'text');
 inWord.classList.add('input-text');
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
