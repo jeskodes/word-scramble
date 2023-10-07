@@ -225,6 +225,7 @@ function gamePlay(){
         output.style.display = 'block';//EDIT hide output variable before start game then make visible. 
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
+        restart.style.display = 'block';
         
 
         myWords.sort(() => {
@@ -265,7 +266,7 @@ function gamePlay(){
 //e.code means event.code - if press enter
 //so if reach same number of letters or if press enter will check if matches word. 
 
-inWord.addEventListener('click', (e) => {  //make more accessible if change from 'keypup' to 'click'
+inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
     // console.log(e); removed - used for debugging
     inWord.style.borderColor = "#000000"; //reset border color to default
     inWord.style.borderWidth = "2px"; //keep border width same throughout game play
