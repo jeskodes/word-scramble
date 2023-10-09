@@ -26,7 +26,7 @@ const output = document.createElement('div');
 
 const inWord = document.getElementById('input-word');
 inWord.setAttribute('type', 'text');
-inWord.id = "input-text";
+inWord.classList.add = "input-text";
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
@@ -44,8 +44,8 @@ btn.classList.add("btn-start");
 output.classList.add("div-played-words"); 
 
 const restart = document.createElement('button');//EDIT Add refresh button
-restart.innerHTML = "Restart"; 
 restart.id = "btn-refresh";
+restart.innerHTML = "Restart"; 
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
