@@ -103,7 +103,8 @@ body {
     border: none;
     padding: 0.75rem;
     margin: 5px 5px;
-    width: 7rem;
+    width: 14rem;
+    height: 4rem; 
 }
 
 .footer__link {
