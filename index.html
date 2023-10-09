@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="anagram, game, guessing, words, scramble, animals">
+    <meta name="author" content="Jessica Clark">
     <title>Word Scramble Game</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/5e56d2dc1d.js" crossorigin="anonymous"></script>
@@ -12,21 +13,30 @@
 </head>
 
 <body>
+    <header>
+
+    </header>
     <!-- Test3  -->
     
     <!--This is where the main game play will take place-->
     <!--Will use JavaScript to select the game area into a useable object-->
-
-    <div id="game-area">
-   <textarea id = "input-word" placeholder = 'Press Enter to Skip' aria-label="Type word here"></textarea>
+    <main>
+        <section class = game-play>
+            <div id="game-area">
+                <textarea id = "input-word" placeholder = 'Press Enter to Skip' aria-label="Type word here"></textarea>
        <!-- Added html from DevTools so can see what I'm doing!  -->
         <!-- <div class="div_scoreBoard" style="display: none;"></div>
         <div class="click_button">Click that button</div>
         <input type="text" class="myInput" style="display: none;">
         <button class="btn_start">START GAME</button>
         <button id="btn_refresh" style="display: none;">Refresh</button> -->
-    </div>
-    <div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class = "footer__link">
+        <p>https://github.com/jeskodes</p>
+    </footer>
 
     <script src="assets/js/words.js"></script>
     <script src="assets/js/script.js"></script>
