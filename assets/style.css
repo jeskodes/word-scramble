@@ -11,10 +11,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5e5fc;
     min-height: 100vh;
     min-width: 100vw;
     background-color: #e9c46a; 
+}
+
+#heading-wordscramble {
+    color: white;  
+    font-size: 1.8rem; 
+    text-align: center; 
 }
 
 #game-area {
