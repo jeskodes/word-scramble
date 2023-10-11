@@ -252,7 +252,7 @@ function gamePlay(){
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "#7AB2A9ff"; 
+        output.style.backgroundColor = "#FBAA69ff"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
@@ -332,7 +332,7 @@ function winChecker() {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        output.style.backgroundColor = "#FBAA69f"; //EDIT changed background color of output not inWord
+        output.style.backgroundColor = "#FBAA69ff"; //EDIT changed background color of output not inWord
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
         console.log(maxGuesses);

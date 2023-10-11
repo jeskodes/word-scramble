@@ -78,7 +78,7 @@ main {
 
 /* To add hover color change to button */
 .btn-start:hover, #btn-refresh:hover {
-    background-color: #F4DBAFff; 
+    background-color: #E2DBC9ff; 
 }
 
 /* Create and style refresh button */
@@ -102,7 +102,7 @@ main {
 } */
 
 .div-played-words {
-    background-color: #7AB2A9ff;
+    /* background-color: #7AB2A9ff; */
     font-size: 2rem; 
     border-radius: 5px; 
     width: 14rem;
