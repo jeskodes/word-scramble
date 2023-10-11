@@ -57,6 +57,7 @@ console.log(restart); //test restart button
 // Add to HTML page using append. Append to gameArea
 // prepend scoreBoard at top
 
+gameArea.append(title); 
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.append(output);
 gameArea.append(inWord);
@@ -216,6 +217,7 @@ function gamePlay(){
         
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
+        title.style.display = "none"; 
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
