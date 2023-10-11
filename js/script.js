@@ -6,6 +6,8 @@
 // gameArea "object"
 const gameArea = document.getElementById('game-area');
 
+const title = document.getElementById('heading-wordscramble');
+
 // create a button to start - can also create btn in hmtl
 // document.createElement() is a method. 
 const btn = document.createElement('button');
