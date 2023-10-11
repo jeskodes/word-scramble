@@ -322,7 +322,7 @@ function winChecker() {
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
-        output.style.backgroundColor = "palegreen"; 
+        output.style.backgroundColor = "#07698a"; 
         btn.style.display = "block";
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 

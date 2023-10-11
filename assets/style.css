@@ -76,6 +76,19 @@ main {
 }
 
 
+/* Varied by changing CSS from tutorial  */
+.btn-start {
+    border-radius: 5px;
+    border: none;
+    padding: 0.75rem;
+    margin: 5px 5px;
+    width: 14rem;
+    height: 4rem; 
+    font-size: 1.2rem;
+    font-family: 'Patua One', serif;
+    color: #0D2656ff; 
+    /* border: solid 8px #e76f51; */
+}
 /* To add hover color change to button */
 .btn-start:hover, #btn-refresh:hover {
     background-color: #E2DBC9ff; 
@@ -88,6 +101,7 @@ main {
     padding: 0.35rem;
     margin: 5px 5px; 
     font-family: 'Patua One', serif;
+    font-size: 1rem;
     color: #0D2656ff; 
     /* border: solid 4px #e76f51; */
 }
@@ -137,18 +151,7 @@ main {
     padding-top: 1rem; 
 }
 
-/* Varied by changing CSS from tutorial  */
-.btn-start {
-    border-radius: 5px;
-    border: none;
-    padding: 0.75rem;
-    margin: 5px 5px;
-    width: 14rem;
-    height: 4rem; 
-    font-family: 'Patua One', serif;
-    color: #0D2656ff; 
-    /* border: solid 8px #e76f51; */
-}
+
 
 
 
