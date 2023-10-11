@@ -45,7 +45,7 @@ output.classList.add("div-played-words");
 
 const restart = document.createElement('button');//EDIT Add refresh button
 restart.id = "btn-refresh";
-document.getElementById("btn-refresh").innerHTML = "Restart"; 
+restart.textContent = "Restart"; 
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
