@@ -55,7 +55,7 @@ console.log(restart); //test restart button
 //https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button.
 
 // Add to HTML page using append. Append to gameArea
-// prepend scoreBoard at top
+// prep
 
 gameArea.append(title); 
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above

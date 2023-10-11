@@ -9,25 +9,23 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    min-width: 100vw;
     background-color: #e9c46a; 
 }
 
-#heading-wordscramble {
-    color: white;  
-    font-size: 1.8rem; 
-    text-align: center; 
-    position: absolute; 
-    margin-top: -14rem;
-    padding-bottom: 1.2rem;
+main {
+    display: flex; 
+    flex: 1 0 auto; 
+    align-items: center; 
 }
 
 #game-area {
     display: flex;
     flex-direction: column;
+    /* flex: 1 0 auto;  */
     align-items: center;
     justify-content: center;
     background-color: #2a9d8f;
@@ -43,6 +41,16 @@ body {
 }
 
 /*Need to wrap contents of game area in div and space out*/
+
+#heading-wordscramble {
+    color: white;  
+    font-size: 1.8rem; 
+    text-align: center; 
+    position: absolute; 
+    margin-top: -14rem;
+    padding-bottom: 1.2rem;
+}
+
 
 .div-scoreboard {
     font-family: arial; /*TEST checking can style score*/
@@ -87,6 +95,7 @@ body {
     position: relative; 
     padding: 0.5rem;
     margin: 5px 5px; 
+    font-family: 'Patua One', serif;
 }
 
 .input-text {
@@ -101,6 +110,7 @@ body {
     padding: 0.75rem;
     margin: 5px 5px;   
     overflow: hidden; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .input-text::placeholder {
@@ -122,17 +132,13 @@ body {
     /* border: solid 8px #e76f51; */
 }
 
-footer {
-    background-color: #264653;
-}
+
 
 .footer__link  {
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-    right: 0rem;
-    margin-bottom: 0; 
-    margin-top: 2rem; 
+    background-color: #264653;
+    width: 100vw; 
+    display: flex; 
+    justify-content: center; 
 }
 
 footer p  {
@@ -140,7 +146,5 @@ footer p  {
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     color: white; 
-    text-align: center; 
-    padding-top: 5px; 
-    padding-bottom: 7px; 
+    padding: 5px 5px; 
 }
