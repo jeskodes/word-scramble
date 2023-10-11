@@ -217,7 +217,6 @@ function gamePlay(){
         
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
-        title.style.display = "none"; 
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
