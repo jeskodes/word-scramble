@@ -116,7 +116,7 @@ main {
 } */
 
 .div-played-words {
-    /* background-color: #7AB2A9ff; */
+    background-color: #7AB2A9;
     font-size: 2rem; 
     border-radius: 5px; 
     width: 14rem;
@@ -137,7 +137,7 @@ main {
     font-size: 1.5rem;
     text-align: center; 
     border-radius: 5px;
-    padding: 0.75rem;
+    padding: 0.6rem;
     margin: 5px 5px;   
     overflow: hidden; 
     font-family: 'Roboto', sans-serif;
@@ -151,9 +151,9 @@ main {
     padding-top: 1rem; 
 }
 
-
-
-
+.div-gameover {
+    font-size: 3rem; 
+}
 
 .footer__link  {
     background-color: #0A446Fff;

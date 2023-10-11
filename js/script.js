@@ -192,9 +192,10 @@ function gamePlay(){
         //number of words but only play 5 at a time. 
         console.log('game over');
         console.log(maxGuesses);
-        gameArea.innerHTML = `<div>GAME OVER</div>`;
-        gameArea.innerHTML += `<div> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
+        gameArea.innerHTML = `<div class = "div-gameover">GAME OVER</div>`;
+        gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
+        restart.style.fontSize = 'x-large'; 
         // gameArea.appendChild(restart); EDIT add refresh button
         // gameArea.innerHTML = `<button>Refresh</button>`;
         // window.addEventListener('onClick',()=>{ location.reload()})
@@ -252,7 +253,7 @@ function gamePlay(){
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "#FBAA69ff"; 
+        output.style.backgroundColor = "#FBAA69"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
@@ -262,7 +263,7 @@ function gamePlay(){
 }
 
 
-//Add letter count using EventListener()
+//Add letter count using EventListener
 //the function will check to see what the length of the inWord input is
 //everytime press in textbox get value 1 - length of word
 //keyup counts key presses 
@@ -332,7 +333,7 @@ function winChecker() {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        output.style.backgroundColor = "#FBAA69ff"; //EDIT changed background color of output not inWord
+        output.style.backgroundColor = "#FBAA69"; //EDIT changed background color of output not inWord
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
         console.log(maxGuesses);
