@@ -192,11 +192,12 @@ function gamePlay(){
         gameArea.innerHTML = `<div>GAME OVER</div>`;
         gameArea.innerHTML += `<div> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
-        gameArea.appendChild(restart); //EDIT add refresh button
+        // gameArea.appendChild(restart); EDIT add refresh button
         // gameArea.innerHTML = `<button>Refresh</button>`;
         // window.addEventListener('onClick',()=>{ location.reload()})
         // btn.style.display = "block";
         // btn.textContent = "Click for next word"; 
+        
         
 
         //Want to reset game
