@@ -230,6 +230,7 @@ function gamePlay(){
         inWord.style.display = 'block';
         restart.style.display = 'block';
         
+        
 
         myWords.sort(() => {
             return 0.475 - Math.random()
