@@ -44,7 +44,7 @@ main {
     /* flex: 1 0 auto;  */
     align-items: center;
     justify-content: center;
-    background-color: #086D90ff;
+    background-color: #086D90;
     padding: 4rem;
     min-width: 20rem;
     max-width: 20rem; 
@@ -86,12 +86,18 @@ main {
     height: 4rem; 
     font-size: 1.2rem;
     font-family: 'Patua One', serif;
-    color: #0D2656ff; 
+    color: #0D2656; 
     /* border: solid 8px #e76f51; */
 }
+
+
+button {
+  cursor:pointer;
+}
+
 /* To add hover color change to button */
 .btn-start:hover, #btn-refresh:hover {
-    background-color: #E2DBC9ff; 
+    background-color: #fdeda8; 
 }
 
 /* Create and style refresh button */
@@ -101,7 +107,7 @@ main {
     padding: 0.35rem;
     margin: 5px 5px; 
     font-family: 'Patua One', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #0D2656ff; 
     /* border: solid 4px #e76f51; */
 }
@@ -152,18 +158,21 @@ main {
 }
 
 .div-gameover {
-    font-size: 3rem; 
+    font-size: 1.4rem; 
+    color: white; 
+    font-family: 'Patua One', serif, 400;
+    
 }
 
 .footer__link  {
-    background-color: #0A446Fff;
+    background-color: #0A446F;
     width: 100vw; 
     display: flex; 
     justify-content: center; 
 }
 
 footer p  {
-    background-color: #0A446Fff; 
+    background-color: #0A446F; 
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     color: white; 

@@ -192,30 +192,12 @@ function gamePlay(){
         //number of words but only play 5 at a time. 
         console.log('game over');
         console.log(maxGuesses);
-        gameArea.innerHTML = `<div class = "div-gameover">GAME OVER</div>`;
+        gameArea.innerHTML = `<div class = "div-gameover">Game Over</div>`;
         gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
-        restart.style.fontSize = 'x-large'; 
-        // gameArea.appendChild(restart); EDIT add refresh button
-        // gameArea.innerHTML = `<button>Refresh</button>`;
-        // window.addEventListener('onClick',()=>{ location.reload()})
-        // btn.style.display = "block";
-        // btn.textContent = "Click for next word"; 
-        
-        
-
-        //Want to reset game
-        // btn.addEventListener('Click', (e) => {
-        // window.location.reload(); //Edit: Add refresh but need it to be on click    
-        // })
-        
-// function resetGame () {
-//     if (gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`) {
-//         btn.style.display = "block";
-//         btn.textContent = "Click for next word"
-//     }
-// }
-        
+        gameArea.appendChild(restart); //EDIT add refresh button
+        restart.textContent = 'Play Again';
+ 
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
@@ -253,7 +235,7 @@ function gamePlay(){
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "#FBAA69"; 
+        output.style.backgroundColor = "#DEEFF5"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
@@ -323,17 +305,17 @@ function winChecker() {
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
-        output.style.backgroundColor = "#07698a";
+        output.style.backgroundColor = "#b9ecdc";
         btn.style.display = "block";
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
-    
+ 
     } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        output.style.backgroundColor = "#FBAA69"; //EDIT changed background color of output not inWord
+        output.style.backgroundColor = "pink"; //EDIT changed background color of output not inWord
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
         console.log(maxGuesses);
