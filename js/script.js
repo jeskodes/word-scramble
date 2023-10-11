@@ -26,7 +26,7 @@ const output = document.createElement('div');
 
 const inWord = document.getElementById('input-word');
 inWord.setAttribute('type', 'text');
-inWord.classList.add = "input-text";
+// inWord.classList.add = "input-text";
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
@@ -268,8 +268,8 @@ function gamePlay(){
 
 inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
     // console.log(e); removed - used for debugging
-    inWord.style.borderColor = "#000000"; //reset border color to default
-    inWord.style.borderWidth = "2px"; //keep border width same throughout game play
+    // inWord.style.borderColor = "#000000"; //reset border color to default
+    // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
@@ -309,7 +309,6 @@ function addScore() {
 
 
 function winChecker() {
-    inWord.style.borderWidth = "2px";
     if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
         // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;

@@ -90,7 +90,7 @@ body {
     overflow: hidden; 
 }
 
-::placeholder {
+.input-text::placeholder {
     font-size: 0.5rem; 
     text-align: center; 
     letter-spacing: 0rem;   
