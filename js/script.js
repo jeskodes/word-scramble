@@ -196,9 +196,7 @@ function gamePlay(){
         gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
-        restart.textContent = 'Play Again';
- 
-        
+        restart.textContent = 'Play Again';    
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
@@ -295,6 +293,15 @@ function addScore() {
 //In winChecker function once played need to reenable new word to guess. 
 //reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
 
+function lettersOnlyCheck(inWord) {
+var regEx = /^[A-Za-z]+$/;
+    if(inWord.value.match(regEx)){
+    return true;
+}   else {
+    alert("Please enter letters only.");
+    return false;
+    }
+}
 
 function winChecker() {
     if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
