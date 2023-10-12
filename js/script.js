@@ -123,6 +123,16 @@ restart.addEventListener("keypress", (e) => {
     window.location.reload();
 })
 
+
+function checkAlphabets(input) { 
+    for (const char of input) { 
+        if (!(char >= "a" && char <= "z") && 
+            !(char >= "A" && char <= "Z")) { 
+            return false; 
+        } 
+    } 
+    return true; 
+} 
 //Fisher-Yate shuffle algorithim
 // function shuffle(myWords) {
 //     for (let i = myWords.length - 1; i > 0; i--) {
