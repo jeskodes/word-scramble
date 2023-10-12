@@ -6,6 +6,8 @@
 // gameArea "object"
 const gameArea = document.getElementById('game-area');
 
+const title = document.getElementById('heading-wordscramble');
+
 // create a button to start - can also create btn in hmtl
 // document.createElement() is a method. 
 const btn = document.createElement('button');
@@ -26,7 +28,7 @@ const output = document.createElement('div');
 
 const inWord = document.getElementById('input-word');
 inWord.setAttribute('type', 'text');
-inWord.classList.add('input-text');
+// inWord.classList.add = "input-text";
 //output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
@@ -44,8 +46,8 @@ btn.classList.add("btn-start");
 output.classList.add("div-played-words"); 
 
 const restart = document.createElement('button');//EDIT Add refresh button
-restart.innerHTML = "Restart"; 
 restart.id = "btn-refresh";
+restart.textContent = "Restart"; 
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
@@ -53,8 +55,9 @@ console.log(restart); //test restart button
 //https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button.
 
 // Add to HTML page using append. Append to gameArea
-// prepend scoreBoard at top
+// prep
 
+gameArea.append(title); 
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.append(output);
 gameArea.append(inWord);
@@ -96,6 +99,14 @@ const game = {
 
 let maxGuesses = ''; //Edit counting number of guesses 
 
+// function allowOnlyLetters(e) {
+//     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
+//       return true;
+//     } else {
+//       alert("Please enter only alphabets");
+//      return false;
+//      }
+//   };
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
 //the new word button needs tabbing to before click enter. 
@@ -118,7 +129,8 @@ restart.addEventListener("click", (e) => {
 
 restart.addEventListener("keypress", (e) => {
     window.location.reload();
-})
+}) 
+
 
 //Fisher-Yate shuffle algorithim
 // function shuffle(myWords) {
@@ -189,28 +201,11 @@ function gamePlay(){
         //number of words but only play 5 at a time. 
         console.log('game over');
         console.log(maxGuesses);
-        gameArea.innerHTML = `<div>GAME OVER</div>`;
-        gameArea.innerHTML += `<div> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
+        gameArea.innerHTML = `<div class = "div-gameover">Game Over</div>`;
+        gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
-        // gameArea.innerHTML = `<button>Refresh</button>`;
-        // window.addEventListener('onClick',()=>{ location.reload()})
-        // btn.style.display = "block";
-        // btn.textContent = "Click for next word"; 
-        
-
-        //Want to reset game
-        // btn.addEventListener('Click', (e) => {
-        // window.location.reload(); //Edit: Add refresh but need it to be on click    
-        // })
-        
-// function resetGame () {
-//     if (gameArea.innerHTML += `<div> Score ${game.score} out of ${game.played}</div>`) {
-//         btn.style.display = "block";
-//         btn.textContent = "Click for next word"
-//     }
-// }
-        
+        restart.textContent = 'Play Again';
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
@@ -226,6 +221,7 @@ function gamePlay(){
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
         restart.style.display = 'block';
+        
         
 
         myWords.sort(() => {
@@ -247,7 +243,7 @@ function gamePlay(){
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
         // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "#ADD8E6"; 
+        output.style.backgroundColor = "#DEEFF5"; 
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //adds focus to input field 
         inWord.style.borderColor = "black";
@@ -257,7 +253,7 @@ function gamePlay(){
 }
 
 
-//Add letter count using EventListener()
+//Add letter count using EventListener
 //the function will check to see what the length of the inWord input is
 //everytime press in textbox get value 1 - length of word
 //keyup counts key presses 
@@ -268,8 +264,8 @@ function gamePlay(){
 
 inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
     // console.log(e); removed - used for debugging
-    inWord.style.borderColor = "#000000"; //reset border color to default
-    inWord.style.borderWidth = "2px"; //keep border width same throughout game play
+    // inWord.style.borderColor = "#000000"; //reset border color to default
+    // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
     if (inWord.value.length == game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
@@ -308,8 +304,19 @@ function addScore() {
 //reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
 
 
+//https://www.w3schools.blog/letters-alphabets-validation-javascript-js
+//Need to update html too. 
+function lettersOnlyCheck(inputtext) {
+var regEx = /^[A-Za-z]+$/;
+    if(inputtext.value.match(regEx)){
+    return true;
+}   else {
+    alert("Please enter letters only.");
+    return false;
+    }
+}
+
 function winChecker() {
-    inWord.style.borderWidth = "2px";
     if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
         // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
         game.score++;
@@ -318,17 +325,16 @@ function winChecker() {
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
         inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
-        output.style.backgroundColor = "palegreen"; 
+        output.style.backgroundColor = "#b9ecdc";
         btn.style.display = "block";
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
-    
-    } else {
+        } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
-        output.style.backgroundColor = "lightpink"; //EDIT changed background color of output not inWord
+        output.style.backgroundColor = "pink"; //EDIT changed background color of output not inWord
         // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
         maxGuesses++; //attempting to count maxGuesses - currently not defined
         console.log(maxGuesses);
