@@ -293,9 +293,12 @@ function addScore() {
 //In winChecker function once played need to reenable new word to guess. 
 //reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
 
-function lettersOnlyCheck(inWord) {
+
+//https://www.w3schools.blog/letters-alphabets-validation-javascript-js
+//Need to update html too. 
+function lettersOnlyCheck(inputtext) {
 var regEx = /^[A-Za-z]+$/;
-    if(inWord.value.match(regEx)){
+    if(inputtext.value.match(regEx)){
     return true;
 }   else {
     alert("Please enter letters only.");
@@ -317,8 +320,7 @@ function winChecker() {
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
- 
-    } else {
+        } else {
         console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
         inWord.value = "";
         inWord.focus();
