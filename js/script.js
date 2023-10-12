@@ -99,6 +99,14 @@ const game = {
 
 let maxGuesses = ''; //Edit counting number of guesses 
 
+function allowOnlyLetters(e) {
+    if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
+      return true;
+    } else {
+      alert("Please enter only alphabets");
+     return false;
+     }
+  };
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
 //the new word button needs tabbing to before click enter. 
@@ -121,18 +129,9 @@ restart.addEventListener("click", (e) => {
 
 restart.addEventListener("keypress", (e) => {
     window.location.reload();
-})
+}) 
 
 
-function checkAlphabets(input) { 
-    for (const char of input) { 
-        if (!(char >= "a" && char <= "z") && 
-            !(char >= "A" && char <= "Z")) { 
-            return false; 
-        } 
-    } 
-    return true; 
-} 
 //Fisher-Yate shuffle algorithim
 // function shuffle(myWords) {
 //     for (let i = myWords.length - 1; i > 0; i--) {
