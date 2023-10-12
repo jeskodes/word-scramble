@@ -266,7 +266,7 @@ inWord.addEventListener('keyup', (e) => {  //make more accessible if change from
     // console.log(e); removed - used for debugging
     // inWord.style.borderColor = "#000000"; //reset border color to default
     // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
-    if (inWord.value.length == game.sel.length || e.code == "Enter") {
+    if (inWord.value.length == game.sel.length && e.code == "Enter") {
         winChecker(); //runt the winChecker function 
     }
 
@@ -306,15 +306,15 @@ function addScore() {
 
 //https://www.w3schools.blog/letters-alphabets-validation-javascript-js
 //Need to update html too. 
-function lettersOnlyCheck(inputtext) {
-var regEx = /^[A-Za-z]+$/;
-    if(inputtext.value.match(regEx)){
-    return true;
-}   else {
-    alert("Please enter letters only.");
-    return false;
-    }
-}
+// function lettersOnlyCheck(inputtext) {
+// var regEx = /^[A-Za-z]+$/;
+//     if(inputtext.value.match(regEx)){
+//     return true;
+// }   else {
+//     alert("Please enter letters only.");
+//     return false;
+//     }
+// }
 
 function winChecker() {
     if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
