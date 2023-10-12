@@ -99,14 +99,14 @@ const game = {
 
 let maxGuesses = ''; //Edit counting number of guesses 
 
-function allowOnlyLetters(e) {
-    if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
-      return true;
-    } else {
-      alert("Please enter only alphabets");
-     return false;
-     }
-  };
+// function allowOnlyLetters(e) {
+//     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
+//       return true;
+//     } else {
+//       alert("Please enter only alphabets");
+//      return false;
+//      }
+//   };
 
 //EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
 //the new word button needs tabbing to before click enter. 
@@ -205,7 +205,8 @@ function gamePlay(){
         gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
-        restart.textContent = 'Play Again';    
+        restart.textContent = 'Play Again';
+        
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
