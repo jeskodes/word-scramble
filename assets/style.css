@@ -134,6 +134,10 @@ button {
     font-family: 'Patua One', serif, 400;
 }
 
+/* input:focus, textarea:focus, select:focus{
+    outline: none;
+} */
+
 .input-text {
     letter-spacing: 0.3rem;
     /* max-width: 4.7rem;
