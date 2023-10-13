@@ -45,7 +45,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #086D90;
-    padding: 4rem;
+    padding: 2rem;
     min-width: 20rem;
     max-width: 20rem; 
     /*to stop the cards from changing size with different words*/
