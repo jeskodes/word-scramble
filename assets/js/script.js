@@ -266,11 +266,11 @@ inWord.addEventListener('keyup', (e) => {  //make more accessible if change from
     // console.log(e); removed - used for debugging
     // inWord.style.borderColor = "#000000"; //reset border color to default
     // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
-    if (inWord.value.length == game.sel.length || e.code == "Enter") {
+    if (inWord.value.length === game.sel.length || e.code == "Enter") {
         winChecker(); //runt the winChecker function 
-    }
-
+    } 
 })
+
 
 
 //if (inWord.value.length == game.sel.length && e.code == "Enter") { changed 

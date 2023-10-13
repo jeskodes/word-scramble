@@ -174,10 +174,10 @@ button {
     justify-content: center; 
 }
 
-footer p  {
+footer a { 
     background-color: #0A446F; 
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     color: white; 
-    padding: 0.6rem;
+    padding: 0.4rem;
 }
