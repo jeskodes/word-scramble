@@ -76,6 +76,7 @@ ul {
     list-style-type: none;  
     font-family: 'Patua One', serif;
     font-size: 0.9rem;
+    padding-top: 1rem;
 }
 
 li {
