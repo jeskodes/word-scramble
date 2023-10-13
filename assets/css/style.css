@@ -45,7 +45,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #086D90;
-    padding: 2rem;
+    padding: 4rem;
     min-width: 20rem;
     max-width: 20rem; 
     /*to stop the cards from changing size with different words*/
@@ -103,7 +103,7 @@ li {
     font-family: 'Patua One', serif;
     color: #0D2656; 
     /* border: solid 8px #e76f51; */
-    margin-bottom: 1.6rem;
+
     
 }
 
