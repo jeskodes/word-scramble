@@ -57,12 +57,15 @@ console.log(restart); //test restart button
 // Add to HTML page using append. Append to gameArea
 // prep
 
+let rules = document.getElementById('rules'); 
+
 gameArea.append(title); 
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
 gameArea.appendChild(restart);
+gameArea.append(rules); 
 
 
 //hide scoreBoard, input and refresh at start of game
@@ -70,6 +73,7 @@ scoreBoard.style.display = 'none';
 inWord.style.display = 'none';
 restart.style.display = 'none';
 output.style.display = 'none';
+
 
 console.log(btn);
 
@@ -206,6 +210,7 @@ function gamePlay(){
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
         restart.textContent = 'Play Again';
+        rules.style.display = 'none';
         
     } else { //edit from tutorial - too wordy with correct and incorrect.
         scoreBoard.style.display = 'block';
@@ -221,6 +226,7 @@ function gamePlay(){
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
         restart.style.display = 'block';
+        rules.style.display = 'none';
         
         
 
