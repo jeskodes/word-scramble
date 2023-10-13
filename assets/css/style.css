@@ -180,4 +180,5 @@ footer a {
     font-family: 'Roboto', sans-serif;
     color: white; 
     padding: 0.4rem;
+    text-decoration: none; 
 }
