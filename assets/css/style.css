@@ -199,9 +199,10 @@ cursor:pointer;
     width: 100vw; 
     display: flex; 
     justify-content: center; 
+    align-items: center; 
 }
 
-footer a { 
+footer a, footer i { 
     background-color: #0A446F; 
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
