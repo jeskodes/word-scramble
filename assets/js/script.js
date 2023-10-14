@@ -65,7 +65,7 @@ gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
 gameArea.appendChild(restart);
-gameArea.append(rules); 
+// gameArea.append(rules); 
 
 
 //hide scoreBoard, input and refresh at start of game
