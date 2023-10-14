@@ -1,10 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "";
-    /* font-family: 'Patua One', serif;
-    font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300&display=swap');
+
+:root {
     --scarlet: #F53519ff;
     --cambridge-blue: #7AB2A9ff;
     --sandy-brown: #FBAA69ff;
@@ -15,6 +12,16 @@
     --wheat: #F4DBAFff;
     --indigo-dye: #0A446Fff;
     --cerulean: #086D90ff;
+    font-family: 'Patua One', serif;
+    font-family: 'Roboto', sans-serif
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "";
 }
 
 body {
