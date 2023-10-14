@@ -113,10 +113,7 @@ li {
     font-family: 'Patua One', serif;
     color: #0D2656; 
     /* border: solid 8px #e76f51; */
-
-    
 }
-
 
 button {
 cursor:pointer;
@@ -134,19 +131,9 @@ cursor:pointer;
     padding: 0.35rem;
     margin: 5px 5px; 
     font-family: 'Patua One', serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #0D2656ff; 
-    /* border: solid 4px #e76f51; */
 }
-
-/*Created class .click_button so can target text*/
-/* .click_button {
-    text-align: center;
-    background-color: pink;
-    margin: 5px 5px;
-    width: 7rem;
-    border-radius: 5px; 
-} */
 
 .div-played-words {
     background-color: #7AB2A9;
@@ -165,11 +152,10 @@ cursor:pointer;
     outline: none;
 } */
 
+/* Stopped all from jumping around by making input
+ same size a button - padding, margin and width */
 .input-text {
     letter-spacing: 0.3rem;
-    /* max-width: 4.7rem;
-    max-height: 3rem; */
-    /* Stopped all from jumping around by making input same size a button - padding, margin and width */
     width: 14rem;    
     font-size: 1.5rem;
     text-align: center; 
