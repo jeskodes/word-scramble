@@ -88,7 +88,14 @@ console.log(btn);
 //const myWords = [''];
 
 
-
+//Fisher-Yate shuffle algorithim
+// function shuffle(myWords) {
+//     for (let i = myWords.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
+//     }
+//     return myWords;
+//   }
 
 
 
