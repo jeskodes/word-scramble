@@ -1,40 +1,41 @@
 /* jshint esversion:8 */
 
+/*Based on Udemy Tutorial by Laurence Svekis.
+"JavaScript Create 5 Fun Word Games"
+https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
+"EDIT" indicates where additions or changes have been made*/
 
-//nice to have - click to skip to  next word 
-//nice to have - separate letters of words to guess into boxes - see conundra
-// debug by outputing object to console. 
-// select element on html page use querySelector
-// selects the "gameArea" class
-// gameArea "object"
+//Variables
+
 const gameArea = document.getElementById('game-area');
 
 const title = document.getElementById('heading-wordscramble');
 
-// create a button to start - can also create btn in hmtl
-// document.createElement() is a method. 
 const btn = document.createElement('button');
 
-// output some content - eventually scrambled word
-// creating a div in html
 const output = document.createElement('div');
 
-
-// const output = document.createElement("p");
-// const node = document.createTextNode("text node");
-// output.appendChild(node);
-
-// const element = document.getElementsByClassName("click_button");
-// element.appendChild(output);
-
-
-
 const inWord = document.getElementById('input-word');
-inWord.setAttribute('type', 'text');
-// inWord.classList.add = "input-text";
-//output.style.textAlign = "center"; //use flex - html and CSS this will be deleted. 
 
 const scoreBoard = document.createElement('div');
+
+const restart = document.createElement('button');//EDIT Add refresh button
+
+let rules = document.getElementById('rules'); //EDIT Add rules. 
+
+let maxGuesses = ''; //EDIT Added maxGuesses to count guesses and stop at 5.  
+inWord.setAttribute('type', 'text');
+
+const game = {
+    sel: '',
+    scramble: '',
+    score: 0,
+    incorrect: 0,
+    maxGuesses: 0, //Edit - add maxGuesses so game over after 5 guesses. 
+    played: myWords.length
+};
+
+
 scoreBoard.textContent = "Score";  //EDIT: removed "Score in html"
 scoreBoard.classList.add("div-scoreboard");
 //Edit: added classname to scoreBoard so can style
@@ -48,27 +49,20 @@ btn.classList.add("btn-start");
 //Edit: add class to output so can style 
 output.classList.add("div-played-words"); 
 
-const restart = document.createElement('button');//EDIT Add refresh button
+
 restart.id = "btn-refresh";
 restart.textContent = "Restart"; 
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
-//create new button from 
-//https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button.
-
-// Add to HTML page using append. Append to gameArea
-// prep
-
-let rules = document.getElementById('rules'); 
+// Add to HTML page using append. 
 
 gameArea.append(title); 
 gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
-gameArea.appendChild(restart);
-// gameArea.append(rules); 
+gameArea.appendChild(restart); //EDIT append restart button
 
 
 //hide scoreBoard, input and refresh at start of game
@@ -95,16 +89,8 @@ console.log(btn);
 
 
 
-const game = {
-    sel: '',
-    scramble: '',
-    score: 0,
-    incorrect: 0,
-    maxGuesses: 0, //Edit - add maxGuesses so game over after 5 guesses. 
-    played: myWords.length
-};
 
-let maxGuesses = ''; //Edit counting number of guesses 
+
 
 // function allowOnlyLetters(e) {
 //     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
@@ -128,8 +114,7 @@ let maxGuesses = ''; //Edit counting number of guesses
 // const correctWord = myWords.game.sel; 
 // // console.log(correctWord);
 
-//EDIT: create function to refresh 
-
+//EDIT: Add restart button and EventListenr to refresh game.  
 restart.addEventListener("click", (e) => {
     window.location.reload();
 })
@@ -138,74 +123,11 @@ restart.addEventListener("keypress", (e) => {
     window.location.reload();
 }) 
 
-
-//Fisher-Yate shuffle algorithim
-// function shuffle(myWords) {
-//     for (let i = myWords.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
-//     }
-//     return myWords;
-//   }
-
-btn.addEventListener('click', (gamePlay));  //EDIT - separated out EventListener function and gameplay for more flexibility. 
-// bth.addEventListener('keyup'(winChecker)); {
-//     if ()
-// }
-// btn.addEventListener('keyup', (gamePlay));
-// console.log('button was pressed')
-
-
-// btn.addEventListener("keypress", (e) => {
-//     if (e.key === "Enter") {
-//     btn.click();
-//     console.log("button clicked");
-//     }
-//     })
-
-    
-// btn.addEventListener('keyup', (e) => {
-//     console.log(e); //removed - used for debugging
-//     if (e.keyCode === 13) {
-//         e.preventDefault();
-//         document.getElementById("myBtn").click();
-//     }
-//     {
-//     gamePlay()
-//     }
-// });
-
-
-// var input = document.getElementById("myInput");
-// input.addEventListener("keyup", function(event) {
-//     if (event.keyCode === 13) {
-//         event.preventDefault();
-//         document.getElementById("myBtn").click();
-//     }
-// });
-
-
-// btn.addEventListener ("keydown", function(event) {
-//     // If the user presses the "Enter" key on the keyboard
-//     if (event.key === "Enter" || e.code === "Enter") {  
-//         console.log('enter was pressed');    // Trigger the button element with a click
-//     }
-    
-//     });
-
-
-
-// document.getElementById("id_of_textbox")
-//     .addEventListener("keyup", function(event) {
-//     event.preventDefault();
-//     if (event.keyCode === 13) {
-//         document.getElementById("id_of_button").click();
-//     }
-// });
+//EDIT - separated out EventListener and created gamePlay function for more flexibility. 
+btn.addEventListener('click', (gamePlay));  
 
 function gamePlay(){
-    if (myWords.length <= 0 || (maxGuesses === 5)){ //when all words played //Edit add maxGuesses so can have infinite 
-        //number of words but only play 5 at a time. 
+    if (myWords.length <= 0 || (maxGuesses === 5)){ //EDIT: Add in maxGuesses for game over.  
         console.log('game over');
         console.log(maxGuesses);
         gameArea.innerHTML = `<div class = "div-gameover">Game Over</div>`;
