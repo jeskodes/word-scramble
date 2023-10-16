@@ -93,6 +93,7 @@ restart.addEventListener("keypress", (e) => {
     window.location.reload();
 }) 
 
+
 //EDIT - separated out EventListener and created gamePlay function for more flexibility. 
 btn.addEventListener('click', (gamePlay));  
 

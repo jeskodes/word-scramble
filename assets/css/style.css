@@ -35,11 +35,23 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url("https://i.postimg.cc/7L7rt5Qg/rainbow-background.jpg"); 
-    background-color: #cccccc; 
+    background-color: #E2DBC9; 
     height: 500px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    animation: fadeInAnimation ease 1.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 main {
