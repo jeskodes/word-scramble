@@ -127,7 +127,9 @@ function gamePlay(){
         to give more flexibility
         IN FUTURE would use a for loop to create temporary array of 
         words played then display score at end showing correct and incorrect words
-        guessed using push (), split()*/
+        guessed using push (), split()
+        array.from() method - see https://www.youtube.com/watch?v=NPbDqbwtr-4
+        game.sel = myWords /method/(function)*/
 
     } else { 
         scoreBoard.style.display = 'block';
