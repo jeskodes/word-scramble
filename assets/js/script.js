@@ -96,14 +96,16 @@ restart.addEventListener("keypress", (e) => {
 //EDIT - separated out EventListener and created gamePlay function for more flexibility. 
 btn.addEventListener('click', (gamePlay));  
 
-/*Letter count EventListener; counts lenght of word when same as target word will check if match. 
-Or will check if match is player presses Enter to skip*/
-inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
-    // console.log(e); removed - used for debugging
-    // inWord.style.borderColor = "#000000"; //reset border color to default
-    // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
+/*Letter count EventListener; counts length of word when same as target word will check 
+if matches. 
+Or will check if matches if player presses Enter to skip*/
+/*BUG: EDIT Hid textarea when check match - breaks tab focus
+Makes game inaccessible using tab. To fix. */
+
+inWord.addEventListener('keyup', (e) => {  
+    console.log(e); 
     if (inWord.value.length === game.sel.length || e.code == "Enter") {
-        winChecker(); //runt the winChecker function 
+        winChecker(); //run the winChecker function 
     } 
 })
 
@@ -116,10 +118,12 @@ function gamePlay(){
         gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`;//EDIT Changed so that will always say out of 5
         restart.style.display = 'block';
         gameArea.appendChild(restart); //EDIT add refresh button
-        restart.textContent = 'Play Again';
+        restart.textContent = 'Play Again';//EDIT add restart function
         rules.style.display = 'none';
         
-    } else { //EDIT from tutorial - removed words "correct/incorrect" replaced with icons.
+        /*Continue Play. 
+        EDIT from tutorial - removed words "correct/incorrect" replaced with icons.*/
+    } else { 
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
@@ -142,90 +146,57 @@ function gamePlay(){
         output.style.backgroundColor = "#DEEFF5"; //Revert to neutral bg color after guess
         inWord.setAttribute('maxlength', game.sel.length);
         inWord.focus(); //Adds focus to input field 
-        inWord.style.borderColor = "black";
+        // inWord.style.borderColor = "black";
         output.textContent = `${game.scramble}`;
         console.log(game.sel, game.scramble);
     }
 }
 
 
+/*Edit: Removed html how many words left.
+Added fontawesome icons instead*/
 
-
-
-//if (inWord.value.length == game.sel.length && e.code == "Enter") { changed 
-// from or to and - to change back. 
-// btn.addEventListener ('keyup', (e) => {
-//     if (e.key === "Enter" || e.code === "Enter")
-//         document.getElementsByTagName('btn-start').click(); { 
-//         winChecker(); 
-//         console.log('enter was pressed'); 
-//     }
-// })
-
-
-
-//create a function to output the score on the gameplay
-//Used template literal to assign value of the score
-//tempOutput is what will output to scoreboard. 
-//innerHTML more flexibility than textContent
-
-
-//Edit: Did not add html how many words left
 function addScore() {
     let tempOutput = `${game.score} <i class="fa-solid fa-square-check"></i>  ${game.incorrect} <i class="fa-solid fa-square-xmark"></i>`;
     scoreBoard.innerHTML = tempOutput;
 }
 
-//run check to see if words are matching
-//changing border width when checking making word shift - keep border same width throughout
-//Edit: original used borderWidth to signify if correct - made word above move. Style background color instead. 
-//Update score whenever checking the winner. If get it correct then want to increase if statement if incorrect same with else
-//use game.score++ the addScore() to update score within same function as checking correct/incorrect. 
-//if correct btn will display again to click for next word. Would prefer press enter for next word. 
-//In winChecker function once played need to reenable new word to guess. 
-//reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
-
-
-
+/*EDIT: Original used borderWidth of textarea to signify if word correct or incorrect: 
+this made the word above move around. 
+Styled background color of output - the scrambled/unscrambled word - instead.*/
 
 function winChecker() {
-    if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
-        // inWord.style.backgroundColor = "green"; //Edit: will change but better than changing border width. 
+    if (inWord.value.toLowerCase() == game.sel) { //EDIT: added .toLowerCase()
         game.score++;
-        maxGuesses++; //attempting to count number of guesses - currently not defined. 
+        maxGuesses++; //EDIT: Added maxGuesses - stop game play at 5 goes. See gamePlay()
         console.log(maxGuesses);
         console.log(game.sel); //testing got right part to print
         inWord.disabled = true; //stop player entering correct score indefinitely. 
-        inWord.style.display = "none"; //EDIT: set input to disappear when correct to make room for button - stop moving around -look slicker. 
+        inWord.style.display = "none"; //EDIT: set textarea to disappear when correct to make room for button. 
         output.style.backgroundColor = "#b9ecdc";
         btn.style.display = "block";
         btn.textContent = "Click for next word";
         restart.style.display = 'block'; 
         output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles. 
         } else {
-        console.log("Incorrect"); //if incorrect clear out in.Word value so user cont. 
+        console.log("Incorrect"); //if incorrect clear out inWord value so user cont. 
         inWord.value = "";
-        inWord.focus();
-        output.style.backgroundColor = "pink"; //EDIT changed background color of output not inWord
-        // inWord.style.backgroundColor = "red"; //Edit: will change but better than changing border width.
-        maxGuesses++; //attempting to count maxGuesses - currently not defined
+        inWord.focus();//Focus back on textarea
+        output.style.backgroundColor = "pink"; 
+        maxGuesses++; 
         console.log(maxGuesses);
         game.incorrect++;
         inWord.style.display = "none"; //EDIT: copied from above so can't enter correct word
         btn.style.display = "block"; //EDIT: copied from above 
         btn.textContent = "Click for next word"; //EDIT: move onto next word
-        output.textContent = `${game.sel}`; //EDIT: If guesses incorrect then says what word was. 
+        output.textContent = `${game.sel}`; //EDIT: Added will display correct word even if guess incorrect. 
     }
 
     addScore();
 
 }
 
-
-
-
-
-//Function continues to run until the word is scrambled
+//Function that continues to run until the word is scrambled
 function sorter(val) {
     let temp = val.split('');
     temp.sort(() => {
@@ -240,6 +211,30 @@ function sorter(val) {
     }
     return temp;
 }
+
+
+
+//run check to see if words are matching
+//changing border width when checking making word shift - keep border same width throughout
+//Edit: original used borderWidth to signify if correct - made word above move. Style background color instead. 
+//Update score whenever checking the winner. If get it correct then want to increase if statement if incorrect same with else
+//use game.score++ the addScore() to update score within same function as checking correct/incorrect. 
+//if correct btn will display again to click for next word. Would prefer press enter for next word. 
+//In winChecker function once played need to reenable new word to guess. 
+//reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
+
+//if (inWord.value.length == game.sel.length && e.code == "Enter") { changed 
+// from or to and - to change back. 
+// btn.addEventListener ('keyup', (e) => {
+//     if (e.key === "Enter" || e.code === "Enter")
+//         document.getElementsByTagName('btn-start').click(); { 
+//         winChecker(); 
+//         console.log('enter was pressed'); 
+//     }
+// })
+
+
+
 
         //scramble word letters using .split and turning into an array
         //to put word (temp) back into a string use temp.join()method
