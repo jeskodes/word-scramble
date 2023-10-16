@@ -196,7 +196,18 @@ function winChecker() {
 
 }
 
-//Function that continues to run until the word is scrambled
+//sorter(val)Function that continues to run until the word is scrambled
+
+/*split() splits a string into an array of substrings, and returns the array
+Splits the word into array of single letters
+sort()sorts the array in alphabetical order
+join() returns array as string. Does not alter original array. */
+
+/*Scramble word letters using .split and turning into an array
+to put word (temp) back into a string use temp.join()method
+Edit: changed and added output style - padding, fontSize, borderRadius
+Need to remove word already guessed from array using .shift()method.*/
+
 function sorter(val) {
     let temp = val.split('');
     temp.sort(() => {
@@ -236,10 +247,7 @@ function sorter(val) {
 
 
 
-        //scramble word letters using .split and turning into an array
-        //to put word (temp) back into a string use temp.join()method
-        //Edit: changed and added output style - padding, fontSize, borderRadius
-        //Need to remove word already guessed from array using .shift()method.
+
 
 
 // Learning to do: random sort, template literals. 
