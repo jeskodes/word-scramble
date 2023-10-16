@@ -122,7 +122,13 @@ function gamePlay(){
         rules.style.display = 'none';
         
         /*Continue Play. 
-        EDIT from tutorial - removed words "correct/incorrect" replaced with icons.*/
+        EDIT from tutorial - removed words "correct/incorrect" replaced with icons.
+        IN FUTURE would separate out game over function and play on function in order 
+        to give more flexibility
+        IN FUTURE would use a for loop to create temporary array of 
+        words played then display score at end showing correct and incorrect words
+        guessed using push (), split()*/
+
     } else { 
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
@@ -151,7 +157,6 @@ function gamePlay(){
         console.log(game.sel, game.scramble);
     }
 }
-
 
 /*Edit: Removed html how many words left.
 Added fontawesome icons instead*/
@@ -196,14 +201,8 @@ function winChecker() {
 
 }
 
-//sorter(val)Function that continues to run until the word is scrambled
-
-/*split() splits a string into an array of substrings, and returns the array
-Splits the word into array of single letters
-sort()sorts the array in alphabetical order
-join() returns array as string. Does not alter original array. */
-
-/*Scramble word letters using .split and turning into an array
+/*sorter(val)Function that continues to run until the word is scrambled
+Scramble word letters using .split and turning into an array
 to put word (temp) back into a string use temp.join()method
 Edit: changed and added output style - padding, fontSize, borderRadius
 Need to remove word already guessed from array using .shift()method.*/
@@ -223,7 +222,10 @@ function sorter(val) {
     return temp;
 }
 
-
+/*split() splits a string into an array of substrings, and returns the array
+Splits the word into array of single letters
+sort()sorts the array in alphabetical order
+join() returns array as string. Does not alter original array. */
 
 //run check to see if words are matching
 //changing border width when checking making word shift - keep border same width throughout
