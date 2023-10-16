@@ -7,26 +7,40 @@ https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#c
 
 //Variables
 
+//Main game area
+
+//EDIT: remove const myWords = [""] (words to be scrambled) and created separate file. 
+
 const gameArea = document.getElementById('game-area');
 
 const title = document.getElementById('heading-wordscramble');
 
+//Start and next word button
 const btn = document.createElement('button');
 
+//Scrambled and unscrambled word area
 const output = document.createElement('div');
 
+//Textarea - input guess
 const inWord = document.getElementById('input-word');
 
+//Score
 const scoreBoard = document.createElement('div');
 
+//EDIT Add restart button and function.
 const restart = document.createElement('button');//EDIT Add refresh button
 
-let rules = document.getElementById('rules'); //EDIT Add rules. 
+//EDIT Add rules to start of game.
+let rules = document.getElementById('rules');
 
-let maxGuesses = ''; //EDIT Added maxGuesses to count guesses and stop at 5.  
+//EDIT Add maxGuesses to count guesses and stop at 5.  
+let maxGuesses = ''; 
 inWord.setAttribute('type', 'text');
 
-const game = {
+/*Settings for start of game. EDIT changed from const to let as will change throughout game.
+game.sel = randomised word from array
+game.scramble = scrambled word*/
+let game = {
     sel: '',
     scramble: '',
     score: 0,
@@ -35,93 +49,42 @@ const game = {
     played: myWords.length
 };
 
-
+/*Show score throughout game play. 
+EDIT: added classname to scoreBoard so can style*/
 scoreBoard.textContent = "Score";  //EDIT: removed "Score in html"
 scoreBoard.classList.add("div-scoreboard");
-//Edit: added classname to scoreBoard so can style
 
+//EDIT: add class to btn to style in css
 btn.textContent = "START GAME";
-//Edit: add class to btn to style in css 
 btn.classList.add("btn-start");
 
-// textContent - could also do innerHtml
-// output.textContent = "Click that button";
-//Edit: add class to output so can style 
+//EDIT: add class to output so can style 
 output.classList.add("div-played-words"); 
 
-
+//EDIT: create, add and style restart button and function
 restart.id = "btn-refresh";
 restart.textContent = "Restart"; 
 document.body.appendChild(restart);
 console.log(restart); //test restart button 
 
 // Add to HTML page using append. 
-
-gameArea.append(title); 
-gameArea.append(scoreBoard); //Edit: move scoreboard input rather than above
+gameArea.append(title); //EDIT: Added a title and appended. 
+gameArea.append(scoreBoard); //EDIT: Moved position of scoreboard.
 gameArea.append(output);
 gameArea.append(inWord);
 gameArea.append(btn);
-gameArea.appendChild(restart); //EDIT append restart button
+gameArea.appendChild(restart); //EDIT append restart button.
 
-
-//hide scoreBoard, input and refresh at start of game
+//Hide scoreBoard, textarea, scrambled word and refresh at start of game
 scoreBoard.style.display = 'none';
 inWord.style.display = 'none';
 restart.style.display = 'none';
 output.style.display = 'none';
-
-
 console.log(btn);
 
-//Will have words stored in separate file and use the following code
-//Will poss randomise words using
-/**
- * let myWords = Math.floor(Math.random() * words.length; )
- */
+//EventListeners
 
-
-
-// creating array of words to scramble
-// add score and incorrect to game so can track 
-// const myWords = ["bird", "dog", "cat", "cow", "horse", "sheep", "chicken", "capybara"];
-//const myWords = [''];
-
-
-//Fisher-Yate shuffle algorithim
-// function shuffle(myWords) {
-//     for (let i = myWords.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
-//     }
-//     return myWords;
-//   }
-
-
-
-// function allowOnlyLetters(e) {
-//     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
-//       return true;
-//     } else {
-//       alert("Please enter only alphabets");
-//      return false;
-//      }
-//   };
-
-//EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
-//the new word button needs tabbing to before click enter. 
-//start looking into with https://css-tricks.com/when-a-click-is-not-just-a-click/
-// Add in event listener - listening for presses on the btn.
-// the button is a useable object. 
-// The event object - can write out as function ?(e)=>{}
-// next want to randomise the array
-// see https://www.w3schools.com/js/js_array_sort.asp
-// will then move on to randomising letters
-
-// const correctWord = myWords.game.sel; 
-// // console.log(correctWord);
-
-//EDIT: Add restart button and EventListenr to refresh game.  
+//EDIT: Add restart button and EventListener to refresh game.  
 restart.addEventListener("click", (e) => {
     window.location.reload();
 })
@@ -134,7 +97,7 @@ restart.addEventListener("keypress", (e) => {
 btn.addEventListener('click', (gamePlay));  
 
 function gamePlay(){
-    if (myWords.length <= 0 || (maxGuesses === 5)){ //EDIT: Add in maxGuesses for game over.  
+    if (myWords.length <= 0 || (maxGuesses === 5)){ //EDIT: Add in "or" maxGuesses for game over.  
         console.log('game over');
         console.log(maxGuesses);
         gameArea.innerHTML = `<div class = "div-gameover">Game Over</div>`;
@@ -144,39 +107,27 @@ function gamePlay(){
         restart.textContent = 'Play Again';
         rules.style.display = 'none';
         
-    } else { //edit from tutorial - too wordy with correct and incorrect.
+    } else { //EDIT from tutorial - removed words "correct/incorrect" replaced with icons.
         scoreBoard.style.display = 'block';
         inWord.disabled = false; //refresh word 
         inWord.value = ""; //clear input box on click 
         btn.style.display = "none"; //button disappears when click start
-        // scramble the array
-        // add random zero or a 1 randomise even more
-        //will use Math.floor(Math.random)
-
-        //toggle values of scoreBoard and input when start game
         output.style.display = 'block';//EDIT hide output variable before start game then make visible. 
         scoreBoard.style.display = 'block';
         inWord.style.display = 'block';
         restart.style.display = 'block';
         rules.style.display = 'none';
-        
-        
-
         myWords.sort(() => {
             return 0.475 - Math.random()
         });
+        // Randomise Array; attempted to replace with Fisher-Yates shuffle - unsuccessful. 
 
 
 
-        //https://www.kodeclik.com/how-to-scramble-a-word-in-javascript/ how to scramble a word in javascript
-        //selected word to be scrambled - whichever is first is random list
-        //scramble word letters using .split and turning into an array
-        //to put word (temp) back into a string use temp.join()method
-        //Edit: changed and added output style - padding, fontSize, borderRadius
-        //Need to remove word already guessed from array using .shift()method.
         game.sel = myWords.shift();
-        //Edit: didn't add to game how many words left - too wordy. 
-        game.scramble = sorter(game.sel); //passing into sorter selected word (game.sel)
+        /*EDIT: removed how many words left - too wordy. 
+        game.scramble: passing scrambled word into sorter function check is scrambled.*/
+        game.scramble = sorter(game.sel);
         game.wordsLeft = myWords.length; //how many words left
         // output.style.fontSize = "3rem";
         // output.style.padding = "5px 5px";
@@ -245,17 +196,7 @@ function addScore() {
 //reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false. 
 
 
-//https://www.w3schools.blog/letters-alphabets-validation-javascript-js
-//Need to update html too. 
-// function lettersOnlyCheck(inputtext) {
-// var regEx = /^[A-Za-z]+$/;
-//     if(inputtext.value.match(regEx)){
-//     return true;
-// }   else {
-//     alert("Please enter letters only.");
-//     return false;
-//     }
-// }
+
 
 function winChecker() {
     if (inWord.value.toLowerCase() == game.sel) {  //Edit: added .toLowerCase() - so makes no difference if start word with capitals
@@ -290,12 +231,11 @@ function winChecker() {
 
 }
 
-//create a function that continues to run until the word is scrambled
-//because word isn't always scrambling
 
-//game.sel = randomised word from array
-//game.scramble = scrambled word
 
+
+
+//Function continues to run until the word is scrambled
 function sorter(val) {
     let temp = val.split('');
     temp.sort(() => {
@@ -303,15 +243,7 @@ function sorter(val) {
     });
     temp = temp.join('');
     console.log(temp);
-    /**Check if new word same as previous word
-    if it is then have a problem - testing as go
-    return sorter(val) if not true i.e. if not same as previous word
-    then return temp to make sure is different 
-    short cut if/else statement
-    making sure won't get same value for game.sel as game.scramble
-    will keep scrambling and comparing until they come back different then 
-    will return
-    Testing as we go by line 64 console.log(temp, sorter); */
+    //Check new word not same as previous word
     if (val === temp) {
         console.log(val, temp);
         return sorter(val);
@@ -319,10 +251,63 @@ function sorter(val) {
     return temp;
 }
 
-
+        //scramble word letters using .split and turning into an array
+        //to put word (temp) back into a string use temp.join()method
+        //Edit: changed and added output style - padding, fontSize, borderRadius
+        //Need to remove word already guessed from array using .shift()method.
 
 
 // Learning to do: random sort, template literals. 
 
 // First randomise the word using Math.randon() then make the word
 // into an array and use split()method and randomise the new array. 
+
+
+//EDIT: I would like the new word to automatically appear or to appear on either click or enter. 
+//the new word button needs tabbing to before click enter. 
+//start looking into with https://css-tricks.com/when-a-click-is-not-just-a-click/
+// Add in event listener - listening for presses on the btn.
+// the button is a useable object. 
+// The event object - can write out as function ?(e)=>{}
+// next want to randomise the array
+// see https://www.w3schools.com/js/js_array_sort.asp
+// will then move on to randomising letters
+
+// const correctWord = myWords.game.sel; 
+// // console.log(correctWord);
+
+//Fisher-Yate shuffle algorithim
+// function shuffle(myWords) {
+//     for (let i = myWords.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
+//     }
+//     return myWords;
+//   }
+
+
+
+// function allowOnlyLetters(e) {
+//     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
+//       return true;
+//     } else {
+//       alert("Please enter only alphabets");
+//      return false;
+//      }
+//   };
+
+
+//https://www.kodeclik.com/how-to-scramble-a-word-in-javascript/ how to scramble a word in javascript
+
+
+//https://www.w3schools.blog/letters-alphabets-validation-javascript-js
+//Need to update html too. 
+// function lettersOnlyCheck(inputtext) {
+// var regEx = /^[A-Za-z]+$/;
+//     if(inputtext.value.match(regEx)){
+//     return true;
+// }   else {
+//     alert("Please enter letters only.");
+//     return false;
+//     }
+// }
