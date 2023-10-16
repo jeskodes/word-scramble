@@ -26,6 +26,8 @@
 
 [Background Image from iStockPhoto.com](https://www.istockphoto.com/)
 
+[Make Reload of Page Smoother with CSS Animation and @keyframes](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
+
 [JSON Formatter - Convert Array to JSON](https://jsonformatter.curiousconcept.com/#)
 
 [Create new button from tutorial](https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button)
