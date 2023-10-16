@@ -96,6 +96,18 @@ restart.addEventListener("keypress", (e) => {
 //EDIT - separated out EventListener and created gamePlay function for more flexibility. 
 btn.addEventListener('click', (gamePlay));  
 
+/*Letter count EventListener; counts lenght of word when same as target word will check if match. 
+Or will check if match is player presses Enter to skip*/
+inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
+    // console.log(e); removed - used for debugging
+    // inWord.style.borderColor = "#000000"; //reset border color to default
+    // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
+    if (inWord.value.length === game.sel.length || e.code == "Enter") {
+        winChecker(); //runt the winChecker function 
+    } 
+})
+
+
 function gamePlay(){
     if (myWords.length <= 0 || (maxGuesses === 5)){ //EDIT: Add in "or" maxGuesses for game over.  
         console.log('game over');
@@ -121,20 +133,15 @@ function gamePlay(){
             return 0.475 - Math.random()
         });
         // Randomise Array; attempted to replace with Fisher-Yates shuffle - unsuccessful. 
-
-
-
-        game.sel = myWords.shift();
-        /*EDIT: removed how many words left - too wordy. 
-        game.scramble: passing scrambled word into sorter function check is scrambled.*/
-        game.scramble = sorter(game.sel);
-        game.wordsLeft = myWords.length; //how many words left
-        // output.style.fontSize = "3rem";
-        // output.style.padding = "5px 5px";
-        // output.style.borderRadius = "5px"; //Edit didn't change border
-        output.style.backgroundColor = "#DEEFF5"; 
+        game.sel = myWords.shift(); //Remove word already guessed from array. 
+        //EDIT: removed text how many words left - too wordy. 
+        game.scramble = sorter(game.sel);//Pass scrambled word into sorter function - check scrambled.
+        game.wordsLeft = myWords.length; //How many words left
+        /*EDIT: Removed syling of textarea and scrambled and unscrambled word
+        from js and styled using created classes and CSS */
+        output.style.backgroundColor = "#DEEFF5"; //Revert to neutral bg color after guess
         inWord.setAttribute('maxlength', game.sel.length);
-        inWord.focus(); //adds focus to input field 
+        inWord.focus(); //Adds focus to input field 
         inWord.style.borderColor = "black";
         output.textContent = `${game.scramble}`;
         console.log(game.sel, game.scramble);
@@ -142,23 +149,6 @@ function gamePlay(){
 }
 
 
-//Add letter count using EventListener
-//the function will check to see what the length of the inWord input is
-//everytime press in textbox get value 1 - length of word
-//keyup counts key presses 
-//counting because once reach same number of letters for word will do check 
-//to see if word matches the word. 
-//e.code means event.code - if press enter
-//so if reach same number of letters or if press enter will check if matches word. 
-
-inWord.addEventListener('keyup', (e) => {  //make more accessible if change from 'keypup' to 'click'
-    // console.log(e); removed - used for debugging
-    // inWord.style.borderColor = "#000000"; //reset border color to default
-    // inWord.style.borderWidth = "2px"; //keep border width same throughout game play
-    if (inWord.value.length === game.sel.length || e.code == "Enter") {
-        winChecker(); //runt the winChecker function 
-    } 
-})
 
 
 
