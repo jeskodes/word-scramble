@@ -105,7 +105,7 @@ Makes game inaccessible using tab. To fix. */
 
 inWord.addEventListener('keyup', (e) => {  
     console.log(e); 
-    if (inWord.value.length === game.sel.length || e.code === "Enter"  || e.key === 13) {
+    if (inWord.value.length === game.sel.length || e.key === "Enter") {
         winChecker(); //run the winChecker function 
     } 
 })
