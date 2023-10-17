@@ -207,7 +207,7 @@ function winChecker() {
 /*sorter(val)Function that continues to run until the word is scrambled
 Scramble word letters using .split and turning into an array
 to put word (temp) back into a string use temp.join()method
-Edit: changed and added output style - padding, fontSize, borderRadius
+Edit: Changed and added output style - padding, fontSize, borderRadius
 Need to remove word already guessed from array using .shift()method.*/
 
 function sorter(val) {
