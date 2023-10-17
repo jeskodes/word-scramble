@@ -33,3 +33,7 @@
 [Create new button from tutorial](https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button)
 
 [Hex Colors from Background Image](https://imagecolorpicker.com/)
+
+[Validating JSON Object](https://jsonlint.com/)
+
+[Favicon](favicon.io)
