@@ -3,7 +3,7 @@
 
 /* The javascript is based on Udemy Tutorial by Laurence Svekis:
 "JavaScript Create 5 Fun Word Games"
-The tutorial including minimal CSS; this CSS is my own work.*/
+The tutorial included minimal CSS; this CSS is my own work.*/
 
 :root {
  /* Codes from background image - remove final "ff" */
@@ -40,7 +40,7 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    animation: fadeInAnimation ease 1.9s;
+    animation: fadeInAnimation ease 1.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
