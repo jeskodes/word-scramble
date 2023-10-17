@@ -35,3 +35,5 @@
 [Hex Colors from Background Image](https://imagecolorpicker.com/)
 
 [Validating JSON Object](https://jsonlint.com/)
+
+[Favicon](favicon.io)

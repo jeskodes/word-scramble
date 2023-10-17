@@ -5,6 +5,11 @@
 https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
 "EDIT" indicates where additions or changes have been made*/
 
+//Test json
+fetch('assets/js/animals.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+    
 //Variables
 
 //Main game area
@@ -93,7 +98,6 @@ restart.addEventListener("keypress", (e) => {
     window.location.reload();
 }) 
 
-
 //EDIT - separated out EventListener and created gamePlay function for more flexibility. 
 btn.addEventListener('click', (gamePlay));  
 
@@ -109,7 +113,6 @@ inWord.addEventListener('keyup', (e) => {
         winChecker(); //run the winChecker function 
     } 
 })
-
 
 function gamePlay(){
     if (myWords.length <= 0 || (maxGuesses === 5)){ //EDIT: Add in "or" maxGuesses for game over.  
@@ -143,7 +146,7 @@ function gamePlay(){
         restart.style.display = 'block';
         rules.style.display = 'none';
         myWords.sort(() => {
-            return 0.475 - Math.random()
+            return 0.5 - Math.random()
         });
         // Randomise Array; attempted to replace with Fisher-Yates shuffle - unsuccessful. 
         game.sel = myWords.shift(); //Remove word already guessed from array. 
@@ -250,8 +253,16 @@ join() returns array as string. Does not alter original array. */
 // })
 
 
+// Need to change code to include shuffleArray
 
-
+        // const shuffleArray = myWords => {
+        //     for (let i = myWords.length - 1; i > 0; i--) {
+        //       const j = Math.floor(Math.random() * (i + 1));
+        //       const temp = array[i];
+        //       array[i] = array[j];
+        //       array[j] = temp;
+        //     }
+        //   }
 
 
 
