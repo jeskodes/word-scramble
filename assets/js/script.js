@@ -107,6 +107,15 @@ restart.addEventListener("click", (e) => {
   window.location.reload();
 });
 
+/**
+ * 
+ */
+
+/**
+ * 
+ * 
+ * 
+*/
 restart.addEventListener("keypress", (e) => {
   window.location.reload();
 });
