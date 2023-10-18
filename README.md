@@ -663,3 +663,7 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 - [JavaScript Linting: jshint.com](https://jshint.com/)
 
 - [Convert mp4 to gif using ezgif.com](https://ezgif.com/)
+
+- [Center align and img in README.md from stack overflow](https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github/62383408#62383408)
+
+- [Video Bugs and Functionality Using Bandicam.com](https://www.bandicam.com/)
