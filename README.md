@@ -629,19 +629,19 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 
 ### Credits 
 
-- [Word Scramble Game Youtube Tutoria by Coding Nepal](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
+- [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content)
+- 
+- [Word Scramble Game Youtube Tutorial by Coding Nepal](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
    
 - [Word Scramble Game Tutorial by Coding Nepal](https://www.codingnepalweb.com/word-scramble-game-html-javascript/)
-   
-- [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content)
 
-- [3 Ways to code Rock Paper Scissor with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
+- [Youtube Tutorial: 3 Ways to code Rock Paper Scissors with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
 
 - [Git Hub Repo - Learning how to add reset button and replay](https://github.com/mariaalouisaa/pokemon-top-trumps/blob/main/index.html)
 
 - [Tic Tac Toe Tutorial - Research how to refresh game](https://www.youtube.com/watch?v=JsErMawwdOw)
-- 
-- [W3 Explanation of keyboard and mouse events](https://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS-20071102/SCR20.html)
+  
+- [W3 Explanation of keyboard and mouse events: w3.org](https://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS-20071102/SCR20.html)
 
 - [JavaScript Keyboard Events Tutorial: the keyup and keydown Event Listeners](https://www.youtube.com/watch?v=OiYmhhe6Inc)
 
@@ -651,20 +651,20 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 
 - [Animals Array](https://gist.github.com/borlaym/585e2e09dd6abd9b0d0a)
 
-- [Colour Palettes and Hex Codes](https://coolors.co/)
+- [Colour Palettes and Hex Codes: coolor.co](https://coolors.co/)
 
 - [Background Image from iStockPhoto.com](https://www.istockphoto.com/)
 
-- [Make Reload of Page Smoother with CSS Animation and @keyframes](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
+- [Make Reload of Page Smoother with CSS Animation and @keyframes: geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
 
 - [JSON Formatter - Convert Array to JSON](https://jsonformatter.curiousconcept.com/#)
 
-- [Create new button from tutorial](https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button)
+- [Create new button from tutorial: www.3schools.in](https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button)
 
-- [Hex Colors from Background Image](https://imagecolorpicker.com/)
+- [Hex Colors from Background Image: imagecolorpicker.com](https://imagecolorpicker.com/)
 
-- [Validating JSON Object](https://jsonlint.com/)
+- [Validating JSON Object: jsonlint.com](https://jsonlint.com/)
 
-- [Favicon](favicon.io)
+- [Favicon Icons: favicon.io](favicon.io)
 
-- [JavaScript Linting](https://jshint.com/)
+- [JavaScript Linting: jshint.com](https://jshint.com/)
