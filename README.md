@@ -2,9 +2,8 @@
 
 ![animal-scramble-word-game](<div align="center" video src=https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d></div>)
 
-<div align="center">
-  <video width="auto" height="auto" src="https://picsum.photos/460/300](https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d">
-</div>
+<img align="center" src="https://picsum.photos/460/300](https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d.gif">
+
 
 
 
