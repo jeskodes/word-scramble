@@ -4,8 +4,9 @@
     <img width="72%" src="assets\images\animal-scramble-word-game.gif">
 </p>
 <br>
+
 [Animal Scramble](https://jeskodes.github.io/word-scramble/) is a fun anagram game where the player has to unscramble the jumbled up animal words. 
-The game has been designed to be quick to start playing with obvious game play and minimal rules and explanations. 
+The game has been designed to be quick to start playing with obvious game play and minimal explanations. 
 
 The target players are people of all ages who would like a word game that is a fun and light-hearted distraction. 
 
