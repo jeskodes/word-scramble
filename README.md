@@ -4,17 +4,12 @@
     <img width="72%" src="assets\images\animal-scramble-word-game.gif">
 </p>
 <br>
-[Pen B Wildlife Photography Workshops](https://jeskodes.github.io/milestone-project-1-jesk/) is a business website offering photography workshops in the New Forest, Hampshire, UK. The two main workshops offered are half day and full day walking photography workshops, where the customer joins a small group and they receive a tour of a specific area of the New Forest, Hampshire. The chosen tour area will have been selected to provide the best opportunities to photograph specific wildlife and/or landscapes. This will focus on opportunities to photograph:
+[Animal Scramble](https://jeskodes.github.io/word-scramble/) is a fun anagram game where the player has to unscramble the jumbled up animal words. 
+The game has been designed to be quick to start playing with obvious game play and minimal rules and explanations. 
 
-- Deer, ponies, donkeys, pigs (all allowed to roam wild in the area).
-- Flora and fauna.
-- Birds, insects.
-- Landscapes - woods, lakes, rivers.
-- Seasonal events, such as deer rutting season or the yearly drift where ponies are rounded up so they can be health checked.
+The target players are people of all ages who would like a word game that is a fun and light-hearted distraction. 
 
-The main target audience will be amateur photographers, keen walkers and holiday-makers as the New Forest is a popular tourist destination in the UK.
-
-The site can be accessed from this [link](https://jeskodes.github.io/milestone-project-1-jesk/).
+Play [Animal Scramble](https://jeskodes.github.io/word-scramble/)
 
 ## Design
 
