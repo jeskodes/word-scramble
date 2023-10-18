@@ -1,14 +1,15 @@
 # Animal Scramble Word Game
+
 <br>
 <p align="center" width="100%">
     <img width="72%" src="assets\images\animal-scramble-word-game.gif">
 </p>
 <br>
 
-[Animal Scramble](https://jeskodes.github.io/word-scramble/) is a fun anagram game where the player has to unscramble the jumbled up animal words. 
-The game has been designed to be quick to start playing with obvious game play and minimal explanations. 
+[Animal Scramble](https://jeskodes.github.io/word-scramble/) is a fun anagram game where the player has to unscramble the jumbled up animal words.
+The game has been designed to be quick to start playing with obvious game play and minimal explanations.
 
-The target players are people of all ages who would like a word game that is a fun and light-hearted distraction. 
+The target players are people of all ages who would like a word game that is a fun and light-hearted distraction.
 
 Play [Animal Scramble](https://jeskodes.github.io/word-scramble/)
 
@@ -341,9 +342,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                                font-weight: bold;
-                                }
-                             `
+                              font-weight: bold;
+                              }
+                           `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
@@ -660,6 +661,6 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 
 - [Convert mp4 to gif using ezgif.com](https://ezgif.com/)
 
-- [Center align and img in README.md from stack overflow](https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github/62383408#62383408)
+- [Center align an img in README.md from stack overflow](https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github/62383408#62383408)
 
 - [Video Bugs and Functionality Using Bandicam.com](https://www.bandicam.com/)
