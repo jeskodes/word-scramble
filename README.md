@@ -1,8 +1,9 @@
 # Animal Scramble Word Game
 
+![animal-scramble-word-game](https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d)
 
 
-https://github.com/jeskodes/word-scramble/assets/86005120/3fc71e54-a806-4315-87ed-20b0b2aa318f
+
 
 
 
