@@ -1,7 +1,7 @@
 # Animal Scramble Word Game
 
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/jeskodes/word-scramble/blob/main/assets/images/animal-scramble-word-game.gif">
+    <img width="60%" src="https://github.com/jeskodes/word-scramble/blob/main/assets/images/animal-scramble-word-game.gif">
 </p>
 
 [Pen B Wildlife Photography Workshops](https://jeskodes.github.io/milestone-project-1-jesk/) is a business website offering photography workshops in the New Forest, Hampshire, UK. The two main workshops offered are half day and full day walking photography workshops, where the customer joins a small group and they receive a tour of a specific area of the New Forest, Hampshire. The chosen tour area will have been selected to provide the best opportunities to photograph specific wildlife and/or landscapes. This will focus on opportunities to photograph:
