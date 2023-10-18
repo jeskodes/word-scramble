@@ -661,3 +661,5 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 - [Favicon Icons: favicon.io](favicon.io)
 
 - [JavaScript Linting: jshint.com](https://jshint.com/)
+
+- [Convert mp4 to gif using ezgif.com](https://ezgif.com/)
