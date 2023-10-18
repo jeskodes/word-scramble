@@ -1,5 +1,6 @@
 # Animal Scramble Word Game
 
+
 <p align="center" width="100%">
     <img width="72%" src="assets\images\animal-scramble-word-game.gif">
 </p>
