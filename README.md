@@ -1,6 +1,6 @@
 # Animal Scramble Word Game
 
-![animal-scramble-word-game](img align ="center" src =https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d)
+![animal-scramble-word-game](<img align ="center" src =https://github.com/jeskodes/word-scramble/assets/86005120/2d755b80-05f5-4926-a310-b45db6c5571d>)
 
 
 
