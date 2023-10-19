@@ -83,9 +83,17 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 - Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua One from [google fonts.](https://fonts.google.com/). Sans-serif font for input box and displaying correct word; used Roboto from [google fonts.](https://fonts.google.com/)
 - Colour Palette: Despite research that word games tend to use a more muted colour palette with an emphasis on greens and white, the Animal Scramble game is targeted at users of all ages from 10 upwards. Animal Scramble's aim is to be lighthearted and fun. Therefore a more brightly coloured, retro theme was chosen with a colour palette to reflect this:
 
+
 <br>
 <p align = "center">x
-  <img src="documentation\colour-palette-ws.png" width="60%"/>
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif" width="59%"/>
+</p>
+</br>
+
+https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif
+<br>
+<p align = "center">x
+  <img src="documentation\colour-palette-ws.png" width="39%"/>
 </p>
 </br>
 
