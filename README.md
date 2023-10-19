@@ -51,14 +51,14 @@ Features of Conundra:
 </p>
 <br>
 
-
 ##### Tutorial Research and Development:
 
 I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
 
 A large part of the functionality of Animal Scramble is based on a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content). Additions, deletions, substitutions and changes are noted in the code.
 
-##### Word Scramble by Laurence Svekis - Final Game Play 
+##### Word Scramble by Laurence Svekis - Final Game Play
+
 <br>
 <p align = "center">x
   <img src="documentation/word_scramble_udemy_gameplay.gif" width="30%" style = "border: 2px solid gray"/>
@@ -68,6 +68,7 @@ A large part of the functionality of Animal Scramble is based on a tutorial by L
 I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
 
 ##### Word Scramble by CodingNepal - Final Game Play
+
 <br>
 <p align = "center">
   <img src="documentation/codingnepal-word-scramble.gif" width="30%" /> 
@@ -76,17 +77,13 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 ### Design
 
-- A minimally cluttered container which the user could pick up and play almost immediately. 
+- A minimally cluttered container which the user could pick up and play almost immediately.
 - Intuitive game play: minimal text on the page and only a few instructions needed to understand game play.
 - Slight use of border-radius for container, buttons and input box.
 - Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua One from [google fonts.](https://fonts.google.com/). Sans-serif font for input box and displaying correct word; used Roboto from [google fonts.](https://fonts.google.com/)
 - Colour Palette: Despite research that word games tend to use a more muted colour palette with an emphasis on greens and white, the Animal Scramble game is targeted at users of all ages from 10 upwards. Animal Scramble's aim is to be lighthearted and fun. Therefore a more brightly coloured, retro theme was chosen with a colour palette to reflect this:
 
-
 ![](documentation\colour-palette-ws.png)
-
-  
-
 
 - The design to give both information about the product and to showcase the photographer's work.
 - Black/dark grey and white/off-white colour palette. Good contrast for readability.
@@ -130,89 +127,43 @@ I have noted the main changes from the wireframes as the project was developed i
 2. I want a quick game that will challenge me.
 3. So that I can keep my mind sharp.
 
-
 ##### User Steps:
 
-- General search: SEO tags - brain-training, conundrum, letters and words, anagram, game, guessing, words, scramble, animals. 
+- General search: SEO tags - brain-training, conundrum, letters and words, anagram, game, guessing, words, scramble, animals.
 
 - Easily "plug in play" Animal Scramble. The design communicates how to play without the need for lots of rules.
 
 ##### MVP: Features/Acceptance Criteria:
 
-- Single page. 
-- The user first arrives at the game title and game play. 
-- Start Button. 
-- Input box for guessing the word. 
-- Answer: The correct answer is always shown following guess, whether the uses guesses correctly or incorrectly. 
-- Next Button for next word. 
-- A way to skip a guess. 
-- A restart button to start a new game. 
-- Scoring. 
-- Accessibility: Tab controls can be used to play the game. 
-
-- Hero image.
-- Introduction section
-- Main section
-- Click in and out of different workshops to compare.
-- There is a quick and simple form where the user can provide their name and email and request more information.
-
-#### User Story 3
-
-1. As a customer considering buying a photography workshop.
-2. I want to know more about the photographer and their work.
-3. So that I can decide if I want to take part in a course.
-
-##### User Steps:
-
-Easily navigate to a section about the photographer. Easily navigate to a section or link showcasing the photographer's work.
-
-##### Features/Acceptance Criteria:
-
-- There is an about link in the navbar.
-- The first section contains a picture of the photographer and a summary of who they are.
-- There is a link to "find out more" where I can read more about the photographer's background and work.
-- There is a link in the navbar that takes me to examples of the photographer's work.
-
-#### User Story 4
-
-1. As a customer with an interest in photography workshops.
-2. I want more specific information about the workshops.
-3. So that I can decide if I want to book/request more information.
-
-##### User Steps:
-
-Easily navigate to an overview of the workshops available. Easily navigate to more information about each workshop. Social proof in the form of the reviews from previous customers.
-
-##### Features/Acceptance Criteria:
-
-- There are reviews from previous customers.
-- There are cards with brief summaries of the workshops available.
-- There are links on the cards to find out more.
-- There is a more detailed section about each workshop which includes:
-- Duration of workshop.
-- Examples of photographic opportunities.
-- Price per person.
-- If there are group reductions.
-- Number of people per group.
-- Transport.
-- Food.
-- Clothing and equipment needed.
+- Single page.
+- The user first arrives at the game title and game play.
+- Start Button.
+- Input box for guessing the word.
+- Answer: The correct answer is always shown following guess, whether the uses guesses correctly or incorrectly.
+- Next Button for next word.
+- A way to skip a guess.
+- A restart button to start a new game.
+- Scoring.
+- Accessibility: Tab controls can be used to play the game.
 
 ## Technologies Used
 
-- html and css
+- JavaScript, HTML and CSS.
 - VScode - Coding Editor.
 - Chrome Dev tools
+- [Google Fonts.](https://fonts.google.com/)
+- [Favicon Icons](https://favicon.io)
 - [fontawesome](https://fontawesome.com/) for social media icons.
-- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for carousel and navbar templates.
 - [github](https://github.com/) version control.
-- [Repl:it](https://replit.com/) for initial code design.
+- [Repl:it](https://replit.com/) for experimenting with code.
 - [Axe dev tools](https://www.deque.com/axe/devtools/) to test accessibility.
 - [Webaim](https://wave.webaim.org/) WCAG Contrast checker.
 - [W3C CSS Validation Service](https://wave.webaim.org/) to validate css.
 - [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) to validate html.
-- [YouTube](https://www.youtube.com/) html and css tutorials.
-- [postimg](https://postimg.cc/) for image hosting.
+- [JSON Formatter - Convert Array to JSON](https://jsonformatter.curiousconcept.com/#)
+- [Validating JSON Object: jsonlint.com](https://jsonlint.com/)
+- [JavaScript Linting: jshint.com](https://jshint.com/)
+- [Convert mp4 to gif using ezgif.com](https://ezgif.com/)
 
 ## Current Features
 
@@ -401,9 +352,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                            font-weight: bold;
-                            }
-                         `
+                          font-weight: bold;
+                          }
+                       `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
@@ -682,9 +633,7 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 ### Credits
 
 - [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content)
-  
 - [Word Scramble Game Youtube Tutorial by Coding Nepal](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
-  
 - [Word Scramble Game Tutorial by Coding Nepal](https://www.codingnepalweb.com/word-scramble-game-html-javascript/)
 
 - [Youtube Tutorial: 3 Ways to code Rock Paper Scissors with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
