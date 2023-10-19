@@ -2,23 +2,24 @@
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="https://github.com/jeskodes/word-scramble/blob/main/assets/images/animal_scramble_intro.gif">
+    <img width="72%" src="https://github.com/jeskodes/word-scramble/blob/main/assets/images/animal-scramble-demo.gif">
 </p>
 <br>
 
-[Animal Scramble](https://jeskodes.github.io/word-scramble/) is a fun anagram game where the player has to unscramble the jumbled up animal words.
-The game has been designed to be quick to start playing with obvious game play and minimal explanations.
+[Animal Scramble](https://jeskodes.github.io/word-scramble/) is an anagram game where the player has to unscramble the jumbled up animal words.
+The game has been designed to be quick to start with obvious game play and few explanations.
 
-The target players are people of all ages who looking to distract themselves for a few minutes with a lighthearted word game.
+The target players are people of all ages who are looking to distract themselves for a few minutes with a lighthearted word game.
 
-Play [Animal Scramble](https://jeskodes.github.io/word-scramble/)
+Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 
 ## Design
 
 ### Research
 
-- I carried out research into similar photography websites offering wildlife photography courses, workshops or safaris to get ideas for layout, functionality and styles.
-- I carried out research into independent artist's websites to get an idea of how they showcased their art.
+- I carried out research into word game apps. 
+- I researched both the functionality and the gameplay.
+- The two main apps I was interested in were: 
 - I carried out research into website layouts that emphasised the use of images.
 - I discussed the project with the photographer to get ideas for the content of the photography workshops.
 
@@ -38,6 +39,7 @@ In the first stages of the design I knew that images would form a particularly i
 Starting with a Bootstrap 5 carousel template, I used Chrome dev tools to get the size of hero image and resized the images I would use to 1268x512px.
 
 ### Design
+
 
 - The design to give both information about the product and to showcase the photographer's work.
 - Black/dark grey and white/off-white colour palette. Good contrast for readability.
