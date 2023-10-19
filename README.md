@@ -33,8 +33,8 @@ Features of Conundra:
 
 #### Design Research 
 - I researched word game apps to get ideas for layout and colour palettes.
-- The main findings were that the apps used two - three colours, usually one being white and green was a common main colour.
-- Astra Wordsearch and Wordle are two examples:
+- The main findings were that the apps used two - three colours, usually one being white, and green was a common main colour.
+- Astra Wordsearch and Wordle-type games are two examples:
 
 <br>
 <p align="center" width="100%">
@@ -48,14 +48,11 @@ Features of Conundra:
 </p>
 <br>
  
-  
 
-- I carried out research into website layouts that emphasised the use of images.
-- I discussed the project with the photographer to get ideas for the content of the photography workshops.
 
-##### Initial Findings:
+##### Tutorial Research:
 
-- A carousel hero image is popular as this provides greater opportunies to showcase wildlife photos.
+- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included some of the features I'd like to have in the game.
 - Lots of websites provide an initial short summary of the workshop/courses on cards. There are links to see the full details of the course.
 - Social proof in the form of reviews is popular - usually nearer the end of the page.
 - Styling tends to be minimal with:
