@@ -54,16 +54,25 @@ Features of Conundra:
 
 ##### Tutorial Research and Development:
 
-- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
-- A large part of the functionality of Animal Scramble is based on a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content). Additions, deletions, substitutions and changes are noted in the code.
+I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
 
-- I also referred to two tutorials by [CodingNepal.](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
+A large part of the functionality of Animal Scramble is based on a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content). Additions, deletions, substitutions and changes are noted in the code.
 
-<p align = "center">
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="100%"/>
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="100%" /> 
+##### Word Scramble by Laurence Svekis - Final Game Play 
+<br>
+<p align = "center">x
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="50%"/>
 </p>
+</br>
 
+I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
+
+##### Word Scramble by CodingNepal - Final Game Play
+<br>
+<p align = "center">Coding Nepal's Word Scramble Game
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="50%" /> 
+</p>
+</br>
 
 ### Design
 
