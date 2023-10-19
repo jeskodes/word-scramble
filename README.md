@@ -18,8 +18,9 @@ Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 ### Research
 
 #### Features Research
+
 The original idea for the project came from my enjoyment of anagram and code word games. The Conundra app is great to play to pass the
-time, especially while waiting for appointments or travelling. I wanted to develop something more basic, but similar to Conundra. 
+time, especially while waiting for appointments or travelling. I wanted to develop something more basic, but similar to Conundra.
 
 <br>
 <p align="center" width="100%">
@@ -27,11 +28,13 @@ time, especially while waiting for appointments or travelling. I wanted to devel
 </p>
 <br>
 
-Features of Conundra: 
-- Select three different levels: Practice, Easy, Hard.
-- Gameplay: Buttos to scramble the word again, pass, start again. Scoreboard at the end showing correct and incorrect guesses.   
+Features of Conundra:
 
-#### Design Research 
+- Select three different levels: Practice, Easy, Hard.
+- Gameplay: Buttos to scramble the word again, pass, start again. Scoreboard at the end showing correct and incorrect guesses.
+
+#### Design Research
+
 - I researched word game apps to get ideas for layout and colour palettes.
 - The main findings were that the apps used two - three colours, usually one being white, and green was a common main colour.
 - Astra Wordsearch and Wordle-type games are two examples:
@@ -47,12 +50,12 @@ Features of Conundra:
     <img width="60%" src="documentation/wordle-research.png">
 </p>
 <br>
- 
 
 
-##### Tutorial Research:
+##### Tutorial Research and Development:
 
-- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included some of the features I'd like to have in the game.
+- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features targeted in the game.
+- A large part of the functionality of Animal Scramble is based on initially following a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content).
 - Lots of websites provide an initial short summary of the workshop/courses on cards. There are links to see the full details of the course.
 - Social proof in the form of reviews is popular - usually nearer the end of the page.
 - Styling tends to be minimal with:
@@ -66,7 +69,6 @@ In the first stages of the design I knew that images would form a particularly i
 Starting with a Bootstrap 5 carousel template, I used Chrome dev tools to get the size of hero image and resized the images I would use to 1268x512px.
 
 ### Design
-
 
 - The design to give both information about the product and to showcase the photographer's work.
 - Black/dark grey and white/off-white colour palette. Good contrast for readability.
@@ -371,9 +373,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                              font-weight: bold;
-                              }
-                           `
+                            font-weight: bold;
+                            }
+                         `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
