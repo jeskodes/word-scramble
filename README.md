@@ -60,8 +60,8 @@ A large part of the functionality of Animal Scramble is based on a tutorial by L
 ##### Word Scramble by Laurence Svekis - Final Game Play
 
 <br>
-<p align = "center">x
-  <img src="documentation/word_scramble_udemy_gameplay.gif" width="30%" style = "border: 2px solid gray"/>
+<p align = "center" style="background-color: gray">x
+  <img src="documentation/word_scramble_udemy_gameplay.gif" width="30%" style = "border:2px solid gray"/>
 </p>
 </br>
 
