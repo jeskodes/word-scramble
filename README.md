@@ -2,7 +2,7 @@
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="https://github.com/jeskodes/word-scramble/blob/main/assets/images/animal-scramble-demo.gif">
+    <img width="72%" src="documentation\animal-scramble-demo.gif">
 </p>
 <br>
 
