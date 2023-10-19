@@ -17,8 +17,9 @@ Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 
 ### Research
 
-- I carried out research into similar photography websites offering wildlife photography courses, workshops or safaris to get ideas for layout, functionality and styles.
-- I carried out research into independent artist's websites to get an idea of how they showcased their art.
+- I carried out research into word game apps. 
+- I researched both the functionality and the gameplay.
+- The two main apps I was interested in were: 
 - I carried out research into website layouts that emphasised the use of images.
 - I discussed the project with the photographer to get ideas for the content of the photography workshops.
 
