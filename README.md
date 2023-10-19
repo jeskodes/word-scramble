@@ -31,11 +31,11 @@ time, especially while waiting for appointments or travelling. I wanted to devel
 Features of Conundra:
 
 - Select three different levels: Practice, Easy, Hard.
-- Gameplay: Buttos to scramble the word again, pass, start again. Scoreboard at the end showing correct and incorrect guesses.
+- Gameplay: Buttons to scramble the word again, pass, start again. Scoreboard at the end showing correct and incorrect guesses.
 
 #### Design Research
 
-- I researched word game apps to get ideas for layout and colour palettes.
+- I researched word game apps for layout and colour palette ideas.
 - The main findings were that the apps used two - three colours, usually one being white, and green was a common main colour.
 - Astra Wordsearch and Wordle-type games are two examples:
 
@@ -54,21 +54,21 @@ Features of Conundra:
 
 ##### Tutorial Research and Development:
 
-- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features targeted in the game.
-- A large part of the functionality of Animal Scramble is based on initially following a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content).
-- Lots of websites provide an initial short summary of the workshop/courses on cards. There are links to see the full details of the course.
-- Social proof in the form of reviews is popular - usually nearer the end of the page.
-- Styling tends to be minimal with:
-  - Black, white and one additonal colour scheme.
-  - Crisp edges, or sometimes shadowing on cards.
-  - There is minimal use of thick borders or border radius.
-  - Serif fonts are currently preferred and provide a clean, low key but high quality overall feel to the design.
+- I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
+- A large part of the functionality of Animal Scramble is based on a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content). Additions, deletions, substitutions and changes are noted in the code.
 
-In the first stages of the design I knew that images would form a particularly important part of the site, as they were showcasing the photographer's work. It was important to decide on which images to use and then how to ensure that they could be inserted into the code causing the least issues with responsiveness, especially in terms of sizing. I have used and resized the real photographer's images with her permission. I aimed to keep things simple to reduce bugs with the images. I therefore have mainly resized the images to 500x500px for the main section and resized the hero images to 1268x512px. I chose the size of the main section images following research into the best sizes for images, see for example [tiny-img.com](https://tiny-img.com/blog/best-image-size-for-website/).
+- I also referred to two tutorials by [CodingNepal](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
 
-Starting with a Bootstrap 5 carousel template, I used Chrome dev tools to get the size of hero image and resized the images I would use to 1268x512px.
+<p float="left">
+  <img src="/img1.png" width="100" />
+  <img src="/img2.png" width="100" /> 
+  <img src="/img3.png" width="100" />
+</p>
+
 
 ### Design
+
+
 
 - The design to give both information about the product and to showcase the photographer's work.
 - Black/dark grey and white/off-white colour palette. Good contrast for readability.
@@ -654,7 +654,9 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 ### Credits
 
 - [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content)
+  
 - [Word Scramble Game Youtube Tutorial by Coding Nepal](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
+  
 - [Word Scramble Game Tutorial by Coding Nepal](https://www.codingnepalweb.com/word-scramble-game-html-javascript/)
 
 - [Youtube Tutorial: 3 Ways to code Rock Paper Scissors with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
@@ -662,6 +664,7 @@ https://www.theodinproject.com/lessons/foundations-git-basics
 - [Git Hub Repo - Learning how to add reset button and replay](https://github.com/mariaalouisaa/pokemon-top-trumps/blob/main/index.html)
 
 - [Tic Tac Toe Tutorial - Research how to refresh game](https://www.youtube.com/watch?v=JsErMawwdOw)
+
 - [W3 Explanation of keyboard and mouse events: w3.org](https://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS-20071102/SCR20.html)
 
 - [JavaScript Keyboard Events Tutorial: the keyup and keydown Event Listeners](https://www.youtube.com/watch?v=OiYmhhe6Inc)
