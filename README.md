@@ -86,7 +86,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 <br>
 <p align = "center">x
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif" width="40%"/>
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif" width="26%"/>
 </p>
 </br>
 
