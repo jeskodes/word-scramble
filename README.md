@@ -36,8 +36,20 @@ Features of Conundra:
 - The main findings were that the apps used two - three colours, usually one being white and green was a common main colour.
 - Astra Wordsearch and Wordle are two examples:
 
+<br>
+<p align="center" width="100%">
+    <img width="60%" src="documentation/astra-wordsearch-research.png">
+</p>
+<br>
 
+<br>
+<p align="center" width="100%">
+    <img width="60%" src="documentation/wordle-research.png">
+</p>
+<br>
+ 
   
+
 - I carried out research into website layouts that emphasised the use of images.
 - I discussed the project with the photographer to get ideas for the content of the photography workshops.
 
