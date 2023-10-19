@@ -60,8 +60,8 @@ A large part of the functionality of Animal Scramble is based on a tutorial by L
 
 ##### Word Scramble by Laurence Svekis - Final Game Play 
 <br>
-<p align = "center" background-color="lightgray">x
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="20%"/>
+<p align = "center" border = "solid, gray, 2px">x
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="26%"/>
 </p>
 </br>
 
@@ -70,7 +70,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 ##### Word Scramble by CodingNepal - Final Game Play
 <br>
 <p align = "center">
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="20%" /> 
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="26%" /> 
 </p>
 </br>
 
