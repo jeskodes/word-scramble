@@ -76,6 +76,14 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 ### Design
 
+- A minimally cluttered container which the user could pick up and play almost immediately. 
+- Intuitive game play: minimal text on the page and only a few instructions needed to understand game play.
+- Slight use of border-radius for container, buttons and input box.
+- Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua one - google fonts.
+      -     Sans-serif font for input box and displaying correct word; used Roboto - google fonts. 
+- Colour Palette: Despite research, the Animal Scramble game is targeted at users of all ages from 10 upwards. Therefore a fun, retro theme was chosen with a colour palette to reflect this:
+
+  
 
 
 - The design to give both information about the product and to showcase the photographer's work.
