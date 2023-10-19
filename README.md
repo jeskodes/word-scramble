@@ -79,9 +79,11 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 - A minimally cluttered container which the user could pick up and play almost immediately. 
 - Intuitive game play: minimal text on the page and only a few instructions needed to understand game play.
 - Slight use of border-radius for container, buttons and input box.
-- Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua one - google fonts.
-      -     Sans-serif font for input box and displaying correct word; used Roboto - google fonts. 
-- Colour Palette: Despite research, the Animal Scramble game is targeted at users of all ages from 10 upwards. Therefore a fun, retro theme was chosen with a colour palette to reflect this:
+- Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua One from [google fonts.](https://fonts.google.com/). Sans-serif font for input box and displaying correct word; used Roboto from [google fonts.](https://fonts.google.com/)
+- Colour Palette: Despite research that word games tend to use a more muted colour palette with an emphasis on greens and white, the Animal Scramble game is targeted at users of all ages from 10 upwards. Animal Scramble's aim is to be lighthearted and fun. Therefore a more brightly coloured, retro theme was chosen with a colour palette to reflect this:
+
+
+![](documentation\colour-palette-ws.png)
 
   
 
@@ -104,39 +106,49 @@ I have noted the main changes from the wireframes as the project was developed i
 
 ## User Stories and Features
 
-#### User Story 1a:
+#### User Story 1:
 
-1. As an amateur photographper.
-2. I want to to be able to carry out a general search.
-3. So that I can find companies offering Wildlife Photography Workshops.
+1. As a child of approximately 8 - 13yrs who likes word games.
+2. I want a quick game to keep me occupied.
+3. So that I can test my skills and won't get bored travelling or waiting.
 
-#### User Story 1b:
+#### User Story 2:
 
-1. As a holiday-maker visiting the New Forest.
-2. I want to know what activities are available.
-3. So that I can plan my holiday.
+1. As an adult who enjoys word games.
+2. I want a quick game that will challenge me and keep me occupied.
+3. So that I can relax with an engaging challenge.
+
+#### User Story 3:
+
+1. As an adult who enjoys word games.
+2. I want a quick game that will challenge me and keep me occupied.
+3. So that I can pass the time while waiting or travelling.
+
+#### User Story 4:
+
+1. As an older adult who enjoys word games and is retired.
+2. I want a quick game that will challenge me.
+3. So that I can keep my mind sharp.
+
 
 ##### User Steps:
 
-General search: SEO tags - photography, courses, wildlife, horses, nature, workshops, safari, Hampshire, Dorset, Wiltshire, New Forest, techniques, learn, holiday, groups, social, landscape photography, forests , woods, birds, deer, rut.
+- General search: SEO tags - brain-training, conundrum, letters and words, anagram, game, guessing, words, scramble, animals. 
 
-##### Features/Acceptance Criteria:
+- Easily "plug in play" Animal Scramble. The design communicates how to play without the need for lots of rules.
 
-The website will have the above tags so that it can be found in searches.
+##### MVP: Features/Acceptance Criteria:
 
-#### User Story 2
-
-1. As an amateur photographer
-2. I want a choice of photography workshops.
-3. So that I can decide if I want more information.
-
-##### User Steps:
-
-Easily navigate to product on page (workshops). Easily find more information on the workshops. Easily fill in a short form for more information.
-
-##### Features/Acceptance Criteria:
-
-There are links to the products (workshops) from the start of the webpage in the navbar then in the:
+- Single page. 
+- The user first arrives at the game title and game play. 
+- Start Button. 
+- Input box for guessing the word. 
+- Answer: The correct answer is always shown following guess, whether the uses guesses correctly or incorrectly. 
+- Next Button for next word. 
+- A way to skip a guess. 
+- A restart button to start a new game. 
+- Scoring. 
+- Accessibility: Tab controls can be used to play the game. 
 
 - Hero image.
 - Introduction section
