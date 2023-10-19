@@ -17,6 +17,15 @@ Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 
 ### Research
 
+The original idea for the project came from my enjoyment of anagram and code word games. The Conundra app is great to play to pass the
+time, especially while waiting for appointments or travelling. I wanted to develop something more basic, but similar to Conundra. 
+
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\conundra-demo.gif">
+</p>
+<br>
+
 - I carried out research into word game apps. 
 - I researched both the functionality and the gameplay.
 - The two main apps I was interested in were: 
