@@ -17,6 +17,7 @@ Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 
 ### Research
 
+#### Features Research
 The original idea for the project came from my enjoyment of anagram and code word games. The Conundra app is great to play to pass the
 time, especially while waiting for appointments or travelling. I wanted to develop something more basic, but similar to Conundra. 
 
@@ -26,9 +27,17 @@ time, especially while waiting for appointments or travelling. I wanted to devel
 </p>
 <br>
 
-- I carried out research into word game apps. 
-- I researched both the functionality and the gameplay.
-- The two main apps I was interested in were: 
+Features of Conundra: 
+- Select three different levels: Practice, Easy, Hard.
+- Gameplay: Buttos to scramble the word again, pass, start again. Scoreboard at the end showing correct and incorrect guesses.   
+
+#### Design Research 
+- I researched word game apps to get ideas for layout and colour palettes.
+- The main findings were that the apps used two - three colours, usually one being white and green was a common main colour.
+- Astra Wordsearch and Wordle are two examples:
+
+
+  
 - I carried out research into website layouts that emphasised the use of images.
 - I discussed the project with the photographer to get ideas for the content of the photography workshops.
 
