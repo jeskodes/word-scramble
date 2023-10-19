@@ -22,7 +22,7 @@ time, especially while waiting for appointments or travelling. I wanted to devel
 
 <br>
 <p align="center" width="100%">
-    <img width="33%" src="documentation\conundra-demo.gif">
+    <img width="24%" src="documentation\conundra-demo.gif">
 </p>
 <br>
 
