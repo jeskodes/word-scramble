@@ -59,9 +59,9 @@ Features of Conundra:
 
 - I also referred to two tutorials by [CodingNepal.](https://www.youtube.com/watch?v=4-s3g_fU7Vg&t=992s)
 
-<p float="left">
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="100"/>
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="100" /> 
+<p align = "center">
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/word_scramble_udemy_gameplay.gif" width="100%"/>
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/codingnepal-word-scramble.gif" width="100%" /> 
 </p>
 
 
