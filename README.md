@@ -86,11 +86,11 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 <br>
 <p align = "center">x
-  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif" width="59%"/>
+  <img src="https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif" width="40%"/>
 </p>
 </br>
 
-https://github.com/jeskodes/word-scramble/blob/main/documentation/animal-scramble-final-comp.gif
+
 <br>
 <p align = "center">x
   <img src="documentation\colour-palette-ws.png" width="39%"/>
