@@ -44,7 +44,6 @@ Features of Conundra:
     <img width="60%" src="documentation/astra-wordsearch-research.png">
 </p>
 <br>
-
 <br>
 <p align="center" width="100%">
     <img width="60%" src="documentation/wordle-research.png">
@@ -355,9 +354,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                        font-weight: bold;
-                        }
-                     `
+                      font-weight: bold;
+                      }
+                   `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
