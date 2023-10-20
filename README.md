@@ -135,7 +135,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 - Easily open the app/webpage and play Animal Scramble straight away. The design communicates how to play without the need for lots of explanations.
 
-##### Minimum Viable Product: Features/Acceptance Criteria:
+##### Minimum Viable Product: Features and Acceptance Criteria:
 
 - Single page.
 - The user first arrives at the game title and game play.
@@ -375,6 +375,34 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - The Workshops cards could be made smaller to fit four onto 1200px screen.
 
 ## Testing
+
+### BUGS
+
+## Accessibility
+
+- The player is using tab controls. 
+- The player presses "Enter" to play the game and for the next word. 
+- **BUG**: The winChecker() function immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
+
+<br>
+<p align = "center">
+  <img src="documentation/bug-accessibility-can't-use-tab-controls.gif" width="60%"/>
+</p>
+</br>
+
+- **Fixes**
+ 1. Make input textbox visible throughout.  This resulted in two further bugs: 
+    - The target word persisted and any press on “Enter” resulted in getting an infinite number of correct scores on the same correct guess. 
+    - The input (inWord) could be displayed but was disabled.
+<p align = "center">
+  <img src="documentation\fix1-bug-ax-tab.png" width="60%"/>
+</p>
+
+
+
+
+2. 
+Conclusion: Need to apply EventListener to button to press enter for next word. Could have both buttons visible throughout as well as input box, but input box disabled after correct guess. 
 
 ### Verification
 
