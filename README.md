@@ -354,9 +354,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                      font-weight: bold;
-                      }
-                   `
+                    font-weight: bold;
+                    }
+                 `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
@@ -380,8 +380,8 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 
 ## Accessibility
 
-- The player is using tab controls. 
-- The player presses "Enter" to play the game and for the next word. 
+- The player is using tab controls.
+- The player presses "Enter" to play the game and for the next word.
 - **BUG**: The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
 
 <br>
@@ -391,22 +391,22 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 </br>
 
 - **Fixes**
- 1. Make input textbox visible throughout.  This resulted in two further bugs: 
-    - The target word persisted and any press on “Enter” resulted in getting an infinite number of correct scores on the same correct guess. 
-    - The input (inWord) could be displayed but was disabled.
+
+1. Make input textbox visible throughout. This resulted in two further bugs: - The target word persisted and any press on “Enter” resulted in getting an infinite number of correct scores on the same correct guess. - The input (inWord) could be displayed but was disabled.
 <p align = "center">
   <img src="documentation\fix1-bug-ax-tab.png" width="60%"/>
 </p>
 
-
-
-
-2. Added eventListener to stop default behaviour when pressing Enter - did not fix(removed). 
+2. Added eventListener to stop default behaviour when pressing Enter - did not fix(removed).
 3. Separated out functions to create a separate function after winChecker().
-4. Added `btn.onfocus();` after function checked if words matched - this worked to automatically focus on the button but did not fix the bug. 
+4. Added `btn.onfocus();` after function checked if words matched - this worked to automatically focus on the button but did not fix the bug.
 
-- **Result** 
-- Unable to fix the bug. This would be targeted in later versions. It is disappointing that Animal Scramble V1 is not accessible using tab controls. 
+- **Result**
+- Unable to fix the bug. This would be targeted in later versions. It is disappointing that Animal Scramble V1 is not accessible using tab controls.
+
+- The player guesses correctly or incorrectly.
+- **BUG** The output does not unscramble the word, even if they guess incorrectly so the player won't know what the right answer was.
+- **Fix**
 
 ### Verification
 
