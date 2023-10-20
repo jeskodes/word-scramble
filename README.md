@@ -382,7 +382,7 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 
 - The player is using tab controls. 
 - The player presses "Enter" to play the game and for the next word. 
-- **BUG**: The winChecker() function immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
+- **BUG**: The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
 
 <br>
 <p align = "center">
@@ -401,8 +401,12 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 
 
 
-2. 
-Conclusion: Need to apply EventListener to button to press enter for next word. Could have both buttons visible throughout as well as input box, but input box disabled after correct guess. 
+2. Added eventListener to stop default behaviour when pressing Enter - did not fix(removed). 
+3. Separated out functions to create a separate function after winChecker().
+4. Added `btn.onfocus();` after function checked if words matched - this worked to automatically focus on the button but did not fix the bug. 
+
+- **Result** 
+- Unable to fix the bug. This would be targeted in later versions. It is disappointing that Animal Scramble V1 is not accessible using tab controls. 
 
 ### Verification
 
