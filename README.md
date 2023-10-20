@@ -77,11 +77,12 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 ### Design
 
-- A minimally cluttered container which the user could pick up and play almost immediately.
+- A minimally cluttered container which the user can pick up and play almost immediately.
 - Intuitive game play: minimal text on the page and only a few instructions needed to understand game play.
 - Slight use of border-radius for container, buttons and input box.
-- Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used Patua One from [google fonts.](https://fonts.google.com/). Sans-serif font for input box and displaying correct word; used Roboto from [google fonts.](https://fonts.google.com/)
-- Colour Palette: Despite research that word games tend to use a more muted colour palette with an emphasis on greens and white, the Animal Scramble game is targeted at users of all ages from 10 upwards. Animal Scramble's aim is to be lighthearted and fun. Therefore a more brightly coloured, retro theme was chosen with a colour palette to reflect this:
+- Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used [google fonts](https://fonts.google.com/)
+  Patua One. Sans-serif font for input box and displaying correct word; used [google fonts](https://fonts.google.com/) Roboto.
+- Colour Palette: Despite research that word games tend to use a more muted colour palette with an emphasis on greens and white, the Animal Scramble game is targeted at users of all ages from 10yrs upwards. Animal Scramble's aim is to be lighthearted and fun. Therefore a more brightly coloured, retro theme was chosen with a colour palette to reflect this:
 
 <br>
 <p align = "center">
@@ -94,17 +95,6 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
   <img src="documentation/animal-scramble-static-img.png" width="39%"/>
 </p>
 </br>
-
-
-
-
-- The design to give both information about the product and to showcase the photographer's work.
-- Black/dark grey and white/off-white colour palette. Good contrast for readability.
-- No thick borders and minimal use of border radius; simplistic, clutter-free styling.
-- Typeface for main text: a serif font - this is currently trending and there is also [guidance](https://www.siteimprove.com/glossary/accessible-fonts/#:~:text=These%20font%20types%20are%20mostly,decision%20is%20up%20to%20you.) that it is more accessible for those with dyslexia as the letters are more easily distinguishable.
-- Typeface for navigating site: a sans serif font such as Tahoma or Verdana which are also rated as having good accessibility.
-- Text: clear and concise with only necessary links.
-- Images to be a large feature of the site.
 
 #### Wireframes
 
@@ -144,15 +134,15 @@ I have noted the main changes from the wireframes as the project was developed i
 
 - General search: SEO tags - brain-training, conundrum, letters and words, anagram, game, guessing, words, scramble, animals.
 
-- Easily "plug in play" Animal Scramble. The design communicates how to play without the need for lots of rules.
+- Easily open the app/webpage and play Animal Scramble straight away. The design communicates how to play without the need for lots of explanations.
 
-##### MVP: Features/Acceptance Criteria:
+##### Minimum Viable Product: Features/Acceptance Criteria:
 
 - Single page.
 - The user first arrives at the game title and game play.
 - Start Button.
 - Input box for guessing the word.
-- Answer: The correct answer is always shown following guess, whether the uses guesses correctly or incorrectly.
+- Answer: The correct answer is always shown after the guess, whether the uses guesses correctly or incorrectly.
 - Next Button for next word.
 - A way to skip a guess.
 - A restart button to start a new game.
@@ -365,9 +355,9 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 - This intiially caused issues with the cards expanding and contracting when hovered over.
 - I styled the button only and styled the actual whole card link to `text-decoration: none;`. This fixed this issue.  
    `:hover {
-                          font-weight: bold;
-                          }
-                       `
+                        font-weight: bold;
+                        }
+                     `
 
 ##### Bio Sections and Detailed Workshop Sections:
 
