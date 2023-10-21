@@ -24,7 +24,7 @@ time, especially while waiting for appointments or travelling. I wanted to devel
 
 <br>
 <p align="center" width="100%">
-    <img width="24%" src="documentation\conundra-demo.gif">
+    <img width="24%" src="documentation/conundra-demo.gif">
 </p>
 <br>
 
@@ -85,7 +85,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 <br>
 <p align = "center">
-  <img src="documentation\colour-palette-ws.png" width="39%"/>
+  <img src="documentation/colour-palette-ws.png" width="39%"/>
 </p>
 </br>
 
@@ -171,7 +171,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img src="documentation/animal-scramble-demo.gif" width="50%"/>
+    <img src="documentation/animal-scramble-demo.gif" width="50%">
 </p>
 <br>
 
@@ -184,7 +184,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img src="documentation\start-game.png"width="50%"/>
+    <img src="documentation\start-game.png"width="33%">
 </p>
 <br>
 
@@ -195,7 +195,7 @@ I have noted the main changes from the wireframes as the project was developed i
 #### Game Play
 <br>
 <p align="center" width="100%">
-    <img src="documentation\gameplay.png"width="50%"/>
+    <img src="documentation\gameplay.png"width="33%">
 </p>
 <br>
 
@@ -208,7 +208,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img src="documentation\guess-word.png"width="50%"/>
+    <img src="documentation\guess-word.png"width="33%">
 </p>
 <br>
 
@@ -221,7 +221,7 @@ Make a guess, then
 
 <br>
 <p align="center" width="100%">
-    <img src="documentation\game-over.png"width="50%"/>
+    <img src="documentation\game-over.png"width="33%">
 </p>
 <br>
 
