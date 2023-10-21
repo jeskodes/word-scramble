@@ -378,11 +378,13 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 
 ### BUGS
 
-## Accessibility
+#### Accessibility Bugs
 
+**BUG**
 - The player is using tab controls.
 - The player presses "Enter" to play the game and for the next word.
-- **BUG**: The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
+
+**BUG**: The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
 
 <br>
 <p align = "center">
@@ -390,7 +392,7 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 </p>
 </br>
 
-- **Fixes**
+**Fixes**
 
 1. Make input textbox visible throughout. This resulted in two further bugs: - The target word persisted and any press on “Enter” resulted in getting an infinite number of correct scores on the same correct guess. - The input (inWord) could be displayed but was disabled.
 <p align = "center">
@@ -401,13 +403,72 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 3. Separated out functions to create a separate function after winChecker().
 4. Added `btn.onfocus();` after function checked if words matched - this worked to automatically focus on the button but did not fix the bug.
 
-- **Result**
+**Result**
 - Unable to fix the bug. This would be targeted in later versions. It is disappointing that Animal Scramble V1 is not accessible using tab controls.
-
 - The player guesses correctly or incorrectly.
-- **BUG** The output does not unscramble the word, even if they guess incorrectly so the player won't know what the right answer was.
-- **Fix**
 
+#### Game Play General Bugs 
+**BUG** 
+- The output does not unscramble the word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
+
+**Fix**
+ - Add line of code to winChecker() fucntion - both correct and incorrect guesses: 
+
+ ![](documentation\bug-fix-unscramble-word.png)
+
+ **BUG**
+ - Gameplay does not stop at 5 turns and can play an infinite amout of times if keep guessing incorrectly. 
+
+ ![](documentation\BUG-infinite-turns.png)
+
+ **Fix**
+ -Create maxGuesses variable to count guesses and add to gamePlay() function; stop play at 5 guesses.  
+
+
+```javascript 
+
+function gamePlay() {
+  if (myWords.length <= 0 || maxGuesses === 5) {
+    //EDIT: Add in "or" maxGuesses for game over.
+    console.log("game over");
+    console.log(maxGuesses);`
+    
+```
+
+#### Textbox Specific Bugs
+
+**BUG**
+- User testing on ios reported that the game was showing an incorrect response as correct. 
+- Investigation revealed that the words were being autocorrected across multiple devices. 
+
+**Fix**
+- Add autocomplete = "off" spellcheck = "false" to input html. 
+
+```html
+
+<section class = "game-play">
+  <div id="game-area">
+    <h1 id="heading-wordscramble">Animal Scramble</h1>
+      <input type="text" class ="input-text" id = "input-word" name = "inputtext" autocomplete = "off" spellcheck = "false" autocomplete = "off" placeholder = 'Press Enter to Skip' aria-label="Type word here" 
+
+```
+
+      
+
+
+**BUG**
+
+- Can enter numbers and special characters into input box. 
+
+**Fix**
+- Add code snippet to html to only allow letters. 
+
+```html
+
+      onkeypress="return (event.charCode > 64 && 
+	    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+
+```
 ### Verification
 
 ### Responsiveness
