@@ -547,19 +547,16 @@ function winChecker() {
 
 ### Responsiveness
 
-The pages were tested for responsiveness across different devices using Chrome DevTools. Overall responsiveness is good from mobile devices up to desktops.
+  <br>
+<p align = "center">
+  <img src="documentation/animal-scramble-responsive.png" width="60%"/>
+</p>
+</br>
 
-![Responsiveness grid](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/responsiveness_grid.png)
-
-![Mobile](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/responsiveness%20iphonexr_ipadair.png)
-
-![Desktop](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/desktop_responsiveness.png)
-
-##### The pages were tested on a real iphone Air and iphoneSE.
-
-- iphoneSE BUG: The bottom of the contact form was cut off in landscape mode.
-
-![Bug landscape iphone SE](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/iphonese_landscape.png)
+[Animal Scramble](https://jeskodes.github.io/word-scramble/) is responsive across a large range of devices. There are no media queries needed as:
+-  The main game container div is set at a fixed size using rem.
+-  The input box, buttons and output div are also set to a fixed size using rem so the format does not break when resized. 
+- Responsiveness was tested using Chrome DevTools, [Responsivedesignchecker.com](https://responsivedesignchecker.com), and user testing on Android Phone, ios ipad air 2, iphone SE 2020, iphone 10, windows laptop 1600 x 1200.
 
 ---
 
