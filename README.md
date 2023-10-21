@@ -171,7 +171,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="documentation/animal-scramble-demo.gif">
+    <img width="50%" src="documentation/animal-scramble-demo.gif">
 </p>
 <br>
 
@@ -184,7 +184,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="documentation\start-game.png">
+    <img width="50%" src="documentation\start-game.png">
 </p>
 <br>
 
@@ -195,7 +195,7 @@ I have noted the main changes from the wireframes as the project was developed i
 #### Game Play
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="documentation\gameplay.png">
+    <img width="50%" src="documentation\gameplay.png">
 </p>
 <br>
 
@@ -208,7 +208,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="documentation\guess-word.png">
+    <img width="50%" src="documentation\guess-word.png">
 </p>
 <br>
 
@@ -221,7 +221,7 @@ Make a guess, then
 
 <br>
 <p align="center" width="100%">
-    <img width="72%" src="documentation\game-over.png">
+    <img width="50%" src="documentation\game-over.png">
 </p>
 <br>
 
