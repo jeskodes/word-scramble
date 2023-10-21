@@ -222,6 +222,15 @@ Buttons
 
 ### Features for Future Versions:
 
+- Fix accessibility issue so can use tab controls to play game.
+- Add to Json File and create levels of difficulty, Easy, Medium, Hard. 
+- Add additional categories, e.g. Food, Countries, Actions. 
+- Add buttons to choose difficulty level. 
+- Store the 5 words per game in a temporary array and create scoreboard at end showing correct and incorrect words. 
+- Best of 5 games then final score. 
+- Timer.
+- Split scrambled word into individual tiles. 
+- More celebratory and dynamic "Game Over" or "You Won". 
 
 ## Testing
 
