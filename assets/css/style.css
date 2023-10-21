@@ -19,7 +19,8 @@ The tutorial included minimal CSS; this CSS is my own work.*/
     --indigo-dye: #0A446Fff;
     --cerulean: #086D90ff;
     font-family: 'Patua One', serif;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 * {
@@ -71,9 +72,6 @@ main {
     padding: 4rem;
     min-width: 20rem;
     max-width: 20rem; 
-    /* All boxes are jumping around during gameplay*/
-    /*To stop the cards from changing size with different words*/
-    /* Setting min and max width works but not responsive - looks fine on iphone and ipad. */
     max-height: 20rem;
     min-height: 20rem; 
     border-radius: 5px;
@@ -152,8 +150,8 @@ cursor:pointer;
     position: relative; 
     padding: 0.5rem;
     margin: 5px 5px; 
-    font-family: 'Patua One', serif;
-    font-weight: 300;   
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 .input-text {
@@ -180,8 +178,7 @@ cursor:pointer;
 .div-gameover {
     font-size: 1.4rem; 
     color: white; 
-    font-family: 'Patua One', serif;  
-    font-weight: 400;  
+    font-family: 'Patua One', serif;
 }
 
 .footer__link  {
