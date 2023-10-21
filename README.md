@@ -383,8 +383,7 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 **BUG**
 - The player is using tab controls.
 - The player presses "Enter" to play the game and for the next word.
-
-**BUG**: The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
+- The winChecker() function - which checks if the words match - immediately checks the word and the player cannot make a guess. The game cannot be played without using the mouse.
 
 <br>
 <p align = "center">
@@ -404,22 +403,32 @@ In future I would carefully plan how I want the anchor links to be styled to kee
 4. Added `btn.onfocus();` after function checked if words matched - this worked to automatically focus on the button but did not fix the bug.
 
 **Result**
-- Unable to fix the bug. This would be targeted in later versions. It is disappointing that Animal Scramble V1 is not accessible using tab controls.
-- The player guesses correctly or incorrectly.
+- Unable to fix the bug. This would be targeted in later versions with a separate function at the point of refreshing the scrambled word. 
+It is disappointing that Animal Scramble V1 is not accessible using tab controls.
 
 #### Game Play General Bugs 
 **BUG** 
-- The output does not unscramble the word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
+- The output(myWords) does not unscramble the target word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
 
 **Fix**
  - Add line of code to winChecker() fucntion - both correct and incorrect guesses: 
 
- ![](documentation\bug-fix-unscramble-word.png)
+ <br>
+<p align = "center">
+  <img src="documentation/bug-fix-unscramble-word.png" width="60%"/>
+</p>
+</br>
+
 
  **BUG**
  - Gameplay does not stop at 5 turns and can play an infinite amout of times if keep guessing incorrectly. 
 
- ![](documentation\BUG-infinite-turns.png)
+  <br>
+<p align = "center">
+  <img src="documentation/BUG-infinite-turns.png" width="60%"/>
+</p>
+</br>
+
 
  **Fix**
  -Create maxGuesses variable to count guesses and add to gamePlay() function; stop play at 5 guesses.  
@@ -435,11 +444,62 @@ function gamePlay() {
     
 ```
 
+**BUG**
+- Game play stops at 5 turns but the player has no way to play again unless they refresh the page. 
+
+**Fix**
+- Add restart-btn. 
+
+```javascript
+const restart = document.createElement("button");
+```
+
+- Add EventListener to restart button to refresh page when clicked. 
+
+```javascript
+restart.addEventListener("click", (e) => {
+  window.location.reload();
+});
+```
+
+**BUG**
+- User testing reported that on android there was no way to press "Enter" to skip; the "go" button did not work. 
+
+**Fix**
+
+- Added EventListener for pressing "go" when focus on input box = carry out winChecker function. 
+
+```javascript
+
+inWord.addEventListener("keyup", (e) => {
+  console.log(e);
+  if (inWord.value.length === game.sel.length || e.key === "Enter") {
+    winChecker(); //run the winChecker function
+  }
+});
+
+```
+
 #### Textbox Specific Bugs
+
+**BUG**
+- Initially used four animal words in array inside script.js to scramble; the words were four letters in lenght or shorter. 
+- Added much big array of animal words to separate js file and the text went outside of input and output boxes. 
+
+**Fix**
+- Added classes to inWord(textbox) and myWords (scrambled words) and styled with CSS. 
+- Additionally added classes to start and refresh buttons in order to style in CSS. 
 
 **BUG**
 - User testing on ios reported that the game was showing an incorrect response as correct. 
 - Investigation revealed that the words were being autocorrected across multiple devices. 
+- Investigation with DevTools showed correct guess in console log as incorrect: 
+
+
+
+<p align = "center">
+  <img src="documentation/BUG-case-sensitive-textbox.png" width="60%"/>
+</p>
 
 **Fix**
 - Add autocomplete = "off" spellcheck = "false" to input html. 
@@ -453,21 +513,35 @@ function gamePlay() {
 
 ```
 
-      
-
 
 **BUG**
 
 - Can enter numbers and special characters into input box. 
 
 **Fix**
-- Add code snippet to html to only allow letters. 
+- Add javascript code snippet to html to only allow letters. 
 
-```html
+```javascript 
 
       onkeypress="return (event.charCode > 64 && 
 	    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+      
+```
 
+**BUG**
+
+- Input box is case sensitive and counting guesses in lowercase and caps as wrong. 
+
+**Fix**
+
+- Add toLowerCase() to winChecker() function. 
+
+```javascript
+
+function winChecker() {
+  if (inWord.value.toLowerCase() == game.sel) {
+    //EDIT: added .toLowerCase()
+    
 ```
 ### Verification
 
