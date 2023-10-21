@@ -27,7 +27,7 @@ fetchAnimalsWords();
 
 //EDIT: remove let myWords = [""] (words to be scrambled) and created separate file.
 
-let myWordsFromJson;
+let myWordsFromJson = [""];
 
 const gameArea = document.getElementById("game-area");
 
@@ -64,7 +64,7 @@ let game = {
   score: 0,
   incorrect: 0,
   maxGuesses: 0, //Edit - add maxGuesses so game over after 5 guesses.
-  played: myWords.length,
+  played: myWordsFromJson.length,
 };
 
 /*Show score throughout game play. 
@@ -137,7 +137,7 @@ inWord.addEventListener("keyup", (e) => {
 });
 
 function gamePlay() {
-  if (myWords.length <= 0 || maxGuesses === 5) {
+  if (myWordsFromJson.length <= 0 || maxGuesses === 5) {
     //EDIT: Add in "or" maxGuesses for game over.
     console.log("game over");
     console.log(maxGuesses);
@@ -167,14 +167,14 @@ function gamePlay() {
     inWord.style.display = "block";
     restart.style.display = "block";
     rules.style.display = "none";
-    myWords.sort(() => {
+    myWordsFromJson.sort(() => {
       return 0.5 - Math.random();
     });
     // Randomise Array; attempted to replace with Fisher-Yates shuffle - unsuccessful.
-    game.sel = myWords.shift(); //Remove word already guessed from array.
+    game.sel = myWordsFromJson.shift(); //Remove word already guessed from array.
     //EDIT: removed text how many words left - too wordy.
     game.scramble = sorter(game.sel); //Pass scrambled word into sorter function - check scrambled.
-    game.wordsLeft = myWords.length; //How many words left
+    game.wordsLeft = myWordsFromJson.length; //How many words left
     /*EDIT: Removed syling of textarea and scrambled and unscrambled word
         from js and styled using created classes and CSS */
     output.style.backgroundColor = "#DEEFF5"; //Revert to neutral bg color after guess
