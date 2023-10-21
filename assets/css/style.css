@@ -164,7 +164,6 @@ cursor:pointer;
     margin: 5px 5px;   
     overflow: hidden; 
     font-family: 'Roboto', sans-serif;
-    font-weight: 300; 
 }
 
 .input-text::placeholder {
