@@ -181,17 +181,36 @@ I have noted the main changes from the wireframes as the project was developed i
 - Footer with link to [github profile](https://github.com/jeskodes).
 
 #### Start Game
+
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\start-game.png">
+</p>
+<br>
+
 - Title 
 - Rules
 - Start button
 
 #### Game Play
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\gameplay.png">
+</p>
+<br>
+
 - Title
 - Dynamic Scoreboard
 - Scrambled word
 - Input box to type in guess.
 - Placeholder text in textarea "Enter to Skip". 
 - Restart button
+
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\guess-word.png">
+</p>
+<br>
 
 Make a guess, then
 - Title
@@ -200,25 +219,24 @@ Make a guess, then
 - Button "Click for Next Word"
 - Restart button. 
 
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\game-over.png">
+</p>
+<br>
+
 After 5 guesses (correct or incorrect) then
 - Game Over
 - Score
 - Restart button. 
 
-Restart Button
+#### Restart Button
 - Reloads page. 
 - Animation used to smooth transition. 
 
-Buttons
+#### Buttons
 - :hover used to change color. 
 - cursor pointer added. 
-
-### Footer
-
-- Copyright information.
-- Links to the photographer's social media sites (in new tabs).
-- Link to the contact form.
-- Link to workshops.
 
 ### Features for Future Versions:
 
