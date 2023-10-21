@@ -442,7 +442,7 @@ function winChecker() {
 - No issues raised. 
   <br>
 <p align = "center">
-  <img src="documentation/ax-testing-animal-scramble.png" width="60%"/>
+  <img src="documentation/ax-testing-animal-scramble.png" width="68%"/>
 </p>
 </br>
 
