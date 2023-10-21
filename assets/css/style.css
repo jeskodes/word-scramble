@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300&display=swap');
 
 
@@ -120,7 +121,6 @@ li {
     font-size: 1.2rem;
     font-family: 'Patua One', serif;
     color: #0D2656; 
-    /* border: solid 8px #e76f51; */
 }
 
 button {
@@ -152,7 +152,8 @@ cursor:pointer;
     position: relative; 
     padding: 0.5rem;
     margin: 5px 5px; 
-    font-family: 'Patua One', serif, 400;
+    font-family: 'Patua One', serif;
+    font-weight: 300;   
 }
 
 .input-text {
@@ -179,7 +180,8 @@ cursor:pointer;
 .div-gameover {
     font-size: 1.4rem; 
     color: white; 
-    font-family: 'Patua One', serif, 400;   
+    font-family: 'Patua One', serif;  
+    font-weight: 400;  
 }
 
 .footer__link  {

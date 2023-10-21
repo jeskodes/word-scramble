@@ -576,7 +576,22 @@ function winChecker() {
 
 ## W3C CSS Validation Service
 
-The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) found 8 warnings and 1 syntax error.
+The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) found 3 errors:
+
+<br>
+<p align = "center">
+  <img src="documentation\w3c-errors-font-family.png" width="60%"/>
+</p>
+</br>
+
+However, if changed to: 
+
+`   font-family: 'Patua One', serif;
+    font-weight: 300;   `
+
+Then the change would not be applied, making the scrambled and unscrambled text bolder. The code has therefore been left as it is and will be investigated. 
+
+8 warnings and 1 syntax error.
 
 The syntax error was: `flex-wrap:no-wrap`; this was changed to `flex-wrap:nowrap`.
 
