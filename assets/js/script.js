@@ -1,9 +1,9 @@
 /* jshint esversion:8 */
 
-/*Based on Udemy Tutorial by Laurence Svekis.
-"JavaScript Create 5 Fun Word Games"
-https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
-"EDIT" indicates where additions or changes have been made*/
+/**Based on Udemy Tutorial by Laurence Svekis.
+ * "JavaScript Create 5 Fun Word Games"
+ * https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
+ * "EDIT" indicates where additions or changes have been made*/
 
 
 //Fetch words to be played from json file
@@ -52,10 +52,10 @@ let rules = document.getElementById("rules");
 let maxGuesses = "";
 inWord.setAttribute("type", "text");
 
-/*Settings for start of game. 
-EDIT changed from const to let as will change throughout game.
-game.sel = randomised word from array
-game.scramble = scrambled word*/
+/**Settings for start of game. 
+ * game.sel = randomised word from array
+ * game.scramble = scrambled word
+ * EDIT changed from const to let as will change throughout game.*/
 let game = {
   sel: "",
   scramble: "",
@@ -99,7 +99,6 @@ output.style.display = "none";
 console.log(btn);
 
 //EventListeners
-
 //EDIT: Add restart button and EventListener to refresh game.
 restart.addEventListener("click", (e) => {
   window.location.reload();
@@ -109,7 +108,7 @@ restart.addEventListener("keypress", (e) => {
   window.location.reload();
 });
 
-//EDIT - separated out EventListener and created gamePlay function for more flexibility.
+//EDIT: Separated out EventListener and created gamePlay function for more flexibility.
 btn.addEventListener("click", gamePlay);
 
 /**Check if same number of characters in word as typed
@@ -122,10 +121,10 @@ inWord.addEventListener("keyup", (e) => {
 });
 
 /**EDIT: Added "or" maxGuesses for game over.
- *Removed words "correct/incorrect" replaced with icons.
-  Removed syling of textarea and scrambled and unscrambled word
-  from js and styled using created classes and CSS.  
-  Removed text "how many words left" - too wordy.
+ * Removed words "correct/incorrect" replaced with icons.
+ * Removed syling of textarea and scrambled and unscrambled word
+ * from js and created classes and styled in CSS.  
+ * Removed text "how many words left" - too wordy.
   */     
 function gamePlay() {
   if (myWordsFromJson.length <= 0 || maxGuesses === 5) {
@@ -161,20 +160,18 @@ function gamePlay() {
   }
 }
 
-
-
 function addScore() {
   let tempOutput = `${game.score} <i class="fa-solid fa-square-check"></i>  ${game.incorrect} <i class="fa-solid fa-square-xmark"></i>`;
   scoreBoard.innerHTML = tempOutput;
 }
 
-/*EDITS: Original used borderWidth of textarea to signify if word correct or incorrect: 
-this made the word above move around. 
-Styled background color of output instead of border colour.
-Added .toLowerCase().
-Added maxGuesses - stop game play at 5 goes. See gamePlay()
-Set textarea to disappear when correct to make room for button.
-Added line so word unscrambles after correct or incorrect guess.*/
+/**EDITS: Original used borderWidth of textarea to signify if word correct or incorrect: 
+ * this made the word above move around. 
+ * Styled background color of output instead of border colour.
+ * Added .toLowerCase().
+ * Added maxGuesses - stop game play at 5 goes. See gamePlay()
+ * Set textarea to disappear when correct to make room for button. 
+ * Added line so word unscrambles after correct or incorrect guess.*/
 function winChecker() {
   if (inWord.value.toLowerCase() == game.sel) {
     game.score++;
@@ -205,11 +202,11 @@ function winChecker() {
   addScore();
 }
 
-/*sorter(val)Function that continues to run until the word is scrambled
-Scramble word letters using .split and turning into an array
-to put word (temp) back into a string use temp.join()method
-EDIT: Changed and added output style - padding, fontSize, borderRadius
-Need to remove word already guessed from array using .shift()method.*/
+/**sorter(val)Function that continues to run until the word is scrambled.
+ * Scramble word letters using .split() and turning into an array
+ * Then to put word (temp) back into a string use temp.join()method
+ * Remove word already guessed from array using .shift()method.
+*/
 
 function sorter(val) {
   let temp = val.split("");
