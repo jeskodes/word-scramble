@@ -576,15 +576,15 @@ function winChecker() {
 
 ## W3C CSS Validation Service
 
-The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) found 3 errors:
+The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) found no errors. 
 
 <br>
 <p align = "center">
-  <img src="documentation\w3c-errors-font-family.png" width="60%"/>
+  <img src="documentation/w3c-errors-font-family.png" width="60%"/>
 </p>
 </br>
 
-However, if changed to: 
+The above code was incorrect and therefore not being applied and when applied the font was too bold. The font-family 'Patua One' only has one font-weight. The errored code was removed and the game remained the same as the default font 
 
 `   font-family: 'Patua One', serif;
     font-weight: 300;   `

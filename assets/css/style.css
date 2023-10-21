@@ -106,7 +106,7 @@ li {
     color: white; 
     margin: 5px 5px; 
     letter-spacing: 0.1rem;
-    font-family: 'Patua One', serif, 300;
+    font-family: 'Patua One', serif;
 }
 
 .btn-start {
@@ -150,8 +150,7 @@ cursor:pointer;
     position: relative; 
     padding: 0.5rem;
     margin: 5px 5px; 
-    font-family: 'Times New Roman', Times, serif;
-    
+    font-family: 'Times New Roman', Times, serif;    
 }
 
 .input-text {
