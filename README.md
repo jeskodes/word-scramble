@@ -439,6 +439,7 @@ function winChecker() {
 
 ### Axe Chrome DevTools and WebAIM Contrast Checker
 
+- No issues raised. 
   <br>
 <p align = "center">
   <img src="documentation/ax-testing-animal-scramble.png" width="60%"/>
