@@ -187,12 +187,7 @@ The final rendering of the footer:
 ![Final footer layout](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/final_footer_layout.png)
 
 
-
-
-
-
 ### Features for Future Versions:
-
 
 ## Testing
 
@@ -404,12 +399,9 @@ The HTML passed with no warnings or errors to show following minor fixes, such a
 
 ---
 
-
-
-
 ## Deployment
 
-Animal Scramble was deployed using git, github and vscodeto GitHub pages. The steps to deploy are as follows:
+[Animal Scramble](https://jeskodes.github.io/word-scramble/) was deployed using git, github and vscode.
 
 ## Credits
 
