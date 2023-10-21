@@ -169,6 +169,50 @@ I have noted the main changes from the wireframes as the project was developed i
 
 ## Current Features
 
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation/animal-scramble-demo.gif">
+</p>
+<br>
+
+### Main Game Area
+- Background image covers entire screen. 
+- One main section with fixed div container for whole game. 
+- Footer with link to [github profile](https://github.com/jeskodes).
+
+#### Start Game
+- Title 
+- Rules
+- Start button
+
+#### Game Play
+- Title
+- Dynamic Scoreboard
+- Scrambled word
+- Input box to type in guess.
+- Placeholder text in textarea "Enter to Skip". 
+- Restart button
+
+Make a guess, then
+- Title
+- Scrambled word unscrambles with correct or incorrect guess. 
+- Scrambled word background goes blue for correct or pink for incorrect. 
+- Button "Click for Next Word"
+- Restart button. 
+
+After 5 guesses (correct or incorrect) then
+- Game Over
+- Score
+- Restart button. 
+
+Restart Button
+- Reloads page. 
+- Animation used to smooth transition. 
+
+Buttons
+- :hover used to change color. 
+- cursor pointer added. 
+
 ### Footer
 
 - Copyright information.
@@ -176,18 +220,8 @@ I have noted the main changes from the wireframes as the project was developed i
 - Link to the contact form.
 - Link to workshops.
 
-The footer was designed to be fully responsive, with a `flex-direction:row;` layout for desktops and a `flex-direction:column` layout for mobiles. In the end, due to time constraints, it follows just a `flex-direction:row;` format. It's fully responsive and this doesn't impact significantly on the final desktop rendering.
-
-The original desktop mockup made on [repl:it](https://replit.com/@JessicaClark6/footer)
-
-![Desktop Layout Design ](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/desktop_layout_footer_design.png)
-
-The final rendering of the footer:
-
-![Final footer layout](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/final_footer_layout.png)
-
-
 ### Features for Future Versions:
+
 
 ## Testing
 
