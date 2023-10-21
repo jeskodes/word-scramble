@@ -60,7 +60,7 @@ A large part of the functionality of Animal Scramble is based on a tutorial by L
 
 <br>
 <p align = "center" style="background-color: gray">
-  <img src="documentation/word-scramble-udemy-demo.gif" width="30%" style = "border:2px solid gray"/>
+  <img src="documentation/word-scramble-udemy-demo.gif" width="30%" style = "border:2px solid gray">
 </p>
 </br>
 
@@ -70,7 +70,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 <br>
 <p align = "center">
-  <img src="documentation/codingnepal-word-scramble.gif" width="30%" /> 
+  <img src="documentation/codingnepal-word-scramble.gif" width="30%"> 
 </p>
 </br>
 
@@ -171,7 +171,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="50%" src="documentation/animal-scramble-demo.gif">
+    <img src="documentation/animal-scramble-demo.gif" width="50%"/>
 </p>
 <br>
 
@@ -184,7 +184,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="50%" src="documentation\start-game.png">
+    <img src="documentation\start-game.png"width="50%"/>
 </p>
 <br>
 
@@ -195,7 +195,7 @@ I have noted the main changes from the wireframes as the project was developed i
 #### Game Play
 <br>
 <p align="center" width="100%">
-    <img width="50%" src="documentation\gameplay.png">
+    <img src="documentation\gameplay.png"width="50%"/>
 </p>
 <br>
 
@@ -208,7 +208,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img width="50%" src="documentation\guess-word.png">
+    <img src="documentation\guess-word.png"width="50%"/>
 </p>
 <br>
 
@@ -221,7 +221,7 @@ Make a guess, then
 
 <br>
 <p align="center" width="100%">
-    <img width="50%" src="documentation\game-over.png">
+    <img src="documentation\game-over.png"width="50%"/>
 </p>
 <br>
 
