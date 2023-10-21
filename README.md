@@ -560,25 +560,13 @@ function winChecker() {
 
 ---
 
-### Lighthouse
+### Axe Chrome DevTools and WebAIM Contrast Checker
 
-![Lighthouse score](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/lighthouse_score.png)
-
-#### The site scored well on accessibility. It scored lowest on performance with concerns about lazy loading and the deprecating of images.
-
-![](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/lighthouse_performance_score.png)
-
----
-
-### Axe Chrome DevTools
-
-![axe devtools](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/axe_devtools_report.png)
-
-##### Axe DevTools highlighted 5 serious issues; these were all with the colour contrast of the links in the main section of the webpage.
-
-##### These were fixed using the [webaim](https://wave.webaim.org/) WCAG Contrast checker.
-
-![webaim contrast checker](https://github.com/jeskodes/milestone-project-1-jesk/blob/main/documentation/readmeimages/webaim_contrast_passed_links.png)
+  <br>
+<p align = "center">
+  <img src="documentation/ax-testing-animal-scramble.png" width="60%"/>
+</p>
+</br>
 
 ---
 
@@ -598,71 +586,9 @@ The warnings were all for vendor extensions, e.g. -webkit-transform. I checked s
 
 ## W3C Markup Validation Service
 
-##### The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the html.
+##### The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the HTML.
 
-There were 5 warnings and 21 errors on index.html file.
-
-These warnings were all _The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment_, and were because I had used the BEM (Bock, Element, Modifier) naming conventions for classes, e.g. `class="workshop--section"`. I'm still grasping the syntax of the naming conventions, but had followed the guidance on [CSS Tricks](https://css-tricks.com/bem-101/). Having checked stack overflow I realised that the classes were in bits of code that I had commented out, and this was the cause of the warnings. I deleted the commented out code and fixed these warnings.
-
-##### The errors included:
-
-- _Bad value button for attribute type on element a: Subtype missing._
-- Stray end tag.
-- Unclosed element.
-- Space in the path of a img src.
-- _The element button must not appear as a descendant of the a element._
-- _The frameborder attribute on the iframe element is obsolete. Use CSS instead._
-
-##### Fixes:
-
-- I changed the names of the jpg files with spaces in their names and updated the html.
-- I deleted unusued commented out code that was not needed.
-- I closed the element without a closing tag.
-
-##### The error with the `a` tag wrapping a `<button>` element was in the workshops cards section:
-
-```
-     <div class="workshops--grid--wrapper">
-       <div class="workshops--card">
-         <a href="#workshop__custom-tours" class="workshop__card__content">
-           <div class="img--card--autumn"></div>
-           <h3 class="workshop--title">Create <br> Custom Tours</h3>
-           <button class="btn--workshops" type="button" aria-label="button learn more"><span class="btn__ws__hover">Learn more</span></button>
-         </a>
-       </div>
-     </div>
-```
-
-I attempted to change this, but it broke the structure of the cards. I have left this error in and this is something that I would fix in the future.
-
-##### _The frameborder attribute on the iframe element is obsolete. Use CSS instead._
-
-```
-          <div class="youtube--container"><iframe class="iframe" width="560" height="315"
-              src="https://www.youtube.com/embed/IfgwoXY5NnI" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              aria-label="Pen B video link relaxing woodland landscapes" allowfullscreen>
-            </iframe></div>
-```
-
-The above error came from the pre-written code when copying the link from YouTube. At this stage the video works. I have left this error in and in the future would investigate how to use CSS instead of the `frameborder` attribute.
-
-##### _Bad value button for attribute type on element a: Subtype missing._
-
-```<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" type="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-```
-
-This is the Bootstrap code for the carousel controls. I have not changed this as the controls work and I would be concerned about breaking the controls. In future I would learn how to add carousel controls from scratch.
-
-##### Retest index.html using [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input):
-
-After fixing the errors I could and leaving the errors discussed above the retest results were 7 errors, these were:
-
-- The buttons wrapped in an `a` tag.
-- The issue with the `frameborder` in the `<iframe>`.
+The HTML passed with no warnings or errors to show following minor fixes, such as an unclosed <div>, a quotation mark the wrong way round in the meta data and two duplicate attributes. 
 
 ---
 
