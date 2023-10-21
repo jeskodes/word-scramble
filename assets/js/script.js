@@ -5,6 +5,8 @@
 https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
 "EDIT" indicates where additions or changes have been made*/
 
+
+//Fetch words to be played from json file
 async function fetchAnimalsWords() {
   const response = await fetch("assets/js/animals.json");
   const data = await response.json();
@@ -22,11 +24,6 @@ async function fetchAnimalsWords() {
 fetchAnimalsWords();
 
 //Variables
-
-//Main game area
-
-//EDIT: remove let myWords = [""] (words to be scrambled) and created separate file.
-
 let myWordsFromJson = [""];
 
 const gameArea = document.getElementById("game-area");
@@ -55,7 +52,8 @@ let rules = document.getElementById("rules");
 let maxGuesses = "";
 inWord.setAttribute("type", "text");
 
-/*Settings for start of game. EDIT changed from const to let as will change throughout game.
+/*Settings for start of game. 
+EDIT changed from const to let as will change throughout game.
 game.sel = randomised word from array
 game.scramble = scrambled word*/
 let game = {
@@ -63,13 +61,13 @@ let game = {
   scramble: "",
   score: 0,
   incorrect: 0,
-  maxGuesses: 0, //Edit - add maxGuesses so game over after 5 guesses.
+  maxGuesses: 0, //Edit - add maxGuesses
   played: myWordsFromJson.length,
 };
 
-/*Show score throughout game play. 
-EDIT: added classname to scoreBoard so can style*/
-scoreBoard.textContent = "Score"; //EDIT: removed "Score in html"
+
+//EDIT: added classname to scoreBoard so can style*/
+scoreBoard.textContent = "Score"; //EDIT: removed "Score from html"
 scoreBoard.classList.add("div-scoreboard");
 
 //EDIT: add class to btn to style in css
@@ -85,7 +83,7 @@ restart.textContent = "Restart";
 document.body.appendChild(restart);
 console.log(restart); //test restart button
 
-// Add to HTML page using append.
+
 gameArea.append(title); //EDIT: Added a title and appended.
 gameArea.append(scoreBoard); //EDIT: Moved position of scoreboard.
 gameArea.append(output);
@@ -107,15 +105,6 @@ restart.addEventListener("click", (e) => {
   window.location.reload();
 });
 
-/**
- * 
- */
-
-/**
- * 
- * 
- * 
-*/
 restart.addEventListener("keypress", (e) => {
   window.location.reload();
 });
@@ -123,45 +112,36 @@ restart.addEventListener("keypress", (e) => {
 //EDIT - separated out EventListener and created gamePlay function for more flexibility.
 btn.addEventListener("click", gamePlay);
 
-/*Letter count EventListener; counts length of word when same as target word will check 
-if matches. 
-Or will check if matches if player presses Enter to skip*/
-/*BUG: EDIT Hid textarea when check match - breaks tab focus
-Makes game inaccessible using tab. To fix. */
-
+/**Check if same number of characters in word as typed
+ *or check if enter pressed*/
 inWord.addEventListener("keyup", (e) => {
   console.log(e);
   if (inWord.value.length === game.sel.length || e.key === "Enter") {
-    winChecker(); //run the winChecker function
+    winChecker(); 
   }
 });
 
+/**EDIT: Added "or" maxGuesses for game over.
+ *Removed words "correct/incorrect" replaced with icons.
+  Removed syling of textarea and scrambled and unscrambled word
+  from js and styled using created classes and CSS.  
+  Removed text "how many words left" - too wordy.
+  */     
 function gamePlay() {
   if (myWordsFromJson.length <= 0 || maxGuesses === 5) {
-    //EDIT: Add in "or" maxGuesses for game over.
     console.log("game over");
     console.log(maxGuesses);
     gameArea.innerHTML = `<div class = "div-gameover">Game Over</div>`;
     gameArea.innerHTML += `<div class = "div-gameover"> Score ${game.score} out of 5 </div>`; //EDIT Changed so that will always say out of 5
     restart.style.display = "block";
-    gameArea.appendChild(restart); //EDIT add refresh button
-    restart.textContent = "Play Again"; //EDIT add restart function
+    gameArea.appendChild(restart); //EDIT add restart button
+    restart.textContent = "Play Again";
     rules.style.display = "none";
-
-    /*Continue Play. 
-        EDIT from tutorial - removed words "correct/incorrect" replaced with icons.
-        IN FUTURE would separate out game over function and play on function in order 
-        to give more flexibility
-        IN FUTURE would use a for loop to create temporary array of 
-        words played then display score at end showing correct and incorrect words
-        guessed using push (), split()
-        array.from() method - see https://www.youtube.com/watch?v=NPbDqbwtr-4
-        game.sel = myWords /method/(function)*/
   } else {
     scoreBoard.style.display = "block";
     inWord.disabled = false; //refresh word
     inWord.value = ""; //clear input box on click
-    btn.style.display = "none"; //button disappears when click start
+    btn.style.display = "none"; 
     output.style.display = "block"; //EDIT hide output variable before start game then make visible.
     scoreBoard.style.display = "block";
     inWord.style.display = "block";
@@ -170,48 +150,45 @@ function gamePlay() {
     myWordsFromJson.sort(() => {
       return 0.5 - Math.random();
     });
-    // Randomise Array; attempted to replace with Fisher-Yates shuffle - unsuccessful.
     game.sel = myWordsFromJson.shift(); //Remove word already guessed from array.
-    //EDIT: removed text how many words left - too wordy.
     game.scramble = sorter(game.sel); //Pass scrambled word into sorter function - check scrambled.
     game.wordsLeft = myWordsFromJson.length; //How many words left
-    /*EDIT: Removed syling of textarea and scrambled and unscrambled word
-        from js and styled using created classes and CSS */
     output.style.backgroundColor = "#DEEFF5"; //Revert to neutral bg color after guess
     inWord.setAttribute("maxlength", game.sel.length);
     inWord.focus(); //Adds focus to input field
-    // inWord.style.borderColor = "black";
     output.textContent = `${game.scramble}`;
     console.log(game.sel, game.scramble);
   }
 }
 
-/*Edit: Removed html how many words left.
-Added fontawesome icons instead*/
+
 
 function addScore() {
   let tempOutput = `${game.score} <i class="fa-solid fa-square-check"></i>  ${game.incorrect} <i class="fa-solid fa-square-xmark"></i>`;
   scoreBoard.innerHTML = tempOutput;
 }
 
-/*EDIT: Original used borderWidth of textarea to signify if word correct or incorrect: 
+/*EDITS: Original used borderWidth of textarea to signify if word correct or incorrect: 
 this made the word above move around. 
-Styled background color of output - the scrambled/unscrambled word - instead.*/
-
+Styled background color of output instead of border colour.
+Added .toLowerCase().
+Added maxGuesses - stop game play at 5 goes. See gamePlay()
+Set textarea to disappear when correct to make room for button.
+EDIT: When guess right the ouput myWordsFromJson unscrambles.*/
 function winChecker() {
   if (inWord.value.toLowerCase() == game.sel) {
-    //EDIT: added .toLowerCase()
+  
     game.score++;
-    maxGuesses++; //EDIT: Added maxGuesses - stop game play at 5 goes. See gamePlay()
+    maxGuesses++; 
     console.log(maxGuesses);
     console.log(game.sel); //testing got right part to print
     inWord.disabled = true; //stop player entering correct score indefinitely.
-    inWord.style.display = "none"; //EDIT: set textarea to disappear when correct to make room for button.
+    inWord.style.display = "none"; 
     output.style.backgroundColor = "#b9ecdc";
     btn.style.display = "block";
     btn.textContent = "Click for next word";
     restart.style.display = "block";
-    output.textContent = `${game.sel}`; //EDIT: When guess right the ouput myWord unscrambles.
+    output.textContent = `${game.sel}`; 
   } else {
     console.log("Incorrect"); //if incorrect clear out inWord value so user cont.
     inWord.value = "";
@@ -333,4 +310,3 @@ join() returns array as string. Does not alter original array. */
 //     alert("Please enter letters only.");
 //     return false;
 //     }
-// }

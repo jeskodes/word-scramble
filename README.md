@@ -223,7 +223,7 @@ It is disappointing that Animal Scramble V1 is not accessible using tab controls
 
 #### Game Play General Bugs 
 **BUG** 
-- The output(myWords) does not unscramble the target word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
+- The output(myWordsFromJson) does not unscramble the target word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
 
 **Fix**
  - Add line of code to winChecker() fucntion - both correct and incorrect guesses: 
@@ -252,7 +252,7 @@ It is disappointing that Animal Scramble V1 is not accessible using tab controls
 ```javascript 
 
 function gamePlay() {
-  if (myWords.length <= 0 || maxGuesses === 5) {
+  if (myWordsFromJson.length <= 0 || maxGuesses === 5) {
     //EDIT: Add in "or" maxGuesses for game over.
     console.log("game over");
     console.log(maxGuesses);`
@@ -276,6 +276,12 @@ restart.addEventListener("click", (e) => {
   window.location.reload();
 });
 ```
+
+**BUG**
+- When refresh page the transition is jerky. 
+
+**Fix**
+- Add CSS animation to start of game to mask. 
 
 **BUG**
 - User testing reported that on android there was no way to press "Enter" to skip; the "go" button did not work. 
@@ -302,7 +308,7 @@ inWord.addEventListener("keyup", (e) => {
 - Added much big array of animal words to separate js file and the text went outside of input and output boxes. 
 
 **Fix**
-- Added classes to inWord(textbox) and myWords (scrambled words) and styled with CSS. 
+- Added classes to inWord(textbox) and myWordsFromJson (scrambled words) and styled with CSS. 
 - Additionally added classes to start and refresh buttons in order to style in CSS. 
 
 **BUG**
