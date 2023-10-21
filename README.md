@@ -301,7 +301,7 @@ It is disappointing that Animal Scramble V1 is not accessible using tab controls
 
   <br>
 <p align = "center">
-  <img src="documentation/BUG-infinite-turns.png" width="60%"/>
+  <img src="documentation/BUG-infinite-turns.png" width="33%"/>
 </p>
 </br>
 
