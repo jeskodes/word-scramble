@@ -174,10 +174,9 @@ Styled background color of output instead of border colour.
 Added .toLowerCase().
 Added maxGuesses - stop game play at 5 goes. See gamePlay()
 Set textarea to disappear when correct to make room for button.
-EDIT: When guess right the ouput myWordsFromJson unscrambles.*/
+Added line so word unscrambles after correct or incorrect guess.*/
 function winChecker() {
   if (inWord.value.toLowerCase() == game.sel) {
-  
     game.score++;
     maxGuesses++; 
     console.log(maxGuesses);
@@ -197,10 +196,10 @@ function winChecker() {
     maxGuesses++;
     console.log(maxGuesses);
     game.incorrect++;
-    inWord.style.display = "none"; //EDIT: copied from above so can't enter correct word
-    btn.style.display = "block"; //EDIT: copied from above
-    btn.textContent = "Click for next word"; //EDIT: move onto next word
-    output.textContent = `${game.sel}`; //EDIT: Added will display correct word even if guess incorrect.
+    inWord.style.display = "none"; 
+    btn.style.display = "block"; 
+    btn.textContent = "Click for next word"; 
+    output.textContent = `${game.sel}`; 
   }
 
   addScore();
