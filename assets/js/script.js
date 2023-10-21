@@ -208,7 +208,7 @@ function winChecker() {
 /*sorter(val)Function that continues to run until the word is scrambled
 Scramble word letters using .split and turning into an array
 to put word (temp) back into a string use temp.join()method
-Edit: Changed and added output style - padding, fontSize, borderRadius
+EDIT: Changed and added output style - padding, fontSize, borderRadius
 Need to remove word already guessed from array using .shift()method.*/
 
 function sorter(val) {
@@ -226,86 +226,3 @@ function sorter(val) {
   return temp;
 }
 
-/*split() splits a string into an array of substrings, and returns the array
-Splits the word into array of single letters
-sort()sorts the array in alphabetical order
-join() returns array as string. Does not alter original array. */
-
-//run check to see if words are matching
-//changing border width when checking making word shift - keep border same width throughout
-//Edit: original used borderWidth to signify if correct - made word above move. Style background color instead.
-//Update score whenever checking the winner. If get it correct then want to increase if statement if incorrect same with else
-//use game.score++ the addScore() to update score within same function as checking correct/incorrect.
-//if correct btn will display again to click for next word. Would prefer press enter for next word.
-//In winChecker function once played need to reenable new word to guess.
-//reenable new word by goint to btn.addEventListener function and setting inWord.disabled to false.
-
-//if (inWord.value.length == game.sel.length && e.code == "Enter") { changed
-// from or to and - to change back.
-// btn.addEventListener ('keyup', (e) => {
-//     if (e.key === "Enter" || e.code === "Enter")
-//         document.getElementsByTagName('btn-start').click(); {
-//         winChecker();
-//         console.log('enter was pressed');
-//     }
-// })
-
-// Need to change code to include shuffleArray
-
-// const shuffleArray = myWords => {
-//     for (let i = myWords.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       const temp = array[i];
-//       array[i] = array[j];
-//       array[j] = temp;
-//     }
-//   }
-
-// Learning to do: random sort, template literals.
-
-// First randomise the word using Math.randon() then make the word
-// into an array and use split()method and randomise the new array.
-
-//EDIT: I would like the new word to automatically appear or to appear on either click or enter.
-//the new word button needs tabbing to before click enter.
-//start looking into with https://css-tricks.com/when-a-click-is-not-just-a-click/
-// Add in event listener - listening for presses on the btn.
-// the button is a useable object.
-// The event object - can write out as function ?(e)=>{}
-// next want to randomise the array
-// see https://www.w3schools.com/js/js_array_sort.asp
-// will then move on to randomising letters
-
-// const correctWord = myWords.game.sel;
-// // console.log(correctWord);
-
-//Fisher-Yate shuffle algorithim
-// function shuffle(myWords) {
-//     for (let i = myWords.length - 1; i > 0; i--) {
-//       const j = Math.floor(Math.random() * (i + 1));
-//       [myWords[i], myWords[j]] = [myWords[j], myWords[i]];
-//     }
-//     return myWords;
-//   }
-
-// function allowOnlyLetters(e) {
-//     if (e.which <= 90 && e.which >= 48 || e.which >= 96 && e.which <= 105) {
-//       return true;
-//     } else {
-//       alert("Please enter only alphabets");
-//      return false;
-//      }
-//   };
-
-//https://www.kodeclik.com/how-to-scramble-a-word-in-javascript/ how to scramble a word in javascript
-
-//https://www.w3schools.blog/letters-alphabets-validation-javascript-js
-//Need to update html too.
-// function lettersOnlyCheck(inputtext) {
-// var regEx = /^[A-Za-z]+$/;
-//     if(inputtext.value.match(regEx)){
-//     return true;
-// }   else {
-//     alert("Please enter letters only.");
-//     return false;
-//     }

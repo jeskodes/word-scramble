@@ -393,6 +393,16 @@ function winChecker() {
 
 ## Validator Testing
 
+### JSHint Validator
+
+There were no warnings or errors when passed through the [JSHint](https://jshint.com/) validator. 
+
+<br>
+<p align = "center">
+  <img src="documentation\jshint-validator.png" width="60%"/>
+</p>
+</br>
+
 ### W3C CSS Validation Service
 
 The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) found no errors. 
