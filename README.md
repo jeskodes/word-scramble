@@ -171,7 +171,7 @@ I have noted the main changes from the wireframes as the project was developed i
 
 <br>
 <p align="center" width="100%">
-    <img src="documentation/animal-scramble-demo.gif" width="50%">
+    <img src="documentation/animal-scramble-demo.gif" width="60%">
 </p>
 <br>
 
