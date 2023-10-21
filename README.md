@@ -11,7 +11,7 @@ The game has been designed to be quick to start with obvious game play and few e
 
 The target players are people of all ages who are looking to distract themselves for a few minutes with a lighthearted word game.
 
-Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/){:target="_blank"}  
+Play [Animal Scramble!](https://jeskodes.github.io/word-scramble/)
 
 ## Design
 
