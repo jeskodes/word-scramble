@@ -181,34 +181,25 @@ I have noted the main changes from the wireframes as the project was developed i
 - Footer with link to [github profile](https://github.com/jeskodes).
 
 #### Start Game
-
+- Title 
+- Rules
+- Start button
 <br>
 <p align="center" width="100%">
     <img src="documentation\start-game.png"width="33%">
 </p>
 <br>
 
-- Title 
-- Rules
-- Start button
-
 #### Game Play
-<br>
-<p align="center" width="100%">
-    <img src="documentation\gameplay.png"width="33%">
-</p>
-<br>
-
 - Title
 - Dynamic Scoreboard
 - Scrambled word
 - Input box to type in guess.
 - Placeholder text in textarea "Enter to Skip". 
 - Restart button
-
 <br>
 <p align="center" width="100%">
-    <img src="documentation\guess-word.png"width="33%">
+    <img src="documentation\gameplay.png"width="33%">
 </p>
 <br>
 
@@ -217,18 +208,22 @@ Make a guess, then
 - Scrambled word unscrambles with correct or incorrect guess. 
 - Scrambled word background goes blue for correct or pink for incorrect. 
 - Button "Click for Next Word"
-- Restart button. 
-
-<br>
+- Restart button.
+- <br>
 <p align="center" width="100%">
-    <img src="documentation\game-over.png"width="33%">
+    <img src="documentation\guess-word.png"width="33%">
 </p>
 <br>
 
 After 5 guesses (correct or incorrect) then
 - Game Over
 - Score
-- Restart button. 
+- Restart button.
+<br>
+<p align="center" width="100%">
+    <img src="documentation\game-over.png"width="33%">
+</p>
+<br>
 
 #### Restart Button
 - Reloads page. 
