@@ -476,7 +476,7 @@ The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_b
 
 ##### The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the HTML.
 
-The HTML passed with no warnings or errors to show following minor fixes, such as an unclosed <div>, a quotation mark the wrong way round in the meta data and two duplicate attributes. 
+Following minor fixes such as an unclosed <div>, a quotation mark the wrong way round in the meta data and two duplicate attributes, the HTML passed with no warnings or errors.
 
 ---
 
@@ -517,6 +517,9 @@ The HTML passed with no warnings or errors to show following minor fixes, such a
 - [Create new button from tutorial: www.3schools.in](<https://www.3schools.in/2022/08/how-to-create-button-with-id-js.html#:~:text=Use%20the%20createElement()%20method%20and%20set%20in%20a%20variable,an%20id%20to%20that%20button>)
 
 - [Hex Colors from Background Image: imagecolorpicker.com](https://imagecolorpicker.com/)
+
+- [YouTube: JavaScript Array Methods You Should Know | JSON | Object Arrays
+](https://www.youtube.com/watch?v=kMVMxyp0KVo)
 
 - [Validating JSON Object: jsonlint.com](https://jsonlint.com/)
 
