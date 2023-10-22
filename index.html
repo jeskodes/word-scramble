@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="An Animal Anagram Game">
-    <meta name="keywords" content="brain, train, animal, anagram, game, words, scramble, anagram, guessing, conundrum,"> 
-    <meta name="author" content="Jessica Clark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="An Animal Anagram Game" />
+    <meta
+      name="keywords"
+      content="brain, train, animal, anagram, game, words, scramble, anagram, guessing, conundrum,"
+    />
+    <meta name="author" content="Jessica Clark" />
     <title>Animal Word Scramble</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/5e56d2dc1d.js" crossorigin="anonymous"></script>
-    
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/images/favicon/android-chrome-192x192.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5e56d2dc1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<!-- The Javascript for this project is based on Udemy Tutorial by Laurence Svekis:
+  <!-- The Javascript for this project is based on Udemy Tutorial by Laurence Svekis:
     "JavaScript Create 5 Fun Word Games".  The only html used from the course is:
     <"div id="game-area">. -->
 
-<body>
-    <header>
-
-    </header>
+  <body>
+    <header></header>
 
     <main>
-        <section class = "game-play">
-            <div id="game-area">
-                <h1 id="heading-wordscramble">Animal Scramble</h1>
-                <input type="text" class ="input-text" id = "input-word" name = "inputtext" 
-                autocomplete = "off" spellcheck = "false" 
-                placeholder = 'Press Enter to Skip' aria-label="Type word here" 
-                onkeypress="return (event.charCode > 64 && 
-	            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+      <section class="game-play">
+        <div id="game-area">
+          <h1 id="heading-wordscramble">Animal Scramble</h1>
+          <input
+            type="text"
+            class="input-text"
+            id="input-word"
+            name="inputtext"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Press Enter to Skip"
+            aria-label="Type word here"
+            onkeypress="return (event.charCode > 64 && 
+	            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+          />
 
-            <div class = "div-rules">
-                <ul id="rules">
-                    <li class = "list-intro">Unscramble the Animal!</li>
-                    <li class = "list-intro">Press Enter to Skip</li>
-                    <li class = "list-intro">5 Turns then Play Again </li>
-                </ul>
-            </div>
+          <div class="div-rules">
+            <ul id="rules">
+              <li class="list-intro">Unscramble the Animal!</li>
+              <li class="list-intro">Press Enter to Skip</li>
+              <li class="list-intro">5 Turns then Play Again</li>
+            </ul>
+          </div>
 
-<!-- Code snippet to only allows letters in textbox from: 
+          <!-- Code snippet to only allows letters in textbox from: 
 https://www.includehelp.com/code-snippets/allow-only-alphabets-in-input-field-in-javascript.aspx -->
-                
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
-    <footer class = "footer__link">
-        <a href = "https://github.com/jeskodes" target = "_blank"><i class="fa-brands fa-github"></i>
-            https://github.com/jeskodes</a>
-            
+    <footer class="footer__link">
+      <a href="https://github.com/jeskodes" target="_blank"
+        ><i class="fa-brands fa-github"></i> https://github.com/jeskodes</a
+      >
     </footer>
 
-    <script src="assets/js/words.js"></script>
     <script src="assets/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

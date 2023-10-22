@@ -52,7 +52,7 @@ Features of Conundra:
 
 ##### Tutorial Research and Development:
 
-I searched for Javacript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
+I searched for JavaScript word scramble tutorials to develop my knowlege of JavaScript and which included the basic features I wanted to include in the game.
 
 A large part of the functionality of Animal Scramble is based on a tutorial by Laurence Svekis: [JavaScript Create 5 Fun Word Games by Laurence Svekis](https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content). Additions, deletions, substitutions and changes are noted in the code.
 
@@ -97,11 +97,19 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 #### Wireframes
 
-I initially planned to start design from a desktop first approach. However, as the project developed it became clear I was working towards a mobile first approach. This is reflective in the media queries - most are `min-width` but some are `max-width`. Part of the reason this became mobile first was using Bootstrap carousel and navbar templates which are designed to be mobile first. In the future, I would be much more conscious of mobile first vs desktop first and would design based on a mobile first approach.
+<br>
+<p align="center" width="100%">
+    <img width="72%" src="documentation\wireframes-animal-scramble.png">
+</p>
+<br>
 
-Wireframes can be found [here](https://github.com/jeskodes/milestone-project-1-jesk/tree/main/documentation/wireframes)
-
-I have noted the main changes from the wireframes as the project was developed in the course of this readme and in commenting the actual code.
+#### Wireframes
+- Starting from a desktop first approach. 
+- Main gameplay in a fixed sized <div> container; media queries will be applied if needed for tablet and mobile. 
+- Three different displays of content controlled with JavaScript: 
+  - Start Page
+  - Game Play
+  - Game Over
 
 ## User Stories and Features
 
@@ -396,7 +404,7 @@ inWord.addEventListener("keyup", (e) => {
 - Can enter numbers and special characters into input box. 
 
 **Fix**
-- Add javascript code snippet to html to only allow letters. 
+- Add JavaScript code snippet to html to only allow letters. 
 
 ```javascript 
 
