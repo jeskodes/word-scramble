@@ -5,7 +5,9 @@
  * https://www.udemy.com/course/javascript-games/learn/lecture/22686281?start=120#content
  * "EDIT" indicates where additions or changes have been made*/
 
-
+/**EDIT: Changed from using words array in separate js file
+ * to fetching words from json for greater flexibility. 
+ */
 //Fetch words to be played from json file
 async function fetchAnimalsWords() {
   const response = await fetch("assets/js/animals.json");

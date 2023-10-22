@@ -243,14 +243,15 @@ After 5 guesses (correct or incorrect) then
 
 ### Features for Future Versions:
 
-- Fix accessibility issue so can use tab controls to play game.
+- Fix accessibility issue so can use tab controls to play game; split game into more functions so greater flexibility. 
 - Add to Json File and create levels of difficulty, Easy, Medium, Hard. 
-- Add additional categories, e.g. Food, Countries, Actions. 
+- Add additional categories, e.g. Food, Countries, Actions; add different start pages and themes for each category. 
 - Add buttons to choose difficulty level. 
-- Store the 5 words per game in a temporary array and create scoreboard at end showing correct and incorrect words. 
+- Store the 5 words per game in a temporary array - likely with for loop and create scoreboard at end showing correct and incorrect words. 
 - Best of 5 games then final score. 
 - Timer.
 - Split scrambled word into individual tiles. 
+- Experiment with ["Fisher-Yates" shuffle algorithim](https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/) to randomise selection of words. 
 - More celebratory and dynamic "Game Over" or "You Won". 
 
 ## Testing
