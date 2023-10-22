@@ -209,7 +209,6 @@ function winChecker() {
  * Then to put word (temp) back into a string use temp.join()method
  * Remove word already guessed from array using .shift()method.
 */
-
 function sorter(val) {
   let temp = val.split("");
   temp.sort(() => {
