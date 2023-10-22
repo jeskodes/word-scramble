@@ -288,7 +288,7 @@ It is disappointing that Animal Scramble V1 is not accessible using tab controls
 
 #### Game Play General Bugs 
 **BUG** 
-- The output(myWordsFromJson) does not unscramble the target word, even if they guess incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
+- The output(myWordsFromJson) does not unscramble the target word, even if the player guesses incorrectly so the player won't know what the right answer was; this could cause the player frustration. 
 
 **Fix**
  - Add line of code to winChecker() fucntion - both correct and incorrect guesses: 
