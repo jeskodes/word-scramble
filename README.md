@@ -76,7 +76,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 
 ### Design
 
-- A minimally cluttered container which the user can pick up and play almost immediately.
+- A minimally cluttered single gameplay container which the user can pick up and play almost immediately.
 - Intuitive game play: minimal text on the page and only a few instructions needed to understand game play.
 - Slight use of border-radius for container, buttons and input box.
 - Typeface: Serif font for labels such as name of game, buttons - slightly 70's style; used [google fonts](https://fonts.google.com/)
@@ -149,7 +149,7 @@ I also referred to two similar tutorials by [CodingNepal.](https://www.youtube.c
 - The user first arrives at the game title and game play.
 - Start Button.
 - Input box for guessing the word.
-- Answer: The correct answer is always shown after the guess, whether the uses guesses correctly or incorrectly.
+- Answer: The correct answer is always shown after the guess, whether the user guesses correctly or incorrectly.
 - Next Button for next word.
 - A way to skip a guess.
 - A restart button to start a new game.
@@ -217,7 +217,7 @@ Make a guess, then
 - Scrambled word background goes blue for correct or pink for incorrect. 
 - Button "Click for Next Word"
 - Restart button.
-- <br>
+<br>
 <p align="center" width="100%">
     <img src="documentation\guess-word.png"width="33%">
 </p>
@@ -247,7 +247,7 @@ After 5 guesses (correct or incorrect) then
 - Add to Json File and create levels of difficulty, Easy, Medium, Hard. 
 - Add additional categories, e.g. Food, Countries, Actions; add different start pages and themes for each category. 
 - Add buttons to choose difficulty level. 
-- Store the 5 words per game in a temporary array - likely with for loop and create scoreboard at end showing correct and incorrect words. 
+- Store the 5 words per game in a temporary array with for loop and create scoreboard at end showing correct and incorrect words. 
 - Best of 5 games then final score. 
 - Timer.
 - Split scrambled word into individual tiles. 
@@ -369,8 +369,8 @@ inWord.addEventListener("keyup", (e) => {
 #### Textbox Specific Bugs
 
 **BUG**
-- Initially used four animal words in array inside script.js to scramble; the words were four letters in lenght or shorter. 
-- Added much big array of animal words to separate js file and the text went outside of input and output boxes. 
+- Initially used four animal words in array inside script.js to scramble; the words were four letters in length or shorter. 
+- Added larger array of animal words to separate js file and the text went outside of input and output boxes. 
 
 **Fix**
 - Added classes to inWord(textbox) and myWordsFromJson (scrambled words) and styled with CSS. 
@@ -379,13 +379,6 @@ inWord.addEventListener("keyup", (e) => {
 **BUG**
 - User testing on ios reported that the game was showing an incorrect response as correct. 
 - Investigation revealed that the words were being autocorrected across multiple devices. 
-- Investigation with DevTools showed correct guess in console log as incorrect: 
-
-
-
-<p align = "center">
-  <img src="documentation/BUG-case-sensitive-textbox.png" width="60%"/>
-</p>
 
 **Fix**
 - Add autocomplete = "off" spellcheck = "false" to input html. 
@@ -417,6 +410,12 @@ inWord.addEventListener("keyup", (e) => {
 **BUG**
 
 - Input box is case sensitive and counting guesses in lowercase and caps as wrong. 
+- Investigation with DevTools showed correct guess in console log as incorrect: 
+
+<p align = "center">
+  <img src="documentation/BUG-case-sensitive-textbox.png" width="60%"/>
+</p>
+
 
 **Fix**
 
